@@ -1,0 +1,3408 @@
+{
+  "assets": [
+    {
+      "id": "environments_winter_day_sky",
+      "path": "environments/winter/day/sky.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": false,
+      "season": "winter",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Cielo opaco; permite encuadre extendido por color de borde. Zona central de texto despejada.",
+      "layer": "sky",
+      "depth": 0
+    },
+    {
+      "id": "environments_winter_day_far_background",
+      "path": "environments/winter/day/far_background.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "far_background",
+      "depth": 10,
+      "parallax": 0.15
+    },
+    {
+      "id": "environments_winter_day_midground",
+      "path": "environments/winter/day/midground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "midground",
+      "depth": 20,
+      "parallax": 0.4
+    },
+    {
+      "id": "environments_winter_day_ground",
+      "path": "environments/winter/day/ground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Borde visual de suelo y plataforma lógica recomendada y=900. Personajes a profundidad 40.",
+      "layer": "ground",
+      "depth": 30,
+      "walkBaseline": 900,
+      "walkableRect": {
+        "x": 210,
+        "y": 900,
+        "width": 1500,
+        "height": 145
+      }
+    },
+    {
+      "id": "environments_winter_day_foreground",
+      "path": "environments/winter/day/foreground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "foreground",
+      "depth": 60,
+      "parallax": 1.1
+    },
+    {
+      "id": "environments_winter_night_sky",
+      "path": "environments/winter/night/sky.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": false,
+      "season": "winter",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Cielo opaco; permite encuadre extendido por color de borde. Zona central de texto despejada.",
+      "layer": "sky",
+      "depth": 0
+    },
+    {
+      "id": "environments_winter_night_far_background",
+      "path": "environments/winter/night/far_background.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "far_background",
+      "depth": 10,
+      "parallax": 0.15
+    },
+    {
+      "id": "environments_winter_night_midground",
+      "path": "environments/winter/night/midground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "midground",
+      "depth": 20,
+      "parallax": 0.4
+    },
+    {
+      "id": "environments_winter_night_ground",
+      "path": "environments/winter/night/ground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Borde visual de suelo y plataforma lógica recomendada y=900. Personajes a profundidad 40.",
+      "layer": "ground",
+      "depth": 30,
+      "walkBaseline": 900,
+      "walkableRect": {
+        "x": 210,
+        "y": 900,
+        "width": 1500,
+        "height": 145
+      }
+    },
+    {
+      "id": "environments_winter_night_foreground",
+      "path": "environments/winter/night/foreground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "foreground",
+      "depth": 60,
+      "parallax": 1.1
+    },
+    {
+      "id": "environments_autumn_day_sky",
+      "path": "environments/autumn/day/sky.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": false,
+      "season": "autumn",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Cielo opaco; permite encuadre extendido por color de borde. Zona central de texto despejada.",
+      "layer": "sky",
+      "depth": 0
+    },
+    {
+      "id": "environments_autumn_day_far_background",
+      "path": "environments/autumn/day/far_background.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "far_background",
+      "depth": 10,
+      "parallax": 0.15
+    },
+    {
+      "id": "environments_autumn_day_midground",
+      "path": "environments/autumn/day/midground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "midground",
+      "depth": 20,
+      "parallax": 0.4
+    },
+    {
+      "id": "environments_autumn_day_ground",
+      "path": "environments/autumn/day/ground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Borde visual de suelo y plataforma lógica recomendada y=900. Personajes a profundidad 40.",
+      "layer": "ground",
+      "depth": 30,
+      "walkBaseline": 900,
+      "walkableRect": {
+        "x": 210,
+        "y": 900,
+        "width": 1500,
+        "height": 145
+      }
+    },
+    {
+      "id": "environments_autumn_day_foreground",
+      "path": "environments/autumn/day/foreground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "foreground",
+      "depth": 60,
+      "parallax": 1.1
+    },
+    {
+      "id": "environments_autumn_night_sky",
+      "path": "environments/autumn/night/sky.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": false,
+      "season": "autumn",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Cielo opaco; permite encuadre extendido por color de borde. Zona central de texto despejada.",
+      "layer": "sky",
+      "depth": 0
+    },
+    {
+      "id": "environments_autumn_night_far_background",
+      "path": "environments/autumn/night/far_background.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "far_background",
+      "depth": 10,
+      "parallax": 0.15
+    },
+    {
+      "id": "environments_autumn_night_midground",
+      "path": "environments/autumn/night/midground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "midground",
+      "depth": 20,
+      "parallax": 0.4
+    },
+    {
+      "id": "environments_autumn_night_ground",
+      "path": "environments/autumn/night/ground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Borde visual de suelo y plataforma lógica recomendada y=900. Personajes a profundidad 40.",
+      "layer": "ground",
+      "depth": 30,
+      "walkBaseline": 900,
+      "walkableRect": {
+        "x": 210,
+        "y": 900,
+        "width": 1500,
+        "height": 145
+      }
+    },
+    {
+      "id": "environments_autumn_night_foreground",
+      "path": "environments/autumn/night/foreground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "foreground",
+      "depth": 60,
+      "parallax": 1.1
+    },
+    {
+      "id": "environments_spring_day_sky",
+      "path": "environments/spring/day/sky.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": false,
+      "season": "spring",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Cielo opaco; permite encuadre extendido por color de borde. Zona central de texto despejada.",
+      "layer": "sky",
+      "depth": 0
+    },
+    {
+      "id": "environments_spring_day_far_background",
+      "path": "environments/spring/day/far_background.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "far_background",
+      "depth": 10,
+      "parallax": 0.15
+    },
+    {
+      "id": "environments_spring_day_midground",
+      "path": "environments/spring/day/midground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "midground",
+      "depth": 20,
+      "parallax": 0.4
+    },
+    {
+      "id": "environments_spring_day_ground",
+      "path": "environments/spring/day/ground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Borde visual de suelo y plataforma lógica recomendada y=900. Personajes a profundidad 40.",
+      "layer": "ground",
+      "depth": 30,
+      "walkBaseline": 900,
+      "walkableRect": {
+        "x": 210,
+        "y": 900,
+        "width": 1500,
+        "height": 145
+      }
+    },
+    {
+      "id": "environments_spring_day_foreground",
+      "path": "environments/spring/day/foreground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "foreground",
+      "depth": 60,
+      "parallax": 1.1
+    },
+    {
+      "id": "environments_spring_night_sky",
+      "path": "environments/spring/night/sky.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": false,
+      "season": "spring",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Cielo opaco; permite encuadre extendido por color de borde. Zona central de texto despejada.",
+      "layer": "sky",
+      "depth": 0
+    },
+    {
+      "id": "environments_spring_night_far_background",
+      "path": "environments/spring/night/far_background.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "far_background",
+      "depth": 10,
+      "parallax": 0.15
+    },
+    {
+      "id": "environments_spring_night_midground",
+      "path": "environments/spring/night/midground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "midground",
+      "depth": 20,
+      "parallax": 0.4
+    },
+    {
+      "id": "environments_spring_night_ground",
+      "path": "environments/spring/night/ground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Borde visual de suelo y plataforma lógica recomendada y=900. Personajes a profundidad 40.",
+      "layer": "ground",
+      "depth": 30,
+      "walkBaseline": 900,
+      "walkableRect": {
+        "x": 210,
+        "y": 900,
+        "width": 1500,
+        "height": 145
+      }
+    },
+    {
+      "id": "environments_spring_night_foreground",
+      "path": "environments/spring/night/foreground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "foreground",
+      "depth": 60,
+      "parallax": 1.1
+    },
+    {
+      "id": "environments_summer_day_sky",
+      "path": "environments/summer/day/sky.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": false,
+      "season": "summer",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Cielo opaco; permite encuadre extendido por color de borde. Zona central de texto despejada.",
+      "layer": "sky",
+      "depth": 0
+    },
+    {
+      "id": "environments_summer_day_far_background",
+      "path": "environments/summer/day/far_background.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "far_background",
+      "depth": 10,
+      "parallax": 0.15
+    },
+    {
+      "id": "environments_summer_day_midground",
+      "path": "environments/summer/day/midground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "midground",
+      "depth": 20,
+      "parallax": 0.4
+    },
+    {
+      "id": "environments_summer_day_ground",
+      "path": "environments/summer/day/ground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Borde visual de suelo y plataforma lógica recomendada y=900. Personajes a profundidad 40.",
+      "layer": "ground",
+      "depth": 30,
+      "walkBaseline": 900,
+      "walkableRect": {
+        "x": 210,
+        "y": 900,
+        "width": 1500,
+        "height": 145
+      }
+    },
+    {
+      "id": "environments_summer_day_foreground",
+      "path": "environments/summer/day/foreground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "foreground",
+      "depth": 60,
+      "parallax": 1.1
+    },
+    {
+      "id": "environments_summer_night_sky",
+      "path": "environments/summer/night/sky.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": false,
+      "season": "summer",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Cielo opaco; permite encuadre extendido por color de borde. Zona central de texto despejada.",
+      "layer": "sky",
+      "depth": 0
+    },
+    {
+      "id": "environments_summer_night_far_background",
+      "path": "environments/summer/night/far_background.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "far_background",
+      "depth": 10,
+      "parallax": 0.15
+    },
+    {
+      "id": "environments_summer_night_midground",
+      "path": "environments/summer/night/midground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "midground",
+      "depth": 20,
+      "parallax": 0.4
+    },
+    {
+      "id": "environments_summer_night_ground",
+      "path": "environments/summer/night/ground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Borde visual de suelo y plataforma lógica recomendada y=900. Personajes a profundidad 40.",
+      "layer": "ground",
+      "depth": 30,
+      "walkBaseline": 900,
+      "walkableRect": {
+        "x": 210,
+        "y": 900,
+        "width": 1500,
+        "height": 145
+      }
+    },
+    {
+      "id": "environments_summer_night_foreground",
+      "path": "environments/summer/night/foreground.png",
+      "type": "background",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0,
+        0
+      ],
+      "recommendedScale": 1,
+      "notes": "Ilustración vectorial; fuente SVG editable incluida.",
+      "layer": "foreground",
+      "depth": 60,
+      "parallax": 1.1
+    },
+    {
+      "id": "environments_common_props_contact_shadow",
+      "path": "environments/common/props/contact_shadow.png",
+      "type": "prop",
+      "width": 160,
+      "height": 40,
+      "format": "PNG",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_common_props_sun",
+      "path": "environments/common/props/sun.png",
+      "type": "prop",
+      "width": 160,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Sol aislado; el control de día/noche está en ui/."
+    },
+    {
+      "id": "environments_common_props_moon",
+      "path": "environments/common/props/moon.png",
+      "type": "prop",
+      "width": 160,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_common_particles_star",
+      "path": "environments/common/particles/star.png",
+      "type": "particle",
+      "width": 80,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_common_props_cloud",
+      "path": "environments/common/props/cloud.png",
+      "type": "prop",
+      "width": 256,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_common_props_rock",
+      "path": "environments/common/props/rock.png",
+      "type": "prop",
+      "width": 160,
+      "height": 100,
+      "format": "PNG",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_common_props_log_seat",
+      "path": "environments/common/props/log_seat.png",
+      "type": "prop",
+      "width": 240,
+      "height": 100,
+      "format": "PNG",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_particles_snowflake_0",
+      "path": "environments/winter/particles/snowflake_0.png",
+      "type": "particle",
+      "width": 80,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_particles_snowflake_1",
+      "path": "environments/winter/particles/snowflake_1.png",
+      "type": "particle",
+      "width": 80,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_particles_snowflake_2",
+      "path": "environments/winter/particles/snowflake_2.png",
+      "type": "particle",
+      "width": 80,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_particles_snowflake_3",
+      "path": "environments/winter/particles/snowflake_3.png",
+      "type": "particle",
+      "width": 80,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_particles_snow_grain",
+      "path": "environments/winter/particles/snow_grain.png",
+      "type": "particle",
+      "width": 24,
+      "height": 24,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_snowbank",
+      "path": "environments/winter/props/snowbank.png",
+      "type": "prop",
+      "width": 300,
+      "height": 110,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_snowy_pine",
+      "path": "environments/winter/props/snowy_pine.png",
+      "type": "prop",
+      "width": 280,
+      "height": 350,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_snow_cap",
+      "path": "environments/winter/props/snow_cap.png",
+      "type": "prop",
+      "width": 220,
+      "height": 60,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_ice_patch",
+      "path": "environments/winter/props/ice_patch.png",
+      "type": "prop",
+      "width": 300,
+      "height": 100,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_frost_letter_overlay",
+      "path": "environments/winter/props/frost_letter_overlay.png",
+      "type": "prop",
+      "width": 240,
+      "height": 100,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_melt_water",
+      "path": "environments/winter/props/melt_water.png",
+      "type": "prop",
+      "width": 220,
+      "height": 50,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_snowball",
+      "path": "environments/winter/props/snowball.png",
+      "type": "prop",
+      "width": 64,
+      "height": 64,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_snowman_stage_1",
+      "path": "environments/winter/props/snowman_stage_1.png",
+      "type": "prop",
+      "width": 200,
+      "height": 230,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_snowman_stage_2",
+      "path": "environments/winter/props/snowman_stage_2.png",
+      "type": "prop",
+      "width": 200,
+      "height": 230,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_props_snowman_stage_3",
+      "path": "environments/winter/props/snowman_stage_3.png",
+      "type": "prop",
+      "width": 200,
+      "height": 230,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_winter_particles_breath_puff",
+      "path": "environments/winter/particles/breath_puff.png",
+      "type": "particle",
+      "width": 160,
+      "height": 90,
+      "format": "PNG",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_particles_leaf_0",
+      "path": "environments/autumn/particles/leaf_0.png",
+      "type": "particle",
+      "width": 80,
+      "height": 90,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_particles_leaf_1",
+      "path": "environments/autumn/particles/leaf_1.png",
+      "type": "particle",
+      "width": 80,
+      "height": 90,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_particles_leaf_2",
+      "path": "environments/autumn/particles/leaf_2.png",
+      "type": "particle",
+      "width": 80,
+      "height": 90,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_particles_leaf_3",
+      "path": "environments/autumn/particles/leaf_3.png",
+      "type": "particle",
+      "width": 80,
+      "height": 90,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_particles_leaf_4",
+      "path": "environments/autumn/particles/leaf_4.png",
+      "type": "particle",
+      "width": 80,
+      "height": 90,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_props_leaf_pile",
+      "path": "environments/autumn/props/leaf_pile.png",
+      "type": "prop",
+      "width": 280,
+      "height": 130,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_particles_rain_drop",
+      "path": "environments/autumn/particles/rain_drop.png",
+      "type": "particle",
+      "width": 24,
+      "height": 64,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Emisión continua mientras autumn esté activo; no sincronizar con ciclo día/noche."
+    },
+    {
+      "id": "environments_autumn_particles_rain_streak",
+      "path": "environments/autumn/particles/rain_streak.png",
+      "type": "particle",
+      "width": 20,
+      "height": 70,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_props_puddle",
+      "path": "environments/autumn/props/puddle.png",
+      "type": "prop",
+      "width": 260,
+      "height": 90,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_autumn_props_autumn_tree",
+      "path": "environments/autumn/props/autumn_tree.png",
+      "type": "prop",
+      "width": 300,
+      "height": 370,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_grass_tuft",
+      "path": "environments/spring/props/grass_tuft.png",
+      "type": "prop",
+      "width": 140,
+      "height": 110,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_flower_0",
+      "path": "environments/spring/props/flower_0.png",
+      "type": "prop",
+      "width": 130,
+      "height": 150,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_flower_1",
+      "path": "environments/spring/props/flower_1.png",
+      "type": "prop",
+      "width": 130,
+      "height": 150,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_flower_2",
+      "path": "environments/spring/props/flower_2.png",
+      "type": "prop",
+      "width": 130,
+      "height": 150,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_flower_stage_0",
+      "path": "environments/spring/props/flower_stage_0.png",
+      "type": "prop",
+      "width": 130,
+      "height": 150,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_flower_stage_1",
+      "path": "environments/spring/props/flower_stage_1.png",
+      "type": "prop",
+      "width": 130,
+      "height": 150,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_flower_stage_2",
+      "path": "environments/spring/props/flower_stage_2.png",
+      "type": "prop",
+      "width": 130,
+      "height": 150,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_particles_petal_0",
+      "path": "environments/spring/particles/petal_0.png",
+      "type": "particle",
+      "width": 50,
+      "height": 60,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_particles_petal_1",
+      "path": "environments/spring/particles/petal_1.png",
+      "type": "particle",
+      "width": 50,
+      "height": 60,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_particles_petal_2",
+      "path": "environments/spring/particles/petal_2.png",
+      "type": "particle",
+      "width": 50,
+      "height": 60,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_bush",
+      "path": "environments/spring/props/bush.png",
+      "type": "prop",
+      "width": 240,
+      "height": 150,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_props_spring_tree",
+      "path": "environments/spring/props/spring_tree.png",
+      "type": "prop",
+      "width": 300,
+      "height": 370,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_sunscreen_bottle",
+      "path": "environments/summer/props/sunscreen_bottle.png",
+      "type": "prop",
+      "width": 80,
+      "height": 140,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_sunscreen_cream",
+      "path": "environments/summer/props/sunscreen_cream.png",
+      "type": "prop",
+      "width": 80,
+      "height": 60,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_sandcastle_stage_1",
+      "path": "environments/summer/props/sandcastle_stage_1.png",
+      "type": "prop",
+      "width": 270,
+      "height": 210,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_sandcastle_stage_2",
+      "path": "environments/summer/props/sandcastle_stage_2.png",
+      "type": "prop",
+      "width": 270,
+      "height": 210,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_sandcastle_stage_3",
+      "path": "environments/summer/props/sandcastle_stage_3.png",
+      "type": "prop",
+      "width": 270,
+      "height": 210,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_beach_ball",
+      "path": "environments/summer/props/beach_ball.png",
+      "type": "prop",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_bucket",
+      "path": "environments/summer/props/bucket.png",
+      "type": "prop",
+      "width": 120,
+      "height": 130,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_shovel",
+      "path": "environments/summer/props/shovel.png",
+      "type": "prop",
+      "width": 80,
+      "height": 170,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_seashell",
+      "path": "environments/summer/props/seashell.png",
+      "type": "prop",
+      "width": 120,
+      "height": 100,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_particles_seafoam",
+      "path": "environments/summer/particles/seafoam.png",
+      "type": "particle",
+      "width": 220,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_coastal_grass",
+      "path": "environments/summer/props/coastal_grass.png",
+      "type": "prop",
+      "width": 160,
+      "height": 140,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_summer_props_palm_tree",
+      "path": "environments/summer/props/palm_tree.png",
+      "type": "prop",
+      "width": 360,
+      "height": 390,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "notes": "Prop separado para composición y animación en Phaser."
+    },
+    {
+      "id": "environments_spring_particles_butterfly_butterfly_000",
+      "path": "environments/spring/particles/butterfly/butterfly_000.png",
+      "type": "particle",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser.",
+      "animation": "butterfly",
+      "frameIndex": 0
+    },
+    {
+      "id": "environments_spring_particles_butterfly_butterfly_001",
+      "path": "environments/spring/particles/butterfly/butterfly_001.png",
+      "type": "particle",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser.",
+      "animation": "butterfly",
+      "frameIndex": 1
+    },
+    {
+      "id": "environments_spring_particles_butterfly_butterfly_002",
+      "path": "environments/spring/particles/butterfly/butterfly_002.png",
+      "type": "particle",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser.",
+      "animation": "butterfly",
+      "frameIndex": 2
+    },
+    {
+      "id": "environments_spring_particles_butterfly_butterfly_003",
+      "path": "environments/spring/particles/butterfly/butterfly_003.png",
+      "type": "particle",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser.",
+      "animation": "butterfly",
+      "frameIndex": 3
+    },
+    {
+      "id": "environments_spring_particles_butterfly_butterfly_004",
+      "path": "environments/spring/particles/butterfly/butterfly_004.png",
+      "type": "particle",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser.",
+      "animation": "butterfly",
+      "frameIndex": 4
+    },
+    {
+      "id": "environments_spring_particles_butterfly_butterfly_005",
+      "path": "environments/spring/particles/butterfly/butterfly_005.png",
+      "type": "particle",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser.",
+      "animation": "butterfly",
+      "frameIndex": 5
+    },
+    {
+      "id": "environments_spring_particles_butterfly_butterfly_006",
+      "path": "environments/spring/particles/butterfly/butterfly_006.png",
+      "type": "particle",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser.",
+      "animation": "butterfly",
+      "frameIndex": 6
+    },
+    {
+      "id": "environments_spring_particles_butterfly_butterfly_007",
+      "path": "environments/spring/particles/butterfly/butterfly_007.png",
+      "type": "particle",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser.",
+      "animation": "butterfly",
+      "frameIndex": 7
+    },
+    {
+      "id": "spring_butterfly",
+      "path": "environments/spring/particles/butterfly_atlas.png",
+      "jsonPath": "environments/spring/particles/butterfly_atlas.json",
+      "type": "atlas",
+      "width": 1024,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "cellWidth": 128,
+      "cellHeight": 128,
+      "columns": 8,
+      "rows": 1,
+      "frames": [
+        "butterfly_000",
+        "butterfly_001",
+        "butterfly_002",
+        "butterfly_003",
+        "butterfly_004",
+        "butterfly_005",
+        "butterfly_006",
+        "butterfly_007"
+      ],
+      "clips": [
+        "butterfly"
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser."
+    },
+    {
+      "id": "spring_butterfly_strip",
+      "path": "environments/spring/particles/butterfly_strip.png",
+      "type": "sprite",
+      "width": 1024,
+      "height": 128,
+      "format": "PNG",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "notes": "Tira alternativa; celda 128×128, 8 fotogramas."
+    },
+    {
+      "id": "environments_summer_particles_wave_wave_000",
+      "path": "environments/summer/particles/wave/wave_000.png",
+      "type": "particle",
+      "width": 384,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "animation": "wave",
+      "frameIndex": 0,
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "environments_summer_particles_wave_wave_001",
+      "path": "environments/summer/particles/wave/wave_001.png",
+      "type": "particle",
+      "width": 384,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "animation": "wave",
+      "frameIndex": 1,
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "environments_summer_particles_wave_wave_002",
+      "path": "environments/summer/particles/wave/wave_002.png",
+      "type": "particle",
+      "width": 384,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "animation": "wave",
+      "frameIndex": 2,
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "environments_summer_particles_wave_wave_003",
+      "path": "environments/summer/particles/wave/wave_003.png",
+      "type": "particle",
+      "width": 384,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "animation": "wave",
+      "frameIndex": 3,
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "environments_summer_particles_wave_wave_004",
+      "path": "environments/summer/particles/wave/wave_004.png",
+      "type": "particle",
+      "width": 384,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "animation": "wave",
+      "frameIndex": 4,
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "environments_summer_particles_wave_wave_005",
+      "path": "environments/summer/particles/wave/wave_005.png",
+      "type": "particle",
+      "width": 384,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "animation": "wave",
+      "frameIndex": 5,
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "environments_summer_particles_wave_wave_006",
+      "path": "environments/summer/particles/wave/wave_006.png",
+      "type": "particle",
+      "width": 384,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "animation": "wave",
+      "frameIndex": 6,
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "environments_summer_particles_wave_wave_007",
+      "path": "environments/summer/particles/wave/wave_007.png",
+      "type": "particle",
+      "width": 384,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "animation": "wave",
+      "frameIndex": 7,
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "summer_wave",
+      "path": "environments/summer/particles/wave_atlas.png",
+      "jsonPath": "environments/summer/particles/wave_atlas.json",
+      "type": "atlas",
+      "width": 3072,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "cellWidth": 384,
+      "cellHeight": 96,
+      "columns": 8,
+      "rows": 1,
+      "frames": [
+        "wave_000",
+        "wave_001",
+        "wave_002",
+        "wave_003",
+        "wave_004",
+        "wave_005",
+        "wave_006",
+        "wave_007"
+      ],
+      "clips": [
+        "wave"
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "summer_wave_strip",
+      "path": "environments/summer/particles/wave_strip.png",
+      "type": "sprite",
+      "width": 3072,
+      "height": 96,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "notes": "Tira alternativa; celda 384×96, 8 fotogramas. Borde izquierdo/derecho y base se rellenan intencionalmente; repetir horizontalmente.",
+      "tileable": true,
+      "tileAxis": "x"
+    },
+    {
+      "id": "environments_autumn_particles_ripple_ripple_000",
+      "path": "environments/autumn/particles/ripple/ripple_000.png",
+      "type": "particle",
+      "width": 192,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos.",
+      "animation": "ripple",
+      "frameIndex": 0
+    },
+    {
+      "id": "environments_autumn_particles_ripple_ripple_001",
+      "path": "environments/autumn/particles/ripple/ripple_001.png",
+      "type": "particle",
+      "width": 192,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos.",
+      "animation": "ripple",
+      "frameIndex": 1
+    },
+    {
+      "id": "environments_autumn_particles_ripple_ripple_002",
+      "path": "environments/autumn/particles/ripple/ripple_002.png",
+      "type": "particle",
+      "width": 192,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos.",
+      "animation": "ripple",
+      "frameIndex": 2
+    },
+    {
+      "id": "environments_autumn_particles_ripple_ripple_003",
+      "path": "environments/autumn/particles/ripple/ripple_003.png",
+      "type": "particle",
+      "width": 192,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos.",
+      "animation": "ripple",
+      "frameIndex": 3
+    },
+    {
+      "id": "environments_autumn_particles_ripple_ripple_004",
+      "path": "environments/autumn/particles/ripple/ripple_004.png",
+      "type": "particle",
+      "width": 192,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos.",
+      "animation": "ripple",
+      "frameIndex": 4
+    },
+    {
+      "id": "environments_autumn_particles_ripple_ripple_005",
+      "path": "environments/autumn/particles/ripple/ripple_005.png",
+      "type": "particle",
+      "width": 192,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos.",
+      "animation": "ripple",
+      "frameIndex": 5
+    },
+    {
+      "id": "environments_autumn_particles_ripple_ripple_006",
+      "path": "environments/autumn/particles/ripple/ripple_006.png",
+      "type": "particle",
+      "width": 192,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos.",
+      "animation": "ripple",
+      "frameIndex": 6
+    },
+    {
+      "id": "environments_autumn_particles_ripple_ripple_007",
+      "path": "environments/autumn/particles/ripple/ripple_007.png",
+      "type": "particle",
+      "width": 192,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos.",
+      "animation": "ripple",
+      "frameIndex": 7
+    },
+    {
+      "id": "autumn_ripple",
+      "path": "environments/autumn/particles/ripple_atlas.png",
+      "jsonPath": "environments/autumn/particles/ripple_atlas.json",
+      "type": "atlas",
+      "width": 1536,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "cellWidth": 192,
+      "cellHeight": 80,
+      "columns": 8,
+      "rows": 1,
+      "frames": [
+        "ripple_000",
+        "ripple_001",
+        "ripple_002",
+        "ripple_003",
+        "ripple_004",
+        "ripple_005",
+        "ripple_006",
+        "ripple_007"
+      ],
+      "clips": [
+        "ripple"
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos."
+    },
+    {
+      "id": "autumn_ripple_strip",
+      "path": "environments/autumn/particles/ripple_strip.png",
+      "type": "sprite",
+      "width": 1536,
+      "height": 80,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "notes": "Tira alternativa; celda 192×80, 8 fotogramas."
+    },
+    {
+      "id": "environments_autumn_particles_splash_splash_000",
+      "path": "environments/autumn/particles/splash/splash_000.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje.",
+      "animation": "splash",
+      "frameIndex": 0
+    },
+    {
+      "id": "environments_autumn_particles_splash_splash_001",
+      "path": "environments/autumn/particles/splash/splash_001.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje.",
+      "animation": "splash",
+      "frameIndex": 1
+    },
+    {
+      "id": "environments_autumn_particles_splash_splash_002",
+      "path": "environments/autumn/particles/splash/splash_002.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje.",
+      "animation": "splash",
+      "frameIndex": 2
+    },
+    {
+      "id": "environments_autumn_particles_splash_splash_003",
+      "path": "environments/autumn/particles/splash/splash_003.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje.",
+      "animation": "splash",
+      "frameIndex": 3
+    },
+    {
+      "id": "environments_autumn_particles_splash_splash_004",
+      "path": "environments/autumn/particles/splash/splash_004.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje.",
+      "animation": "splash",
+      "frameIndex": 4
+    },
+    {
+      "id": "environments_autumn_particles_splash_splash_005",
+      "path": "environments/autumn/particles/splash/splash_005.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje.",
+      "animation": "splash",
+      "frameIndex": 5
+    },
+    {
+      "id": "environments_autumn_particles_splash_splash_006",
+      "path": "environments/autumn/particles/splash/splash_006.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje.",
+      "animation": "splash",
+      "frameIndex": 6
+    },
+    {
+      "id": "environments_autumn_particles_splash_splash_007",
+      "path": "environments/autumn/particles/splash/splash_007.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje.",
+      "animation": "splash",
+      "frameIndex": 7
+    },
+    {
+      "id": "autumn_splash",
+      "path": "environments/autumn/particles/splash_atlas.png",
+      "jsonPath": "environments/autumn/particles/splash_atlas.json",
+      "type": "atlas",
+      "width": 1536,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "cellWidth": 192,
+      "cellHeight": 160,
+      "columns": 8,
+      "rows": 1,
+      "frames": [
+        "splash_000",
+        "splash_001",
+        "splash_002",
+        "splash_003",
+        "splash_004",
+        "splash_005",
+        "splash_006",
+        "splash_007"
+      ],
+      "clips": [
+        "splash"
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje."
+    },
+    {
+      "id": "autumn_splash_strip",
+      "path": "environments/autumn/particles/splash_strip.png",
+      "type": "sprite",
+      "width": 1536,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "notes": "Tira alternativa; celda 192×160, 8 fotogramas."
+    },
+    {
+      "id": "environments_summer_particles_water_splash_water_splash_000",
+      "path": "environments/summer/particles/water_splash/water_splash_000.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Gotas al entrar/salir del agua; prop independiente.",
+      "animation": "water_splash",
+      "frameIndex": 0
+    },
+    {
+      "id": "environments_summer_particles_water_splash_water_splash_001",
+      "path": "environments/summer/particles/water_splash/water_splash_001.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Gotas al entrar/salir del agua; prop independiente.",
+      "animation": "water_splash",
+      "frameIndex": 1
+    },
+    {
+      "id": "environments_summer_particles_water_splash_water_splash_002",
+      "path": "environments/summer/particles/water_splash/water_splash_002.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Gotas al entrar/salir del agua; prop independiente.",
+      "animation": "water_splash",
+      "frameIndex": 2
+    },
+    {
+      "id": "environments_summer_particles_water_splash_water_splash_003",
+      "path": "environments/summer/particles/water_splash/water_splash_003.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Gotas al entrar/salir del agua; prop independiente.",
+      "animation": "water_splash",
+      "frameIndex": 3
+    },
+    {
+      "id": "environments_summer_particles_water_splash_water_splash_004",
+      "path": "environments/summer/particles/water_splash/water_splash_004.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Gotas al entrar/salir del agua; prop independiente.",
+      "animation": "water_splash",
+      "frameIndex": 4
+    },
+    {
+      "id": "environments_summer_particles_water_splash_water_splash_005",
+      "path": "environments/summer/particles/water_splash/water_splash_005.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Gotas al entrar/salir del agua; prop independiente.",
+      "animation": "water_splash",
+      "frameIndex": 5
+    },
+    {
+      "id": "environments_summer_particles_water_splash_water_splash_006",
+      "path": "environments/summer/particles/water_splash/water_splash_006.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Gotas al entrar/salir del agua; prop independiente.",
+      "animation": "water_splash",
+      "frameIndex": 6
+    },
+    {
+      "id": "environments_summer_particles_water_splash_water_splash_007",
+      "path": "environments/summer/particles/water_splash/water_splash_007.png",
+      "type": "particle",
+      "width": 192,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "notes": "Gotas al entrar/salir del agua; prop independiente.",
+      "animation": "water_splash",
+      "frameIndex": 7
+    },
+    {
+      "id": "summer_water_splash",
+      "path": "environments/summer/particles/water_splash_atlas.png",
+      "jsonPath": "environments/summer/particles/water_splash_atlas.json",
+      "type": "atlas",
+      "width": 1536,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "cellWidth": 192,
+      "cellHeight": 160,
+      "columns": 8,
+      "rows": 1,
+      "frames": [
+        "water_splash_000",
+        "water_splash_001",
+        "water_splash_002",
+        "water_splash_003",
+        "water_splash_004",
+        "water_splash_005",
+        "water_splash_006",
+        "water_splash_007"
+      ],
+      "clips": [
+        "water_splash"
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Gotas al entrar/salir del agua; prop independiente."
+    },
+    {
+      "id": "summer_water_splash_strip",
+      "path": "environments/summer/particles/water_splash_strip.png",
+      "type": "sprite",
+      "width": 1536,
+      "height": 160,
+      "format": "PNG",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "notes": "Tira alternativa; celda 192×160, 8 fotogramas."
+    }
+  ],
+  "seasons": {
+    "winter": {
+      "day": {
+        "layers": [
+          "environments_winter_day_sky",
+          "environments_winter_day_far_background",
+          "environments_winter_day_midground",
+          "environments_winter_day_ground",
+          "environments_winter_day_foreground"
+        ],
+        "preview": "previews/environments_winter_day.png",
+        "walkBaseline": 900,
+        "worldSize": [
+          1920,
+          1080
+        ],
+        "characterDepth": 40,
+        "foregroundDepth": 60,
+        "centerSafeRect": {
+          "x": 420,
+          "y": 170,
+          "width": 1080,
+          "height": 610
+        },
+        "mobile": {
+          "strategy": "Capas escaladas con cover; personajes, props y texto se recolocan con coordenadas normalizadas.",
+          "focus": [
+            0.5,
+            0.65
+          ]
+        },
+        "ambient": "snow"
+      },
+      "night": {
+        "layers": [
+          "environments_winter_night_sky",
+          "environments_winter_night_far_background",
+          "environments_winter_night_midground",
+          "environments_winter_night_ground",
+          "environments_winter_night_foreground"
+        ],
+        "preview": "previews/environments_winter_night.png",
+        "walkBaseline": 900,
+        "worldSize": [
+          1920,
+          1080
+        ],
+        "characterDepth": 40,
+        "foregroundDepth": 60,
+        "centerSafeRect": {
+          "x": 420,
+          "y": 170,
+          "width": 1080,
+          "height": 610
+        },
+        "mobile": {
+          "strategy": "Capas escaladas con cover; personajes, props y texto se recolocan con coordenadas normalizadas.",
+          "focus": [
+            0.5,
+            0.65
+          ]
+        },
+        "ambient": "snow"
+      }
+    },
+    "autumn": {
+      "day": {
+        "layers": [
+          "environments_autumn_day_sky",
+          "environments_autumn_day_far_background",
+          "environments_autumn_day_midground",
+          "environments_autumn_day_ground",
+          "environments_autumn_day_foreground"
+        ],
+        "preview": "previews/environments_autumn_day.png",
+        "walkBaseline": 900,
+        "worldSize": [
+          1920,
+          1080
+        ],
+        "characterDepth": 40,
+        "foregroundDepth": 60,
+        "centerSafeRect": {
+          "x": 420,
+          "y": 170,
+          "width": 1080,
+          "height": 610
+        },
+        "mobile": {
+          "strategy": "Capas escaladas con cover; personajes, props y texto se recolocan con coordenadas normalizadas.",
+          "focus": [
+            0.5,
+            0.65
+          ]
+        },
+        "ambient": "continuous_rain"
+      },
+      "night": {
+        "layers": [
+          "environments_autumn_night_sky",
+          "environments_autumn_night_far_background",
+          "environments_autumn_night_midground",
+          "environments_autumn_night_ground",
+          "environments_autumn_night_foreground"
+        ],
+        "preview": "previews/environments_autumn_night.png",
+        "walkBaseline": 900,
+        "worldSize": [
+          1920,
+          1080
+        ],
+        "characterDepth": 40,
+        "foregroundDepth": 60,
+        "centerSafeRect": {
+          "x": 420,
+          "y": 170,
+          "width": 1080,
+          "height": 610
+        },
+        "mobile": {
+          "strategy": "Capas escaladas con cover; personajes, props y texto se recolocan con coordenadas normalizadas.",
+          "focus": [
+            0.5,
+            0.65
+          ]
+        },
+        "ambient": "continuous_rain"
+      }
+    },
+    "spring": {
+      "day": {
+        "layers": [
+          "environments_spring_day_sky",
+          "environments_spring_day_far_background",
+          "environments_spring_day_midground",
+          "environments_spring_day_ground",
+          "environments_spring_day_foreground"
+        ],
+        "preview": "previews/environments_spring_day.png",
+        "walkBaseline": 900,
+        "worldSize": [
+          1920,
+          1080
+        ],
+        "characterDepth": 40,
+        "foregroundDepth": 60,
+        "centerSafeRect": {
+          "x": 420,
+          "y": 170,
+          "width": 1080,
+          "height": 610
+        },
+        "mobile": {
+          "strategy": "Capas escaladas con cover; personajes, props y texto se recolocan con coordenadas normalizadas.",
+          "focus": [
+            0.5,
+            0.65
+          ]
+        },
+        "ambient": "petals_and_butterflies"
+      },
+      "night": {
+        "layers": [
+          "environments_spring_night_sky",
+          "environments_spring_night_far_background",
+          "environments_spring_night_midground",
+          "environments_spring_night_ground",
+          "environments_spring_night_foreground"
+        ],
+        "preview": "previews/environments_spring_night.png",
+        "walkBaseline": 900,
+        "worldSize": [
+          1920,
+          1080
+        ],
+        "characterDepth": 40,
+        "foregroundDepth": 60,
+        "centerSafeRect": {
+          "x": 420,
+          "y": 170,
+          "width": 1080,
+          "height": 610
+        },
+        "mobile": {
+          "strategy": "Capas escaladas con cover; personajes, props y texto se recolocan con coordenadas normalizadas.",
+          "focus": [
+            0.5,
+            0.65
+          ]
+        },
+        "ambient": "petals_and_butterflies"
+      }
+    },
+    "summer": {
+      "day": {
+        "layers": [
+          "environments_summer_day_sky",
+          "environments_summer_day_far_background",
+          "environments_summer_day_midground",
+          "environments_summer_day_ground",
+          "environments_summer_day_foreground"
+        ],
+        "preview": "previews/environments_summer_day.png",
+        "walkBaseline": 900,
+        "worldSize": [
+          1920,
+          1080
+        ],
+        "characterDepth": 40,
+        "foregroundDepth": 60,
+        "centerSafeRect": {
+          "x": 420,
+          "y": 170,
+          "width": 1080,
+          "height": 610
+        },
+        "mobile": {
+          "strategy": "Capas escaladas con cover; personajes, props y texto se recolocan con coordenadas normalizadas.",
+          "focus": [
+            0.5,
+            0.65
+          ]
+        },
+        "ambient": "waves"
+      },
+      "night": {
+        "layers": [
+          "environments_summer_night_sky",
+          "environments_summer_night_far_background",
+          "environments_summer_night_midground",
+          "environments_summer_night_ground",
+          "environments_summer_night_foreground"
+        ],
+        "preview": "previews/environments_summer_night.png",
+        "walkBaseline": 900,
+        "worldSize": [
+          1920,
+          1080
+        ],
+        "characterDepth": 40,
+        "foregroundDepth": 60,
+        "centerSafeRect": {
+          "x": 420,
+          "y": 170,
+          "width": 1080,
+          "height": 610
+        },
+        "mobile": {
+          "strategy": "Capas escaladas con cover; personajes, props y texto se recolocan con coordenadas normalizadas.",
+          "focus": [
+            0.5,
+            0.65
+          ]
+        },
+        "ambient": "waves"
+      }
+    }
+  },
+  "animations": {
+    "spring_butterfly": {
+      "atlasKey": "spring_butterfly",
+      "frames": [
+        "butterfly_000",
+        "butterfly_001",
+        "butterfly_002",
+        "butterfly_003",
+        "butterfly_004",
+        "butterfly_005",
+        "butterfly_006",
+        "butterfly_007"
+      ],
+      "frameRate": 12,
+      "repeat": -1,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "interruptible": true,
+      "next": null,
+      "notes": "Aleteo articulado simétrico: alas pivotan desde el cuerpo, cambian anchura y leve rotación; el desplazamiento lo hace Phaser."
+    },
+    "summer_wave": {
+      "atlasKey": "summer_wave",
+      "frames": [
+        "wave_000",
+        "wave_001",
+        "wave_002",
+        "wave_003",
+        "wave_004",
+        "wave_005",
+        "wave_006",
+        "wave_007"
+      ],
+      "frameRate": 10,
+      "repeat": -1,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "interruptible": true,
+      "next": null,
+      "notes": "Dos periodos espaciales exactos; animación cíclica sin traslación global. Repetir horizontalmente."
+    },
+    "autumn_ripple": {
+      "atlasKey": "autumn_ripple",
+      "frames": [
+        "ripple_000",
+        "ripple_001",
+        "ripple_002",
+        "ripple_003",
+        "ripple_004",
+        "ripple_005",
+        "ripple_006",
+        "ripple_007"
+      ],
+      "frameRate": 16,
+      "repeat": 0,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "interruptible": true,
+      "next": null,
+      "notes": "Onda radial de una gota; emitir con intervalos aleatorios sobre charcos."
+    },
+    "autumn_splash": {
+      "atlasKey": "autumn_splash",
+      "frames": [
+        "splash_000",
+        "splash_001",
+        "splash_002",
+        "splash_003",
+        "splash_004",
+        "splash_005",
+        "splash_006",
+        "splash_007"
+      ],
+      "frameRate": 16,
+      "repeat": 0,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "interruptible": true,
+      "next": null,
+      "notes": "Salpicadura balística local para lluvia o salto; no mueve al personaje."
+    },
+    "summer_water_splash": {
+      "atlasKey": "summer_water_splash",
+      "frames": [
+        "water_splash_000",
+        "water_splash_001",
+        "water_splash_002",
+        "water_splash_003",
+        "water_splash_004",
+        "water_splash_005",
+        "water_splash_006",
+        "water_splash_007"
+      ],
+      "frameRate": 16,
+      "repeat": 0,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "interruptible": true,
+      "next": null,
+      "notes": "Gotas al entrar/salir del agua; prop independiente."
+    }
+  },
+  "style": {
+    "ink": "#152322",
+    "strokeWidth": 5,
+    "walkBaseline": 900
+  },
+  "rules": {
+    "autumnRain": "continuous_while_autumn",
+    "nightReadability": "lighter_midground_ground_separate_from_sky",
+    "letterText": "Never baked into environment textures"
+  },
+  "qa": {
+    "productionPngs": 147,
+    "scenes": 8,
+    "layers": 40,
+    "effectAtlases": 5,
+    "errors": [],
+    "edgeTouching": [
+      {
+        "path": "environments/summer/particles/wave/wave_000.png",
+        "expected": true,
+        "reason": "tileable_wave"
+      },
+      {
+        "path": "environments/summer/particles/wave/wave_001.png",
+        "expected": true,
+        "reason": "tileable_wave"
+      },
+      {
+        "path": "environments/summer/particles/wave/wave_002.png",
+        "expected": true,
+        "reason": "tileable_wave"
+      },
+      {
+        "path": "environments/summer/particles/wave/wave_003.png",
+        "expected": true,
+        "reason": "tileable_wave"
+      },
+      {
+        "path": "environments/summer/particles/wave/wave_004.png",
+        "expected": true,
+        "reason": "tileable_wave"
+      },
+      {
+        "path": "environments/summer/particles/wave/wave_005.png",
+        "expected": true,
+        "reason": "tileable_wave"
+      },
+      {
+        "path": "environments/summer/particles/wave/wave_006.png",
+        "expected": true,
+        "reason": "tileable_wave"
+      },
+      {
+        "path": "environments/summer/particles/wave/wave_007.png",
+        "expected": true,
+        "reason": "tileable_wave"
+      }
+    ],
+    "visualReview": "All eight scenes, seasonal props and effect contacts inspected. Calm center; readable night ground.",
+    "checks": [
+      "existence",
+      "dimensions",
+      "real alpha",
+      "nonclipped props",
+      "unique animation frames",
+      "atlas rectangles"
+    ]
+  }
+}

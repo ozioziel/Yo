@@ -1,0 +1,12 @@
+{
+  "name": "Phaser",
+  "version": "3.90.0",
+  "license": "MIT",
+  "sourceURL": "https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js",
+  "repositoryURL": "https://github.com/phaserjs/phaser/tree/v3.90.0",
+  "licenseURL": "https://raw.githubusercontent.com/phaserjs/phaser/v3.90.0/LICENSE.md",
+  "licenseFile": "LICENSE-phaser.md",
+  "distributionFile": "phaser-3.90.0.min.js",
+  "sha256": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7",
+  "purpose": "Pinned runtime for local QA harness; optional for production integration"
+}

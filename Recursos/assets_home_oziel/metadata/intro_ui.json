@@ -1,0 +1,1930 @@
+{
+  "assets": [
+    {
+      "id": "rope_intact",
+      "path": "intro/ropes/rope_intact.png",
+      "type": "prop",
+      "width": 48,
+      "height": 512,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Cuerda vertical escalable en Y; origen superior. Zona táctil recomendada 44px de ancho.",
+      "hitArea": {
+        "x": 2,
+        "y": 0,
+        "width": 44,
+        "height": 512
+      }
+    },
+    {
+      "id": "rope_taut",
+      "path": "intro/ropes/rope_taut.png",
+      "type": "prop",
+      "width": 48,
+      "height": 512,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Estado tenso antes del corte."
+    },
+    {
+      "id": "rope_cut_top",
+      "path": "intro/ropes/rope_cut_top.png",
+      "type": "prop",
+      "width": 80,
+      "height": 256,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Cabo libre; pivot en anclaje superior."
+    },
+    {
+      "id": "rope_fragment",
+      "path": "intro/ropes/rope_fragment.png",
+      "type": "prop",
+      "width": 64,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Fragmento físico efímero al corte."
+    },
+    {
+      "id": "anchor",
+      "path": "intro/ropes/anchor.png",
+      "type": "prop",
+      "width": 96,
+      "height": 64,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Soporte separado; cuerda sale en centro inferior."
+    },
+    {
+      "id": "ladder_complete",
+      "path": "intro/ladder/ladder_complete.png",
+      "type": "prop",
+      "width": 160,
+      "height": 512,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Escalera entera separada; peldaños y=37+48i. Alinear manos con peldaño; no reflejar mientras se sube.",
+      "rungSpacing": 48,
+      "railX": [
+        35,
+        120
+      ],
+      "rungY": [
+        37,
+        85,
+        133,
+        181,
+        229,
+        277,
+        325,
+        373,
+        421
+      ]
+    },
+    {
+      "id": "ladder_segment",
+      "path": "intro/ladder/ladder_segment.png",
+      "type": "prop",
+      "width": 160,
+      "height": 256,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        1
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Segmento apilable de escalera; montar en escena.",
+      "rungSpacing": 48
+    },
+    {
+      "id": "ladder_foot",
+      "path": "intro/ladder/ladder_foot.png",
+      "type": "prop",
+      "width": 160,
+      "height": 64,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Bases de apoyo separadas de escalera."
+    },
+    {
+      "id": "switch_off",
+      "path": "intro/switch/switch_off.png",
+      "type": "prop",
+      "width": 128,
+      "height": 160,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Centro de contacto de aleta (64,80), escala sugerida .4 en mundo.",
+      "interactionPoint": [
+        64,
+        80
+      ]
+    },
+    {
+      "id": "switch_off_night",
+      "path": "intro/switch/switch_off_night.png",
+      "type": "prop",
+      "width": 128,
+      "height": 160,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Centro de contacto de aleta (64,80), escala sugerida .4 en mundo.",
+      "interactionPoint": [
+        64,
+        80
+      ]
+    },
+    {
+      "id": "switch_on",
+      "path": "intro/switch/switch_on.png",
+      "type": "prop",
+      "width": 128,
+      "height": 160,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Centro de contacto de aleta (64,80), escala sugerida .4 en mundo.",
+      "interactionPoint": [
+        64,
+        80
+      ]
+    },
+    {
+      "id": "switch_on_night",
+      "path": "intro/switch/switch_on_night.png",
+      "type": "prop",
+      "width": 128,
+      "height": 160,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Centro de contacto de aleta (64,80), escala sugerida .4 en mundo.",
+      "interactionPoint": [
+        64,
+        80
+      ]
+    },
+    {
+      "id": "blackout",
+      "path": "intro/switch/blackout.png",
+      "type": "sprite",
+      "width": 64,
+      "height": 64,
+      "format": "png",
+      "alpha": false,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "overlay",
+      "depth": 1000,
+      "tileable": false,
+      "notes": "Estirar a viewport y animar alpha; independiente del interruptor día/noche."
+    },
+    {
+      "id": "scissors_tool",
+      "path": "intro/tools/scissors_tool.png",
+      "type": "prop",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Herramienta temporal; punta de corte local (104,64). Se muestra solo durante cut_rope.",
+      "cutPoint": [
+        104,
+        64
+      ],
+      "gripPoint": [
+        36,
+        64
+      ]
+    },
+    {
+      "id": "scissors_cursor",
+      "path": "ui/scissors_cursor.png",
+      "type": "ui",
+      "width": 32,
+      "height": 32,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Cursor CSS de 32px, hotspot (27,15).",
+      "hotspot": [
+        27,
+        15
+      ]
+    },
+    {
+      "id": "scissors_touch",
+      "path": "ui/scissors_touch.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Indicador para cuerda seleccionada con touch; no reemplaza área táctil."
+    },
+    {
+      "id": "contact_shadow",
+      "path": "intro/letters_fx/contact_shadow.png",
+      "type": "sprite",
+      "width": 256,
+      "height": 64,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Sombra de contacto separada; escala con altura de personaje."
+    },
+    {
+      "id": "rope_shadow",
+      "path": "intro/ropes/rope_shadow.png",
+      "type": "sprite",
+      "width": 48,
+      "height": 512,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Sombra separada desplazable."
+    },
+    {
+      "id": "frost_corner",
+      "path": "intro/letters_fx/frost_corner.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Escarcha modular de esquina para letras vivas; ocultar al cambiar de estación."
+    },
+    {
+      "id": "frost_melt",
+      "path": "intro/letters_fx/frost_melt.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 64,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Estado derretido separable de la letra."
+    },
+    {
+      "id": "expression_surprise",
+      "path": "intro/letters_fx/expression_surprise.png",
+      "type": "sprite",
+      "width": 72,
+      "height": 88,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Efecto expresivo opcional y separado del personaje."
+    },
+    {
+      "id": "expression_curiosity",
+      "path": "intro/letters_fx/expression_curiosity.png",
+      "type": "sprite",
+      "width": 72,
+      "height": 88,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Efecto expresivo opcional y separado del personaje."
+    },
+    {
+      "id": "fx_cut_000",
+      "path": "intro/letters_fx/fx_cut/frames/fx_cut_000.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Estallido corto al cortar cualquier cuerda; origen en punto de corte.",
+      "effect": "fx_cut",
+      "frameIndex": 0
+    },
+    {
+      "id": "fx_cut_001",
+      "path": "intro/letters_fx/fx_cut/frames/fx_cut_001.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Estallido corto al cortar cualquier cuerda; origen en punto de corte.",
+      "effect": "fx_cut",
+      "frameIndex": 1
+    },
+    {
+      "id": "fx_cut_002",
+      "path": "intro/letters_fx/fx_cut/frames/fx_cut_002.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Estallido corto al cortar cualquier cuerda; origen en punto de corte.",
+      "effect": "fx_cut",
+      "frameIndex": 2
+    },
+    {
+      "id": "fx_cut_003",
+      "path": "intro/letters_fx/fx_cut/frames/fx_cut_003.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Estallido corto al cortar cualquier cuerda; origen en punto de corte.",
+      "effect": "fx_cut",
+      "frameIndex": 3
+    },
+    {
+      "id": "fx_cut_004",
+      "path": "intro/letters_fx/fx_cut/frames/fx_cut_004.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Estallido corto al cortar cualquier cuerda; origen en punto de corte.",
+      "effect": "fx_cut",
+      "frameIndex": 4
+    },
+    {
+      "id": "fx_cut_005",
+      "path": "intro/letters_fx/fx_cut/frames/fx_cut_005.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Estallido corto al cortar cualquier cuerda; origen en punto de corte.",
+      "effect": "fx_cut",
+      "frameIndex": 5
+    },
+    {
+      "id": "fx_cut",
+      "path": "intro/letters_fx/fx_cut.png",
+      "jsonPath": "intro/letters_fx/fx_cut.json",
+      "type": "atlas",
+      "width": 768,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "cellSize": [
+        128,
+        128
+      ],
+      "columns": 6,
+      "rows": 1,
+      "frames": [
+        "fx_cut_000",
+        "fx_cut_001",
+        "fx_cut_002",
+        "fx_cut_003",
+        "fx_cut_004",
+        "fx_cut_005"
+      ],
+      "clips": [
+        "fx_cut"
+      ],
+      "notes": "Estallido corto al cortar cualquier cuerda; origen en punto de corte."
+    },
+    {
+      "id": "fx_dust_000",
+      "path": "intro/letters_fx/fx_dust/frames/fx_dust_000.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Polvo suave tras impacto de letras/escalera.",
+      "effect": "fx_dust",
+      "frameIndex": 0
+    },
+    {
+      "id": "fx_dust_001",
+      "path": "intro/letters_fx/fx_dust/frames/fx_dust_001.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Polvo suave tras impacto de letras/escalera.",
+      "effect": "fx_dust",
+      "frameIndex": 1
+    },
+    {
+      "id": "fx_dust_002",
+      "path": "intro/letters_fx/fx_dust/frames/fx_dust_002.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Polvo suave tras impacto de letras/escalera.",
+      "effect": "fx_dust",
+      "frameIndex": 2
+    },
+    {
+      "id": "fx_dust_003",
+      "path": "intro/letters_fx/fx_dust/frames/fx_dust_003.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Polvo suave tras impacto de letras/escalera.",
+      "effect": "fx_dust",
+      "frameIndex": 3
+    },
+    {
+      "id": "fx_dust_004",
+      "path": "intro/letters_fx/fx_dust/frames/fx_dust_004.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Polvo suave tras impacto de letras/escalera.",
+      "effect": "fx_dust",
+      "frameIndex": 4
+    },
+    {
+      "id": "fx_dust_005",
+      "path": "intro/letters_fx/fx_dust/frames/fx_dust_005.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Polvo suave tras impacto de letras/escalera.",
+      "effect": "fx_dust",
+      "frameIndex": 5
+    },
+    {
+      "id": "fx_dust_006",
+      "path": "intro/letters_fx/fx_dust/frames/fx_dust_006.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Polvo suave tras impacto de letras/escalera.",
+      "effect": "fx_dust",
+      "frameIndex": 6
+    },
+    {
+      "id": "fx_dust_007",
+      "path": "intro/letters_fx/fx_dust/frames/fx_dust_007.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Polvo suave tras impacto de letras/escalera.",
+      "effect": "fx_dust",
+      "frameIndex": 7
+    },
+    {
+      "id": "fx_dust",
+      "path": "intro/letters_fx/fx_dust.png",
+      "jsonPath": "intro/letters_fx/fx_dust.json",
+      "type": "atlas",
+      "width": 1024,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "cellSize": [
+        128,
+        128
+      ],
+      "columns": 8,
+      "rows": 1,
+      "frames": [
+        "fx_dust_000",
+        "fx_dust_001",
+        "fx_dust_002",
+        "fx_dust_003",
+        "fx_dust_004",
+        "fx_dust_005",
+        "fx_dust_006",
+        "fx_dust_007"
+      ],
+      "clips": [
+        "fx_dust"
+      ],
+      "notes": "Polvo suave tras impacto de letras/escalera."
+    },
+    {
+      "id": "fx_o_glow_000",
+      "path": "intro/letters_fx/fx_o_glow/frames/fx_o_glow_000.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Halo al encajar O de hOme; mantener letra como texto.",
+      "effect": "fx_o_glow",
+      "frameIndex": 0
+    },
+    {
+      "id": "fx_o_glow_001",
+      "path": "intro/letters_fx/fx_o_glow/frames/fx_o_glow_001.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Halo al encajar O de hOme; mantener letra como texto.",
+      "effect": "fx_o_glow",
+      "frameIndex": 1
+    },
+    {
+      "id": "fx_o_glow_002",
+      "path": "intro/letters_fx/fx_o_glow/frames/fx_o_glow_002.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Halo al encajar O de hOme; mantener letra como texto.",
+      "effect": "fx_o_glow",
+      "frameIndex": 2
+    },
+    {
+      "id": "fx_o_glow_003",
+      "path": "intro/letters_fx/fx_o_glow/frames/fx_o_glow_003.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Halo al encajar O de hOme; mantener letra como texto.",
+      "effect": "fx_o_glow",
+      "frameIndex": 3
+    },
+    {
+      "id": "fx_o_glow_004",
+      "path": "intro/letters_fx/fx_o_glow/frames/fx_o_glow_004.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Halo al encajar O de hOme; mantener letra como texto.",
+      "effect": "fx_o_glow",
+      "frameIndex": 4
+    },
+    {
+      "id": "fx_o_glow_005",
+      "path": "intro/letters_fx/fx_o_glow/frames/fx_o_glow_005.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Halo al encajar O de hOme; mantener letra como texto.",
+      "effect": "fx_o_glow",
+      "frameIndex": 5
+    },
+    {
+      "id": "fx_o_glow_006",
+      "path": "intro/letters_fx/fx_o_glow/frames/fx_o_glow_006.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Halo al encajar O de hOme; mantener letra como texto.",
+      "effect": "fx_o_glow",
+      "frameIndex": 6
+    },
+    {
+      "id": "fx_o_glow_007",
+      "path": "intro/letters_fx/fx_o_glow/frames/fx_o_glow_007.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Halo al encajar O de hOme; mantener letra como texto.",
+      "effect": "fx_o_glow",
+      "frameIndex": 7
+    },
+    {
+      "id": "fx_o_glow",
+      "path": "intro/letters_fx/fx_o_glow.png",
+      "jsonPath": "intro/letters_fx/fx_o_glow.json",
+      "type": "atlas",
+      "width": 1024,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "cellSize": [
+        128,
+        128
+      ],
+      "columns": 8,
+      "rows": 1,
+      "frames": [
+        "fx_o_glow_000",
+        "fx_o_glow_001",
+        "fx_o_glow_002",
+        "fx_o_glow_003",
+        "fx_o_glow_004",
+        "fx_o_glow_005",
+        "fx_o_glow_006",
+        "fx_o_glow_007"
+      ],
+      "clips": [
+        "fx_o_glow"
+      ],
+      "notes": "Halo al encajar O de hOme; mantener letra como texto."
+    },
+    {
+      "id": "fx_impact_000",
+      "path": "intro/letters_fx/fx_impact/frames/fx_impact_000.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Arcos de golpe para apoyo de escalera o rebote de letras.",
+      "effect": "fx_impact",
+      "frameIndex": 0
+    },
+    {
+      "id": "fx_impact_001",
+      "path": "intro/letters_fx/fx_impact/frames/fx_impact_001.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Arcos de golpe para apoyo de escalera o rebote de letras.",
+      "effect": "fx_impact",
+      "frameIndex": 1
+    },
+    {
+      "id": "fx_impact_002",
+      "path": "intro/letters_fx/fx_impact/frames/fx_impact_002.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Arcos de golpe para apoyo de escalera o rebote de letras.",
+      "effect": "fx_impact",
+      "frameIndex": 2
+    },
+    {
+      "id": "fx_impact_003",
+      "path": "intro/letters_fx/fx_impact/frames/fx_impact_003.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Arcos de golpe para apoyo de escalera o rebote de letras.",
+      "effect": "fx_impact",
+      "frameIndex": 3
+    },
+    {
+      "id": "fx_impact_004",
+      "path": "intro/letters_fx/fx_impact/frames/fx_impact_004.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Arcos de golpe para apoyo de escalera o rebote de letras.",
+      "effect": "fx_impact",
+      "frameIndex": 4
+    },
+    {
+      "id": "fx_impact_005",
+      "path": "intro/letters_fx/fx_impact/frames/fx_impact_005.png",
+      "type": "sprite",
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Arcos de golpe para apoyo de escalera o rebote de letras.",
+      "effect": "fx_impact",
+      "frameIndex": 5
+    },
+    {
+      "id": "fx_impact",
+      "path": "intro/letters_fx/fx_impact.png",
+      "jsonPath": "intro/letters_fx/fx_impact.json",
+      "type": "atlas",
+      "width": 768,
+      "height": 128,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "cellSize": [
+        128,
+        128
+      ],
+      "columns": 6,
+      "rows": 1,
+      "frames": [
+        "fx_impact_000",
+        "fx_impact_001",
+        "fx_impact_002",
+        "fx_impact_003",
+        "fx_impact_004",
+        "fx_impact_005"
+      ],
+      "clips": [
+        "fx_impact"
+      ],
+      "notes": "Arcos de golpe para apoyo de escalera o rebote de letras."
+    },
+    {
+      "id": "season_0_normal",
+      "path": "ui/season_0_normal.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 0; estado normal; etiqueta accesible se añade en HTML.",
+      "level": 0,
+      "state": "normal"
+    },
+    {
+      "id": "season_0_hover",
+      "path": "ui/season_0_hover.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 0; estado hover; etiqueta accesible se añade en HTML.",
+      "level": 0,
+      "state": "hover"
+    },
+    {
+      "id": "season_0_selected",
+      "path": "ui/season_0_selected.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 0; estado selected; etiqueta accesible se añade en HTML.",
+      "level": 0,
+      "state": "selected"
+    },
+    {
+      "id": "season_0_focus",
+      "path": "ui/season_0_focus.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "winter",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 0; estado focus; etiqueta accesible se añade en HTML.",
+      "level": 0,
+      "state": "focus"
+    },
+    {
+      "id": "season_1_normal",
+      "path": "ui/season_1_normal.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 1; estado normal; etiqueta accesible se añade en HTML.",
+      "level": 1,
+      "state": "normal"
+    },
+    {
+      "id": "season_1_hover",
+      "path": "ui/season_1_hover.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 1; estado hover; etiqueta accesible se añade en HTML.",
+      "level": 1,
+      "state": "hover"
+    },
+    {
+      "id": "season_1_selected",
+      "path": "ui/season_1_selected.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 1; estado selected; etiqueta accesible se añade en HTML.",
+      "level": 1,
+      "state": "selected"
+    },
+    {
+      "id": "season_1_focus",
+      "path": "ui/season_1_focus.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "autumn",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 1; estado focus; etiqueta accesible se añade en HTML.",
+      "level": 1,
+      "state": "focus"
+    },
+    {
+      "id": "season_2_normal",
+      "path": "ui/season_2_normal.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 2; estado normal; etiqueta accesible se añade en HTML.",
+      "level": 2,
+      "state": "normal"
+    },
+    {
+      "id": "season_2_hover",
+      "path": "ui/season_2_hover.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 2; estado hover; etiqueta accesible se añade en HTML.",
+      "level": 2,
+      "state": "hover"
+    },
+    {
+      "id": "season_2_selected",
+      "path": "ui/season_2_selected.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 2; estado selected; etiqueta accesible se añade en HTML.",
+      "level": 2,
+      "state": "selected"
+    },
+    {
+      "id": "season_2_focus",
+      "path": "ui/season_2_focus.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "spring",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 2; estado focus; etiqueta accesible se añade en HTML.",
+      "level": 2,
+      "state": "focus"
+    },
+    {
+      "id": "season_3_normal",
+      "path": "ui/season_3_normal.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 3; estado normal; etiqueta accesible se añade en HTML.",
+      "level": 3,
+      "state": "normal"
+    },
+    {
+      "id": "season_3_hover",
+      "path": "ui/season_3_hover.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 3; estado hover; etiqueta accesible se añade en HTML.",
+      "level": 3,
+      "state": "hover"
+    },
+    {
+      "id": "season_3_selected",
+      "path": "ui/season_3_selected.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 3; estado selected; etiqueta accesible se añade en HTML.",
+      "level": 3,
+      "state": "selected"
+    },
+    {
+      "id": "season_3_focus",
+      "path": "ui/season_3_focus.png",
+      "type": "ui",
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "alpha": true,
+      "season": "summer",
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Nivel 3; estado focus; etiqueta accesible se añade en HTML.",
+      "level": 3,
+      "state": "focus"
+    },
+    {
+      "id": "day_night_day_normal",
+      "path": "ui/day_night_day_normal.png",
+      "type": "ui",
+      "width": 160,
+      "height": 80,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Control independiente de apagón narrativo.",
+      "state": "normal"
+    },
+    {
+      "id": "day_night_day_hover",
+      "path": "ui/day_night_day_hover.png",
+      "type": "ui",
+      "width": 160,
+      "height": 80,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Control independiente de apagón narrativo.",
+      "state": "hover"
+    },
+    {
+      "id": "day_night_day_focus",
+      "path": "ui/day_night_day_focus.png",
+      "type": "ui",
+      "width": 160,
+      "height": 80,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "day",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Control independiente de apagón narrativo.",
+      "state": "focus"
+    },
+    {
+      "id": "day_night_night_normal",
+      "path": "ui/day_night_night_normal.png",
+      "type": "ui",
+      "width": 160,
+      "height": 80,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Control independiente de apagón narrativo.",
+      "state": "normal"
+    },
+    {
+      "id": "day_night_night_hover",
+      "path": "ui/day_night_night_hover.png",
+      "type": "ui",
+      "width": 160,
+      "height": 80,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Control independiente de apagón narrativo.",
+      "state": "hover"
+    },
+    {
+      "id": "day_night_night_focus",
+      "path": "ui/day_night_night_focus.png",
+      "type": "ui",
+      "width": 160,
+      "height": 80,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": "night",
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 900,
+      "tileable": false,
+      "notes": "Control independiente de apagón narrativo.",
+      "state": "focus"
+    },
+    {
+      "id": "grab_cursor",
+      "path": "ui/grab_cursor.png",
+      "type": "ui",
+      "width": 32,
+      "height": 32,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Feedback de agarre opcional, hotspot (15,17).",
+      "hotspot": [
+        15,
+        17
+      ]
+    },
+    {
+      "id": "home_typography_reference",
+      "path": "reference/home_typography_reference.png",
+      "type": "preview",
+      "width": 800,
+      "height": 240,
+      "format": "png",
+      "alpha": true,
+      "season": null,
+      "dayNight": null,
+      "characterVariant": null,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "recommendedScale": 1,
+      "layer": "prop",
+      "depth": 40,
+      "tileable": false,
+      "notes": "Referencia tipográfica únicamente. Usar texto HTML editable en integración."
+    }
+  ],
+  "effects": {
+    "fx_cut": {
+      "atlasKey": "fx_cut",
+      "frames": [
+        "fx_cut_000",
+        "fx_cut_001",
+        "fx_cut_002",
+        "fx_cut_003",
+        "fx_cut_004",
+        "fx_cut_005"
+      ],
+      "frameRate": 18,
+      "repeat": 0,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Estallido corto al cortar cualquier cuerda; origen en punto de corte."
+    },
+    "fx_dust": {
+      "atlasKey": "fx_dust",
+      "frames": [
+        "fx_dust_000",
+        "fx_dust_001",
+        "fx_dust_002",
+        "fx_dust_003",
+        "fx_dust_004",
+        "fx_dust_005",
+        "fx_dust_006",
+        "fx_dust_007"
+      ],
+      "frameRate": 16,
+      "repeat": 0,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Polvo suave tras impacto de letras/escalera."
+    },
+    "fx_o_glow": {
+      "atlasKey": "fx_o_glow",
+      "frames": [
+        "fx_o_glow_000",
+        "fx_o_glow_001",
+        "fx_o_glow_002",
+        "fx_o_glow_003",
+        "fx_o_glow_004",
+        "fx_o_glow_005",
+        "fx_o_glow_006",
+        "fx_o_glow_007"
+      ],
+      "frameRate": 14,
+      "repeat": 0,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Halo al encajar O de hOme; mantener letra como texto."
+    },
+    "fx_impact": {
+      "atlasKey": "fx_impact",
+      "frames": [
+        "fx_impact_000",
+        "fx_impact_001",
+        "fx_impact_002",
+        "fx_impact_003",
+        "fx_impact_004",
+        "fx_impact_005"
+      ],
+      "frameRate": 18,
+      "repeat": 0,
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "notes": "Arcos de golpe para apoyo de escalera o rebote de letras."
+    }
+  },
+  "ui": {
+    "seasonLevels": {
+      "0": "winter",
+      "1": "autumn",
+      "2": "spring",
+      "3": "summer"
+    },
+    "cursorHotspot": [
+      27,
+      15
+    ],
+    "homeFont": "Trebuchet MS, Arial, sans-serif"
+  },
+  "extraDecisions": [
+    "Cursores a 32px para compatibilidad CSS; indicador táctil separado de96px.",
+    "Escarcha modular, estado derretido, sombra y bases de escalera separados."
+  ]
+}

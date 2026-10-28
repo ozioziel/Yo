@@ -1,0 +1,62 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oziel — Phaser atlas smoke test</title>
+<style>html,body{margin:0;background:#e8f0f1;overflow:hidden}canvas{display:block}</style>
+<script src="../vendor/phaser-3.90.0.min.js"></script>
+<script type="module">
+import { preloadAssets, registerAnimations, registerEffectAnimations, PenguinController, EnvironmentController, connectPenguinCollisions } from '../oziel_runtime.mjs';
+window.smoke = { state: 'loading', errors: [], history: [] };
+window.addEventListener('error', event => window.smoke.errors.push(event.message));
+window.addEventListener('unhandledrejection', event => window.smoke.errors.push(String(event.reason)));
+try {
+  const [manifest, animations, environments] = await Promise.all([
+    fetch('../../asset_manifest.json').then(r => r.json()),
+    fetch('../../animations.json').then(r => r.json()),
+    fetch('../../metadata/environments.json').then(r => r.json())
+  ]);
+  class SmokeScene extends Phaser.Scene {
+    preload() {
+      this.load.on('loaderror', file => window.smoke.errors.push(`loaderror:${file.key}:${file.url}`));
+      preloadAssets(this, manifest, '../../');
+    }
+    create() {
+      try {
+        registerAnimations(this, animations);
+        registerEffectAnimations(this, animations.effects ?? environments.animations);
+        const environment = new EnvironmentController(this, manifest, environments);
+        environment.set(2, false);
+        const floor = this.add.rectangle(960, 925, 1920, 50, 0).setVisible(false);
+        this.physics.add.existing(floor, true);
+        const penguinDef = animations.characters.penguin.idle;
+        const engineerDef = animations.characters.engineer.idle;
+        const firstFrame = def => typeof def.frames[0] === 'string' ? def.frames[0] : def.frames[0].frame;
+        const sprite = this.physics.add.sprite(500, 900, penguinDef.atlasKey, firstFrame(penguinDef)).setDepth(40);
+        const engineerSprite = this.physics.add.sprite(1200, 900, engineerDef.atlasKey, firstFrame(engineerDef)).setDepth(40);
+        const p = new PenguinController(this, sprite, animations, { random: () => 0.5, propFloor: floor });
+        const engineer = new PenguinController(this, engineerSprite, animations, { engineer: true, propFloor: floor });
+        const group = this.physics.add.group();
+        group.add(sprite); group.add(engineerSprite);
+        this.physics.add.collider(group, floor, object => object.ozielController?.landed());
+        connectPenguinCollisions(this, group);
+        this.controllers = [p, engineer];
+        Object.assign(window.smoke, { state: 'ready', scene: this, p, engineer, environment, sprite,
+          atlasCount: manifest.assets.filter(a => a.type === 'atlas').length,
+          animationCount: Object.values(animations.characters).reduce((sum, clips) => sum + Object.keys(clips).length, 0) });
+      } catch (error) { window.smoke.errors.push(error.stack); window.smoke.state = 'failed'; }
+    }
+    update() {
+      this.controllers?.forEach(p => {
+        p.update();
+        if (p === window.smoke.p && p.state !== window.smoke.history.at(-1)) window.smoke.history.push(p.state);
+      });
+    }
+  }
+  window.smoke.game = new Phaser.Game({
+    type: Phaser.CANVAS, width: 1920, height: 1080,
+    scale: { mode: Phaser.Scale.FIT, autoCenter: Phaser.Scale.CENTER_BOTH },
+    physics: { default: 'arcade', arcade: { gravity: { y: 900 }, debug: false } },
+    input: { activePointers: 3 }, scene: SmokeScene, audio: { noAudio: true }, banner: false
+  });
+} catch (error) { window.smoke.errors.push(error.stack); window.smoke.state = 'failed'; }
+</script>

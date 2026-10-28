@@ -1,0 +1,27 @@
+{
+  "phaser": "3.90.0",
+  "state": "ready",
+  "atlasCount": 47,
+  "animationCount": 246,
+  "history": [
+    "activity",
+    "dragged",
+    "falling",
+    "recovering",
+    "weather",
+    "activity",
+    "weather",
+    "activity",
+    "dragged",
+    "falling",
+    "recovering",
+    "activity"
+  ],
+  "penguinVariant": "penguin_autumn",
+  "engineerVariant": "engineer",
+  "errors": [],
+  "autumnRainPersistsAcrossDayNight": true,
+  "winterEquipAndAutumnRemovalVerified": true,
+  "autumnUmbrellaDropAndCleanupVerified": true,
+  "pageErrors": []
+}

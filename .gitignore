@@ -1,0 +1,21 @@
+node_modules
+dist
+public/assets
+*.log
+# Dependencias instaladas
+node_modules/
+
+# Archivos compilados
+dist/
+
+# Variables privadas
+.env
+.env.*
+!.env.example
+
+# Claves privadas
+*.pem
+*.key
+
+# Archivos temporales
+*.log

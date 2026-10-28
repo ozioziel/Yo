@@ -1,0 +1,702 @@
+{
+  "passed": true,
+  "totals": {
+    "clips": 246,
+    "frames": 1718,
+    "atlases": 38,
+    "gifs": 38
+  },
+  "issues": [],
+  "revisitedPoses": [
+    {
+      "variant": "penguin",
+      "clip": "blink",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "dragged",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "fall_flap",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "stumble",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "bump",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "push",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "sit_idle",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "enter",
+      "unique": 7,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "switch_light",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "place_ladder",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "assemble_ladder",
+      "unique": 7,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "celebrate",
+      "unique": 5,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "sleep",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "greet",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "play",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "laugh",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "interact_object",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "remove_accessories",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "shiver",
+      "unique": 5,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "ice_slide",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "build_snowman",
+      "unique": 11,
+      "total": 12,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "jump_puddle",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "play_leaves",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "hide_rain",
+      "unique": 2,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "smell_flower",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "sit_grass",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "apply_sunscreen",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "build_sandcastle",
+      "unique": 11,
+      "total": 12,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "play_beach",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin",
+      "clip": "shake_water",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "blink",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "dragged",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "fall_flap",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "stumble",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "bump",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "push",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "sit_idle",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "enter",
+      "unique": 7,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "switch_light",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "place_ladder",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "assemble_ladder",
+      "unique": 7,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "celebrate",
+      "unique": 5,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "sleep",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "greet",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "play",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "laugh",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "interact_object",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "shiver",
+      "unique": 5,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "ice_slide",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "build_snowman",
+      "unique": 11,
+      "total": 12,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "jump_puddle",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "play_leaves",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "smell_flower",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "sit_grass",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "apply_sunscreen",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "build_sandcastle",
+      "unique": 11,
+      "total": 12,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "play_beach",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "engineer",
+      "clip": "shake_water",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "blink",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "dragged",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "fall_flap",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "stumble",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "bump",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "push",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "sit_idle",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "enter",
+      "unique": 7,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "switch_light",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "place_ladder",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "assemble_ladder",
+      "unique": 7,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "celebrate",
+      "unique": 5,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "sleep",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "greet",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "play",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "laugh",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "interact_object",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "shiver",
+      "unique": 5,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "ice_slide",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "build_snowman",
+      "unique": 11,
+      "total": 12,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "blink",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "dragged",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "fall_flap",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "stumble",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "bump",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "push",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "sit_idle",
+      "unique": 3,
+      "total": 4,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "enter",
+      "unique": 7,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "switch_light",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "place_ladder",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "assemble_ladder",
+      "unique": 7,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "celebrate",
+      "unique": 5,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "sleep",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "greet",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "play",
+      "unique": 5,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "laugh",
+      "unique": 3,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "interact_object",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "jump_puddle",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "play_leaves",
+      "unique": 4,
+      "total": 8,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "hide_rain",
+      "unique": 2,
+      "total": 6,
+      "reason": "Revisited poses in a cycle or neutral one-shot endpoints; never a wholly static sequence."
+    }
+  ],
+  "limitations": [
+    "Perceptual quality additionally reviewed on model/contact sheets; this script checks structural and pixel continuity, not subjective artistic fidelity.",
+    "Strip/atlas alpha is pixel exact; libvips antialiased RGB rounding tolerance is at most 1/255."
+  ]
+}

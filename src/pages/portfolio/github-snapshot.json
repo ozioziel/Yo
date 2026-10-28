@@ -1,0 +1,173 @@
+{
+  "savedAt": "2026-10-25T05:11:29.757Z",
+  "profile": {
+    "login": "ozioziel",
+    "name": "ozioziel",
+    "avatar_url": "https://avatars.githubusercontent.com/u/201685456?v=4",
+    "html_url": "https://github.com/ozioziel",
+    "bio": "Full Stack Developer | React · NestJS · Flutter · Python | AI & Cloud | Penguins 🐧\r\n",
+    "location": "La Paz - Bolivia",
+    "blog": "",
+    "public_repos": 14,
+    "followers": 1
+  },
+  "readme": "<div align=\"center\">\n\n# Hi, I'm Oziel Ramos Torrez 👋🐧\n\n### Full Stack Developer · Software Engineering Student\n\n**React · TypeScript · NestJS · Flutter · Python · AI · Cloud**\n\n*Automating things… occasionally penguins 🐧*\n</div>\n<div align=\"center\">\n\n[![GitHub](https://img.shields.io/badge/GitHub-ozioziel-181717?style=for-the-badge&logo=github)](https://github.com/ozioziel)\n[![LinkedIn](https://img.shields.io/badge/LinkedIn-Oziel%20Ramos%20Torrez-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oziel-rodman-ramos-torrez-98b914403)\n[![Credly](https://img.shields.io/badge/Credly-Google%20Cloud%20Credential-FF6B00?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/badges/2077fe64-ee88-488a-ba3a-6f04930aabbb/public_url)\n[![Email](https://img.shields.io/badge/Email-roziel147%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:roziel147@gmail.com)\n\n\n</div>\n\n---\n\n## About me\n\nI'm a **Software Engineering student at Universidad Católica Boliviana \"San Pablo\" in La Paz, Bolivia**, focused on full-stack development, mobile applications, AI-powered systems and cloud deployment.\n\nI enjoy taking ideas from prototype to working product: designing interfaces, building APIs, connecting databases, integrating AI services, deploying applications and adapting software to real-world constraints.\n\nSome of my projects started in hackathons and later evolved into **professional consulting work or enterprise-oriented implementations**.\n\n- Focused on **Full Stack Development**\n- Interested in **AI, RAG, automation and intelligent interfaces**\n- Building mobile applications with **Flutter**\n- Experience with **Linux, VPS and Oracle Cloud**\n- Comfortable with relational databases and backend APIs\n- Interested in **IoT, Arduino and software–hardware integration**\n- I enjoy algorithms, graphs and problem solving\n- Based in **La Paz, Bolivia**\n- Penguins are somehow involved 🐧\n\n---\n\n## Tech Stack\n\n### Frontend\n\n![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)\n![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)\n![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)\n![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)\n![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)\n![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)\n![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)\n![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)\n![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)\n\n### Backend & APIs\n\n![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)\n![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)\n![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)\n![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)\n![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)\n\n### Databases & Backend Services\n\n![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)\n![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)\n![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)\n\n### Cloud, DevOps & Tools\n\n![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)\n![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)\n![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)\n![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)\n![Oracle](https://img.shields.io/badge/Oracle%20Cloud-F80000?style=flat-square&logo=oracle&logoColor=white)\n![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)\n\n### AI, Data & Computer Vision\n\n![Groq](https://img.shields.io/badge/Groq-000000?style=flat-square)\n![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)\n![Arduino](https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white)\n\n- Retrieval-Augmented Generation (**RAG**)\n- LLM API integration\n- Prompt / context orchestration\n- Computer vision\n- Hand tracking with MediaPipe\n- REST APIs\n- WebSockets\n- Authentication with JWT / cookies\n- Deployment on Linux VPS environments\n\n---\n\n# Featured Projects\n\n## HyperFlow / Asistente Maxi — InnovaHack 2026\n\nAn AI assistant originally developed as a hackathon prototype for the **Hipermaxi supplier portal** and later redesigned toward a more enterprise-friendly architecture.\n\nThe project evolved from a prototype integrated directly into a simulated portal into an **embeddable widget**, reducing coupling with the host application and making adoption easier.\n\n**Highlights**\n\n- Conversational assistant with text and voice interaction\n- AI-powered contextual assistance\n- RAG-based knowledge retrieval\n- Embeddable widget architecture\n- Frontend/backend separation\n- Enterprise-oriented integration strategy\n- Collaborative development\n\n**Prototype**\n\nhttps://github.com/ozioziel/PortalHipermaxi-Frontend\n\n**Current team repository**\n\nhttps://github.com/daniel69zz/hipermaxi_innova\n\n**Recognition**\n\n🥇 **1st Place — InnovaHack Santa Cruz 2026**\n\n---\n\n## MAPIA\n\nA mobile/full-stack project focused on geolocation, mapping and location-based services.\n\n**Technologies and concepts**\n\n- Flutter\n- NestJS\n- PostgreSQL / PostGIS\n- Supabase\n- Google Maps\n- REST APIs\n- Authentication\n- Cloud deployment\n\nhttps://github.com/ozioziel/mapia\n\n---\n\n## 🐧 PenguinGraph\n\nAn interactive graph editor built to explore **graph theory and algorithms visually**.\n\nUsers can create and manipulate vertices and edges, work with directed and undirected graphs, assign weights, inspect adjacency matrices and analyze critical paths.\n\n**Highlights**\n\n- Custom graph editor built with React\n- SVG-based graph rendering\n- Directed and undirected edges\n- Weighted graphs\n- Adjacency matrix generation\n- JSON import / export\n- Critical path visualization\n- Drag & drop interaction\n\n**Stack**\n\n`React · JavaScript · Vite · SVG · Algorithms`\n\nRepository: https://github.com/ozioziel/PenguinGraph\nDemo: https://grafos-algoritmos.vercel.app/\n\n---\n\n## ControlHand\n\nA hand-gesture-controlled robotic car project that combines **computer vision, Flutter, Python and Arduino**.\n\nThe system detects hand gestures through a camera, maps them to movement commands and uses them to control a physical vehicle.\n\n**Highlights**\n\n- Hand tracking with MediaPipe\n- Computer vision with OpenCV\n- Python + Flask backend\n- Flutter application\n- Gesture-to-command mapping\n- Arduino-based physical vehicle\n- Bluetooth-oriented control architecture\n\n**Stack**\n\n`Flutter · Dart · Python · Flask · OpenCV · MediaPipe · Arduino`\n\nhttps://github.com/Holorololo/ControlHand\n\n---\n\n## HuellitasFind IoT\n\nA pet-oriented web project that integrates a web application with **Arduino, GPS and real-time communication**.\n\n**Highlights**\n\n- GPS tracking\n- Arduino integration\n- Serial communication\n- WebSockets\n- Real-time position updates\n- Vue frontend\n- Node.js backend\n\n**Stack**\n\n`Vue · Vite · Node.js · WebSockets · Arduino · GPS`\n\nhttps://github.com/ozioziel/HuellitasFind-TecnologiasWeb\n\n---\n\n## GeTa\n\nA collaborative social platform oriented toward university students.\n\nI worked primarily on the **frontend**, integrating the application with a backend developed separately by another team member.\n\n**Highlights**\n\n- Authentication flow\n- User profiles\n- Feed\n- Career-based communities\n- Messaging\n- Notifications\n- API integration\n- Collaborative Git/GitHub workflow\n\n**Stack**\n\n`React · TypeScript · Vite · REST APIs`\n\nhttps://github.com/ozioziel/GeTa-Frontend\n\n---\n\n## HuellitasFind — Collaborative Project\n\nA separate collaborative project developed under the `dan-tats-ozi` organization.\n\nThe project includes frontend, backend and hardware-oriented components.\n\nhttps://github.com/dan-tats-ozi/HuellitasFind\n\n---\n\n# Professional Experience\n\n## Independent Software Consultant — Ipas Bolivia\n\n**April 2026**\n\nContracted as part of a consulting team to formalize, improve and deliver a functional MVP originally created during an innovation hackathon.\n\nThe work involved transforming a validated prototype into a more complete deliverable, including technical organization, documentation, functional demonstration and final product delivery.\n\n> The source code and project materials are private due to contractual confidentiality and intellectual-property obligations.\n\n---\n\n# Awards & Hackathons\n\n### 🥇 1st Place — InnovaHack Santa Cruz 2026\n\nDeveloped an AI assistant for the Hipermaxi supplier portal as part of team **NexoLab**.\n\nThe project later continued evolving toward an enterprise-oriented implementation.\n\n---\n\n### 🥈 2nd Place — Ipas Bolivia Digital Innovation Hackathon 2026\n\nDeveloped a digital solution with social impact.\n\nThe prototype was later selected for a **paid professional consulting process** to formalize, improve and deliver the MVP.\n\n---\n\n### 🥈 2nd Place — FUNCTEC 2024\n\nUniversidad Católica Boliviana \"San Pablo\".\n\n---\n\n### Build with AI La Paz 2026 — GDG La Paz\n\nParticipant in the Google Developer Groups hackathon focused on building AI-powered solutions.\n\n---\n\n### Fundación CONSTRUIR — Access to Justice Hackathon 2026\n\nParticipant in a technology and innovation hackathon focused on digital solutions for access to justice.\n\n---\n\n# Education\n\n### Universidad Católica Boliviana \"San Pablo\"\n\n**B.Sc. / Engineering Degree in Systems Engineering**\nLa Paz, Bolivia\n**2024 — Present**\n\nAreas of interest include:\n\n- Software Engineering\n- Web Development\n- Algorithms and Data Structures\n- Databases\n- Cloud Computing\n- Artificial Intelligence\n- Mobile Development\n- Systems Analysis and Design\n\n---\n\n# Certifications\n\n### Google Cloud Data Analytics Certificate\n\nIssued by **Google Cloud**\n\n[![Credly](https://img.shields.io/badge/View%20Credential-Credly-FF6B00?style=flat-square&logo=credly&logoColor=white)](https://www.credly.com/badges/2077fe64-ee88-488a-ba3a-6f04930aabbb/public_url)\n\n---\n\n### Cisco Networking Academy — Networking Basics\n\nFundamentals of computer networks, connectivity and networking concepts.\n\n---\n\n### Cisco Networking Academy — Introduction to Cybersecurity\n\nFoundational cybersecurity concepts, threats, vulnerabilities and security practices.\n\n---\n\n### Microsoft 365 Copilot Skilling Campaign 2026\n\nTraining focused on the use of generative AI across Microsoft 365 productivity tools.\n\n---\n\n# Languages\n\n**Spanish** — Native\n\n**English** — Upper-intermediate, conversational and technical proficiency\n\nI can communicate about software development, explain technical decisions and participate in technical conversations in English.\n\n---\n\n# Currently Working On\n\n- Improving **HyperFlow** for a safer and easier enterprise integration\n- Cleaning and documenting my open-source / portfolio projects\n- Strengthening my **React + Node.js / NestJS** full-stack skills\n- Building and deploying applications on Linux / cloud infrastructure\n- Learning more about backend architecture, cloud systems and AI integration\n\n---\n\n# What I'm Looking For\n\nI'm currently open to opportunities as a:\n\n- **Junior Full Stack Developer**\n- **Junior Software Developer**\n- **Frontend Developer**\n- **Backend Developer**\n- **Software Engineering Intern / Trainee**\n\nI'm especially interested in teams where I can contribute to real products, learn from experienced developers and continue improving as an engineer.\n\n---\n\n# Contact\n\n- LinkedIn: https://www.linkedin.com/in/oziel-rodman-ramos-torrez-98b914403\n- GitHub: https://github.com/ozioziel\n- Email: roziel147@gmail.com\n- Google Cloud credential: https://www.credly.com/badges/2077fe64-ee88-488a-ba3a-6f04930aabbb/public_url\n\n---\n\n<div align=\"center\">\n\n### Thanks for visiting\n\n**Building software, learning constantly, and automating things… occasionally penguins 🐧**\n\n</div>\n",
+  "repos": [
+    {
+      "name": "dawg",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/dawg",
+      "homepage": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-10-25T05:01:15Z",
+      "fork": false
+    },
+    {
+      "name": "Tilca-Go-",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/Tilca-Go-",
+      "homepage": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-10-18T15:40:14Z",
+      "fork": false
+    },
+    {
+      "name": "Lama",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/Lama",
+      "homepage": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-10-17T16:39:20Z",
+      "fork": false
+    },
+    {
+      "name": "Workville",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/Workville",
+      "homepage": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-10-17T02:47:38Z",
+      "fork": false
+    },
+    {
+      "name": "PenguinArcade",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/PenguinArcade",
+      "homepage": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-09-25T23:06:31Z",
+      "fork": false
+    },
+    {
+      "name": "tic-network-hub",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/tic-network-hub",
+      "homepage": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-09-09T15:54:57Z",
+      "fork": false
+    },
+    {
+      "name": "Stellar-Build",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/Stellar-Build",
+      "homepage": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-09-06T03:30:18Z",
+      "fork": false
+    },
+    {
+      "name": "Rag-PinguinoSabio",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/Rag-PinguinoSabio",
+      "homepage": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-08-19T03:33:57Z",
+      "fork": false
+    },
+    {
+      "name": "PortalHipermaxi-Frontend",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/PortalHipermaxi-Frontend",
+      "homepage": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-08-09T20:11:07Z",
+      "fork": false
+    },
+    {
+      "name": "PenguinGraph",
+      "description": "PenguinGraph es una aplicacion web interactiva, su principal objetivo es proporcionar una herramienta que permite al usuarios construir grafos personalizados añadiendo vertices y añadiendo aristas sobre un lienzo, ademas de poder eliminar los elementos, seleccionarlos individualmente y colocarles tanto nombre como valor a cada uno.",
+      "html_url": "https://github.com/ozioziel/PenguinGraph",
+      "homepage": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-08-09T19:46:29Z",
+      "fork": false
+    },
+    {
+      "name": "mapia",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/mapia",
+      "homepage": null,
+      "language": "Dart",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-06-27T19:18:02Z",
+      "fork": false
+    },
+    {
+      "name": "GeTa-Frontend",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/GeTa-Frontend",
+      "homepage": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2026-06-22T18:33:39Z",
+      "fork": false
+    },
+    {
+      "name": "HuellitasFind-TecnologiasWeb",
+      "description": null,
+      "html_url": "https://github.com/ozioziel/HuellitasFind-TecnologiasWeb",
+      "homepage": null,
+      "language": "Vue",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "topics": [],
+      "pushed_at": "2025-12-18T02:33:33Z",
+      "fork": false
+    }
+  ]
+}

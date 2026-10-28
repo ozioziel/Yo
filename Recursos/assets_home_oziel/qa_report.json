@@ -1,0 +1,3301 @@
+{
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "png": 2294,
+    "atlases": 47,
+    "characterAtlases": 38,
+    "clips": 246,
+    "characterFrames": 1718,
+    "individualCharacterFramePNGs": 1718,
+    "characterStrips": 246,
+    "backgroundLayers": 40,
+    "scenarios": 8,
+    "props": 57,
+    "particles": 58,
+    "ui": 25,
+    "previews": 63,
+    "effectClips": 9
+  },
+  "atlasChecks": [
+    {
+      "id": "engineer_autumn_00",
+      "frames": 16,
+      "size": [
+        2048,
+        512
+      ]
+    },
+    {
+      "id": "engineer_base_00",
+      "frames": 60,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "engineer_base_01",
+      "frames": 61,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "engineer_base_02",
+      "frames": 28,
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    {
+      "id": "engineer_daily_00",
+      "frames": 62,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "engineer_intro_00",
+      "frames": 58,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "engineer_intro_01",
+      "frames": 36,
+      "size": [
+        2048,
+        1280
+      ]
+    },
+    {
+      "id": "engineer_spring_00",
+      "frames": 28,
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    {
+      "id": "engineer_summer_00",
+      "frames": 52,
+      "size": [
+        2048,
+        1792
+      ]
+    },
+    {
+      "id": "engineer_weather_00",
+      "frames": 16,
+      "size": [
+        2048,
+        512
+      ]
+    },
+    {
+      "id": "engineer_winter_00",
+      "frames": 42,
+      "size": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "id": "penguin_autumn_00",
+      "frames": 46,
+      "size": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "id": "penguin_base_00",
+      "frames": 60,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_base_01",
+      "frames": 61,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_base_02",
+      "frames": 28,
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    {
+      "id": "penguin_daily_00",
+      "frames": 62,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_intro_00",
+      "frames": 58,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_intro_01",
+      "frames": 36,
+      "size": [
+        2048,
+        1280
+      ]
+    },
+    {
+      "id": "penguin_spring_00",
+      "frames": 28,
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    {
+      "id": "penguin_summer_00",
+      "frames": 52,
+      "size": [
+        2048,
+        1792
+      ]
+    },
+    {
+      "id": "penguin_weather_00",
+      "frames": 24,
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "id": "penguin_winter_00",
+      "frames": 50,
+      "size": [
+        2048,
+        1792
+      ]
+    },
+    {
+      "id": "penguin_autumn_autumn_00",
+      "frames": 46,
+      "size": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "id": "penguin_autumn_base_00",
+      "frames": 60,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_autumn_base_01",
+      "frames": 61,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_autumn_base_02",
+      "frames": 28,
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    {
+      "id": "penguin_autumn_daily_00",
+      "frames": 62,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_autumn_intro_00",
+      "frames": 58,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_autumn_intro_01",
+      "frames": 36,
+      "size": [
+        2048,
+        1280
+      ]
+    },
+    {
+      "id": "penguin_autumn_weather_00",
+      "frames": 24,
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "id": "penguin_winter_base_00",
+      "frames": 60,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_winter_base_01",
+      "frames": 61,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_winter_base_02",
+      "frames": 28,
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    {
+      "id": "penguin_winter_daily_00",
+      "frames": 62,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_winter_intro_00",
+      "frames": 58,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "id": "penguin_winter_intro_01",
+      "frames": 36,
+      "size": [
+        2048,
+        1280
+      ]
+    },
+    {
+      "id": "penguin_winter_weather_00",
+      "frames": 24,
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "id": "penguin_winter_winter_00",
+      "frames": 50,
+      "size": [
+        2048,
+        1792
+      ]
+    },
+    {
+      "id": "autumn_ripple",
+      "frames": 8,
+      "size": [
+        1536,
+        80
+      ]
+    },
+    {
+      "id": "autumn_splash",
+      "frames": 8,
+      "size": [
+        1536,
+        160
+      ]
+    },
+    {
+      "id": "spring_butterfly",
+      "frames": 8,
+      "size": [
+        1024,
+        128
+      ]
+    },
+    {
+      "id": "summer_water_splash",
+      "frames": 8,
+      "size": [
+        1536,
+        160
+      ]
+    },
+    {
+      "id": "summer_wave",
+      "frames": 8,
+      "size": [
+        3072,
+        96
+      ]
+    },
+    {
+      "id": "fx_cut",
+      "frames": 6,
+      "size": [
+        768,
+        128
+      ]
+    },
+    {
+      "id": "fx_dust",
+      "frames": 8,
+      "size": [
+        1024,
+        128
+      ]
+    },
+    {
+      "id": "fx_impact",
+      "frames": 6,
+      "size": [
+        768,
+        128
+      ]
+    },
+    {
+      "id": "fx_o_glow",
+      "frames": 8,
+      "size": [
+        1024,
+        128
+      ]
+    }
+  ],
+  "clipChecks": [
+    {
+      "variant": "penguin",
+      "clip": "idle",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_base_00",
+      "fps": 6,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "blink",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_base_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "walk",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_base_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "run",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_base_00",
+      "fps": 14,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "look_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "look_around",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_base_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "curious",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "confused",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "scared",
+      "frames": 4,
+      "uniqueFrames": 4,
+      "atlas": "penguin_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "dragged",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_base_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "fall_normal",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_base_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "fall_spin",
+      "frames": 12,
+      "uniqueFrames": 12,
+      "atlas": "penguin_base_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "fall_flap",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_base_01",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "impact_light",
+      "frames": 5,
+      "uniqueFrames": 5,
+      "atlas": "penguin_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "impact_medium",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "impact_heavy",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "get_up",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "stumble",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_base_01",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "bump",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_base_02",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "push",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_base_02",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "sit_down",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_base_02",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "sit_idle",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_base_02",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "stand_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_base_02",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "enter",
+      "frames": 8,
+      "uniqueFrames": 7,
+      "atlas": "penguin_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "switch_light",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "notice_name",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_intro_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "group_look_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_intro_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "carry_ladder",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_intro_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "place_ladder",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "assemble_ladder",
+      "frames": 8,
+      "uniqueFrames": 7,
+      "atlas": "penguin_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "hold_ladder",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_intro_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "climb",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_intro_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "reach_rope",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "cut_rope",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "react_name_fall",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "celebrate",
+      "frames": 6,
+      "uniqueFrames": 5,
+      "atlas": "penguin_intro_01",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "sleep",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_daily_00",
+      "fps": 6,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "wake_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "greet",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "play",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_daily_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "chase",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_daily_00",
+      "fps": 14,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "laugh",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "interact_object",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "pick_up_object",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "put_down_object",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "notice_weather",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "weather_confused",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "remove_accessories",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_weather_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "resume_after_weather",
+      "frames": 4,
+      "uniqueFrames": 4,
+      "atlas": "penguin_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "put_scarf",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "shiver",
+      "frames": 6,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "make_snowball",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "throw_snowball",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "ice_slide",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "build_snowman",
+      "frames": 12,
+      "uniqueFrames": 11,
+      "atlas": "penguin_winter_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "put_boots",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "open_umbrella",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "walk_umbrella",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "jump_puddle",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "play_leaves",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "hide_rain",
+      "frames": 6,
+      "uniqueFrames": 2,
+      "atlas": "penguin_autumn_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "chase_butterfly",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_spring_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "smell_flower",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_spring_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "sit_grass",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_spring_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "watch_bloom",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_spring_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "apply_sunscreen",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_summer_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "build_sandcastle",
+      "frames": 12,
+      "uniqueFrames": 11,
+      "atlas": "penguin_summer_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "play_beach",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_summer_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "enter_water",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_summer_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin",
+      "clip": "swim",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_summer_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin",
+      "clip": "shake_water",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_summer_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "idle",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_base_00",
+      "fps": 6,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "blink",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "engineer_base_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "walk",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_base_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "run",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_base_00",
+      "fps": 14,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "look_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "look_around",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_base_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "curious",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "confused",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "scared",
+      "frames": 4,
+      "uniqueFrames": 4,
+      "atlas": "engineer_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "dragged",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "engineer_base_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "fall_normal",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_base_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "fall_spin",
+      "frames": 12,
+      "uniqueFrames": 12,
+      "atlas": "engineer_base_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "fall_flap",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "engineer_base_01",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "impact_light",
+      "frames": 5,
+      "uniqueFrames": 5,
+      "atlas": "engineer_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "impact_medium",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "impact_heavy",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "get_up",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "stumble",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "engineer_base_01",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "bump",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "engineer_base_02",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "push",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "engineer_base_02",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "sit_down",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_base_02",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "sit_idle",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "engineer_base_02",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "stand_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_base_02",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "enter",
+      "frames": 8,
+      "uniqueFrames": 7,
+      "atlas": "engineer_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "switch_light",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "engineer_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "notice_name",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_intro_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "group_look_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_intro_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "carry_ladder",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_intro_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "place_ladder",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "engineer_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "assemble_ladder",
+      "frames": 8,
+      "uniqueFrames": 7,
+      "atlas": "engineer_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "hold_ladder",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_intro_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "climb",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_intro_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "reach_rope",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "cut_rope",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "react_name_fall",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "celebrate",
+      "frames": 6,
+      "uniqueFrames": 5,
+      "atlas": "engineer_intro_01",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "sleep",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "engineer_daily_00",
+      "fps": 6,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "wake_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "greet",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "engineer_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "play",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "engineer_daily_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "chase",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_daily_00",
+      "fps": 14,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "laugh",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "engineer_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "interact_object",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "engineer_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "pick_up_object",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "put_down_object",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "notice_weather",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "weather_confused",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "resume_after_weather",
+      "frames": 4,
+      "uniqueFrames": 4,
+      "atlas": "engineer_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "shiver",
+      "frames": 6,
+      "uniqueFrames": 5,
+      "atlas": "engineer_winter_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "make_snowball",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_winter_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "throw_snowball",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_winter_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "ice_slide",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "engineer_winter_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "build_snowman",
+      "frames": 12,
+      "uniqueFrames": 11,
+      "atlas": "engineer_winter_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "jump_puddle",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "engineer_autumn_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "play_leaves",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "engineer_autumn_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "chase_butterfly",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_spring_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "smell_flower",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "engineer_spring_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "sit_grass",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "engineer_spring_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "watch_bloom",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "engineer_spring_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "apply_sunscreen",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "engineer_summer_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "build_sandcastle",
+      "frames": 12,
+      "uniqueFrames": 11,
+      "atlas": "engineer_summer_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "play_beach",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "engineer_summer_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "enter_water",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_summer_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "engineer",
+      "clip": "swim",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "engineer_summer_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "engineer",
+      "clip": "shake_water",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "engineer_summer_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "idle",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_base_00",
+      "fps": 6,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "blink",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_winter_base_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "walk",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_base_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "run",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_base_00",
+      "fps": 14,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "look_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "look_around",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_base_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "curious",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "confused",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "scared",
+      "frames": 4,
+      "uniqueFrames": 4,
+      "atlas": "penguin_winter_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "dragged",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_winter_base_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "fall_normal",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_base_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "fall_spin",
+      "frames": 12,
+      "uniqueFrames": 12,
+      "atlas": "penguin_winter_base_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "fall_flap",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_base_01",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "impact_light",
+      "frames": 5,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "impact_medium",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "impact_heavy",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "get_up",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "stumble",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_winter_base_01",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "bump",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_winter_base_02",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "push",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_winter_base_02",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "sit_down",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_base_02",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "sit_idle",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_winter_base_02",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "stand_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_base_02",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "enter",
+      "frames": 8,
+      "uniqueFrames": 7,
+      "atlas": "penguin_winter_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "switch_light",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_winter_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "notice_name",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_intro_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "group_look_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_intro_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "carry_ladder",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_intro_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "place_ladder",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_winter_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "assemble_ladder",
+      "frames": 8,
+      "uniqueFrames": 7,
+      "atlas": "penguin_winter_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "hold_ladder",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_intro_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "climb",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_intro_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "reach_rope",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "cut_rope",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "react_name_fall",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "celebrate",
+      "frames": 6,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_intro_01",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "sleep",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 6,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "wake_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "greet",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "play",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "chase",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 14,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "laugh",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "interact_object",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "pick_up_object",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "put_down_object",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "notice_weather",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "weather_confused",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_winter_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "remove_accessories",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "resume_after_weather",
+      "frames": 4,
+      "uniqueFrames": 4,
+      "atlas": "penguin_winter_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "put_scarf",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_winter_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "shiver",
+      "frames": 6,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_winter_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "make_snowball",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_winter_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "throw_snowball",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_winter_winter_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "ice_slide",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_winter_winter_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "build_snowman",
+      "frames": 12,
+      "uniqueFrames": 11,
+      "atlas": "penguin_winter_winter_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "idle",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 6,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "blink",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "walk",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "run",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 14,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "look_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "look_around",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "curious",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "confused",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "scared",
+      "frames": 4,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "dragged",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_autumn_base_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "fall_normal",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_base_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "fall_spin",
+      "frames": 12,
+      "uniqueFrames": 12,
+      "atlas": "penguin_autumn_base_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "fall_flap",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_autumn_base_01",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "impact_light",
+      "frames": 5,
+      "uniqueFrames": 5,
+      "atlas": "penguin_autumn_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "impact_medium",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "impact_heavy",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "get_up",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_base_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "stumble",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_autumn_base_01",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "bump",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_autumn_base_02",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "push",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_autumn_base_02",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "sit_down",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_base_02",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "sit_idle",
+      "frames": 4,
+      "uniqueFrames": 3,
+      "atlas": "penguin_autumn_base_02",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "stand_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_base_02",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "enter",
+      "frames": 8,
+      "uniqueFrames": 7,
+      "atlas": "penguin_autumn_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "switch_light",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "notice_name",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_intro_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "group_look_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_intro_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "carry_ladder",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_intro_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "place_ladder",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "assemble_ladder",
+      "frames": 8,
+      "uniqueFrames": 7,
+      "atlas": "penguin_autumn_intro_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "hold_ladder",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_intro_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "climb",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_intro_01",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "reach_rope",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "cut_rope",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "react_name_fall",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_intro_01",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "celebrate",
+      "frames": 6,
+      "uniqueFrames": 5,
+      "atlas": "penguin_autumn_intro_01",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "sleep",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 6,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "wake_up",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "greet",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "play",
+      "frames": 8,
+      "uniqueFrames": 5,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "chase",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 14,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "laugh",
+      "frames": 6,
+      "uniqueFrames": 3,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "interact_object",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "pick_up_object",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "put_down_object",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_daily_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "notice_weather",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "weather_confused",
+      "frames": 6,
+      "uniqueFrames": 6,
+      "atlas": "penguin_autumn_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "remove_accessories",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "resume_after_weather",
+      "frames": 4,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_weather_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "put_boots",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_autumn_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "open_umbrella",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_autumn_00",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "walk_umbrella",
+      "frames": 8,
+      "uniqueFrames": 8,
+      "atlas": "penguin_autumn_autumn_00",
+      "fps": 10,
+      "loop": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "jump_puddle",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_autumn_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "play_leaves",
+      "frames": 8,
+      "uniqueFrames": 4,
+      "atlas": "penguin_autumn_autumn_00",
+      "fps": 10,
+      "loop": false,
+      "deliberateHoldOrSymmetry": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "hide_rain",
+      "frames": 6,
+      "uniqueFrames": 2,
+      "atlas": "penguin_autumn_autumn_00",
+      "fps": 10,
+      "loop": true,
+      "deliberateHoldOrSymmetry": true
+    }
+  ],
+  "loopDiagnostics": [
+    {
+      "variant": "penguin",
+      "clip": "idle",
+      "edgeDifference": 0.95,
+      "meanStepDifference": 0.575
+    },
+    {
+      "variant": "penguin",
+      "clip": "walk",
+      "edgeDifference": 5.749,
+      "meanStepDifference": 4.413
+    },
+    {
+      "variant": "penguin",
+      "clip": "run",
+      "edgeDifference": 8.171,
+      "meanStepDifference": 5.609
+    },
+    {
+      "variant": "penguin",
+      "clip": "look_around",
+      "edgeDifference": 0.88,
+      "meanStepDifference": 3.145
+    },
+    {
+      "variant": "penguin",
+      "clip": "dragged",
+      "edgeDifference": 0.148,
+      "meanStepDifference": 0.149
+    },
+    {
+      "variant": "penguin",
+      "clip": "fall_normal",
+      "edgeDifference": 3.699,
+      "meanStepDifference": 2.634
+    },
+    {
+      "variant": "penguin",
+      "clip": "fall_spin",
+      "edgeDifference": 18.406,
+      "meanStepDifference": 16.598
+    },
+    {
+      "variant": "penguin",
+      "clip": "fall_flap",
+      "edgeDifference": 3.696,
+      "meanStepDifference": 2.976
+    },
+    {
+      "variant": "penguin",
+      "clip": "sit_idle",
+      "edgeDifference": 0.767,
+      "meanStepDifference": 0.794
+    },
+    {
+      "variant": "penguin",
+      "clip": "carry_ladder",
+      "edgeDifference": 3.961,
+      "meanStepDifference": 3.025
+    },
+    {
+      "variant": "penguin",
+      "clip": "hold_ladder",
+      "edgeDifference": 4.909,
+      "meanStepDifference": 2.742
+    },
+    {
+      "variant": "penguin",
+      "clip": "climb",
+      "edgeDifference": 1.556,
+      "meanStepDifference": 1.743
+    },
+    {
+      "variant": "penguin",
+      "clip": "sleep",
+      "edgeDifference": 2.405,
+      "meanStepDifference": 1.62
+    },
+    {
+      "variant": "penguin",
+      "clip": "play",
+      "edgeDifference": 11.015,
+      "meanStepDifference": 7.497
+    },
+    {
+      "variant": "penguin",
+      "clip": "chase",
+      "edgeDifference": 8.171,
+      "meanStepDifference": 5.609
+    },
+    {
+      "variant": "penguin",
+      "clip": "shiver",
+      "edgeDifference": 3.693,
+      "meanStepDifference": 4.532
+    },
+    {
+      "variant": "penguin",
+      "clip": "make_snowball",
+      "edgeDifference": 6.744,
+      "meanStepDifference": 4.645
+    },
+    {
+      "variant": "penguin",
+      "clip": "ice_slide",
+      "edgeDifference": 1.53,
+      "meanStepDifference": 1.049
+    },
+    {
+      "variant": "penguin",
+      "clip": "walk_umbrella",
+      "edgeDifference": 8.249,
+      "meanStepDifference": 6.663
+    },
+    {
+      "variant": "penguin",
+      "clip": "hide_rain",
+      "edgeDifference": 0.0,
+      "meanStepDifference": 0.009
+    },
+    {
+      "variant": "penguin",
+      "clip": "chase_butterfly",
+      "edgeDifference": 8.108,
+      "meanStepDifference": 5.566
+    },
+    {
+      "variant": "penguin",
+      "clip": "sit_grass",
+      "edgeDifference": 0.664,
+      "meanStepDifference": 0.399
+    },
+    {
+      "variant": "penguin",
+      "clip": "play_beach",
+      "edgeDifference": 4.745,
+      "meanStepDifference": 3.22
+    },
+    {
+      "variant": "penguin",
+      "clip": "swim",
+      "edgeDifference": 4.898,
+      "meanStepDifference": 2.741
+    },
+    {
+      "variant": "engineer",
+      "clip": "idle",
+      "edgeDifference": 1.591,
+      "meanStepDifference": 0.96
+    },
+    {
+      "variant": "engineer",
+      "clip": "walk",
+      "edgeDifference": 7.278,
+      "meanStepDifference": 5.449
+    },
+    {
+      "variant": "engineer",
+      "clip": "run",
+      "edgeDifference": 10.119,
+      "meanStepDifference": 6.977
+    },
+    {
+      "variant": "engineer",
+      "clip": "look_around",
+      "edgeDifference": 0.88,
+      "meanStepDifference": 3.122
+    },
+    {
+      "variant": "engineer",
+      "clip": "dragged",
+      "edgeDifference": 0.148,
+      "meanStepDifference": 0.149
+    },
+    {
+      "variant": "engineer",
+      "clip": "fall_normal",
+      "edgeDifference": 4.54,
+      "meanStepDifference": 3.261
+    },
+    {
+      "variant": "engineer",
+      "clip": "fall_spin",
+      "edgeDifference": 23.431,
+      "meanStepDifference": 21.242
+    },
+    {
+      "variant": "engineer",
+      "clip": "fall_flap",
+      "edgeDifference": 3.696,
+      "meanStepDifference": 2.976
+    },
+    {
+      "variant": "engineer",
+      "clip": "sit_idle",
+      "edgeDifference": 1.388,
+      "meanStepDifference": 1.416
+    },
+    {
+      "variant": "engineer",
+      "clip": "carry_ladder",
+      "edgeDifference": 5.491,
+      "meanStepDifference": 4.06
+    },
+    {
+      "variant": "engineer",
+      "clip": "hold_ladder",
+      "edgeDifference": 5.985,
+      "meanStepDifference": 3.389
+    },
+    {
+      "variant": "engineer",
+      "clip": "climb",
+      "edgeDifference": 1.872,
+      "meanStepDifference": 2.309
+    },
+    {
+      "variant": "engineer",
+      "clip": "sleep",
+      "edgeDifference": 3.469,
+      "meanStepDifference": 2.343
+    },
+    {
+      "variant": "engineer",
+      "clip": "play",
+      "edgeDifference": 12.878,
+      "meanStepDifference": 8.879
+    },
+    {
+      "variant": "engineer",
+      "clip": "chase",
+      "edgeDifference": 10.119,
+      "meanStepDifference": 6.977
+    },
+    {
+      "variant": "engineer",
+      "clip": "shiver",
+      "edgeDifference": 4.647,
+      "meanStepDifference": 5.697
+    },
+    {
+      "variant": "engineer",
+      "clip": "make_snowball",
+      "edgeDifference": 8.097,
+      "meanStepDifference": 5.678
+    },
+    {
+      "variant": "engineer",
+      "clip": "ice_slide",
+      "edgeDifference": 1.53,
+      "meanStepDifference": 1.049
+    },
+    {
+      "variant": "engineer",
+      "clip": "chase_butterfly",
+      "edgeDifference": 9.991,
+      "meanStepDifference": 6.886
+    },
+    {
+      "variant": "engineer",
+      "clip": "sit_grass",
+      "edgeDifference": 1.205,
+      "meanStepDifference": 0.724
+    },
+    {
+      "variant": "engineer",
+      "clip": "play_beach",
+      "edgeDifference": 4.745,
+      "meanStepDifference": 3.22
+    },
+    {
+      "variant": "engineer",
+      "clip": "swim",
+      "edgeDifference": 4.898,
+      "meanStepDifference": 2.741
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "idle",
+      "edgeDifference": 1.221,
+      "meanStepDifference": 0.737
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "walk",
+      "edgeDifference": 6.482,
+      "meanStepDifference": 4.958
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "run",
+      "edgeDifference": 9.371,
+      "meanStepDifference": 6.647
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "look_around",
+      "edgeDifference": 0.834,
+      "meanStepDifference": 2.725
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "dragged",
+      "edgeDifference": 0.148,
+      "meanStepDifference": 0.149
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "fall_normal",
+      "edgeDifference": 4.02,
+      "meanStepDifference": 2.835
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "fall_spin",
+      "edgeDifference": 18.497,
+      "meanStepDifference": 17.181
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "fall_flap",
+      "edgeDifference": 3.473,
+      "meanStepDifference": 2.812
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "sit_idle",
+      "edgeDifference": 1.042,
+      "meanStepDifference": 1.068
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "carry_ladder",
+      "edgeDifference": 4.643,
+      "meanStepDifference": 3.431
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "hold_ladder",
+      "edgeDifference": 5.259,
+      "meanStepDifference": 2.965
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "climb",
+      "edgeDifference": 1.484,
+      "meanStepDifference": 1.852
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "sleep",
+      "edgeDifference": 2.798,
+      "meanStepDifference": 1.882
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "play",
+      "edgeDifference": 10.633,
+      "meanStepDifference": 7.256
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "chase",
+      "edgeDifference": 9.371,
+      "meanStepDifference": 6.647
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "shiver",
+      "edgeDifference": 4.094,
+      "meanStepDifference": 5.047
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "make_snowball",
+      "edgeDifference": 6.788,
+      "meanStepDifference": 4.657
+    },
+    {
+      "variant": "penguin_winter",
+      "clip": "ice_slide",
+      "edgeDifference": 1.256,
+      "meanStepDifference": 0.86
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "idle",
+      "edgeDifference": 2.035,
+      "meanStepDifference": 1.303
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "walk",
+      "edgeDifference": 8.312,
+      "meanStepDifference": 6.76
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "run",
+      "edgeDifference": 8.278,
+      "meanStepDifference": 5.718
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "look_around",
+      "edgeDifference": 2.502,
+      "meanStepDifference": 4.79
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "dragged",
+      "edgeDifference": 0.192,
+      "meanStepDifference": 0.192
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "fall_normal",
+      "edgeDifference": 3.713,
+      "meanStepDifference": 2.641
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "fall_spin",
+      "edgeDifference": 18.576,
+      "meanStepDifference": 16.741
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "fall_flap",
+      "edgeDifference": 3.727,
+      "meanStepDifference": 2.997
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "sit_idle",
+      "edgeDifference": 0.683,
+      "meanStepDifference": 0.712
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "carry_ladder",
+      "edgeDifference": 4.024,
+      "meanStepDifference": 3.121
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "hold_ladder",
+      "edgeDifference": 4.969,
+      "meanStepDifference": 2.778
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "climb",
+      "edgeDifference": 1.744,
+      "meanStepDifference": 1.855
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "sleep",
+      "edgeDifference": 2.439,
+      "meanStepDifference": 1.644
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "play",
+      "edgeDifference": 11.125,
+      "meanStepDifference": 7.554
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "chase",
+      "edgeDifference": 8.278,
+      "meanStepDifference": 5.718
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "walk_umbrella",
+      "edgeDifference": 8.312,
+      "meanStepDifference": 6.76
+    },
+    {
+      "variant": "penguin_autumn",
+      "clip": "hide_rain",
+      "edgeDifference": 0.0,
+      "meanStepDifference": 0.009
+    }
+  ],
+  "recoveryContinuity": [
+    {
+      "variant": "penguin",
+      "transition": "impact_light -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "penguin",
+      "transition": "impact_medium -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "penguin",
+      "transition": "impact_heavy -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "engineer",
+      "transition": "impact_light -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "engineer",
+      "transition": "impact_medium -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "engineer",
+      "transition": "impact_heavy -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "penguin_winter",
+      "transition": "impact_light -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "penguin_winter",
+      "transition": "impact_medium -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "penguin_winter",
+      "transition": "impact_heavy -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "transition": "impact_light -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "transition": "impact_medium -> get_up",
+      "pixelExact": true
+    },
+    {
+      "variant": "penguin_autumn",
+      "transition": "impact_heavy -> get_up",
+      "pixelExact": true
+    }
+  ],
+  "phaserBrowserTest": {
+    "phaser": "3.90.0",
+    "state": "ready",
+    "atlasCount": 47,
+    "animationCount": 246,
+    "history": [
+      "activity",
+      "dragged",
+      "falling",
+      "recovering",
+      "weather",
+      "activity",
+      "weather",
+      "activity",
+      "dragged",
+      "falling",
+      "recovering",
+      "activity"
+    ],
+    "penguinVariant": "penguin_autumn",
+    "engineerVariant": "engineer",
+    "errors": [],
+    "autumnRainPersistsAcrossDayNight": true,
+    "winterEquipAndAutumnRemovalVerified": true,
+    "autumnUmbrellaDropAndCleanupVerified": true,
+    "pageErrors": []
+  },
+  "coverage": {
+    "requested": 71,
+    "producedCanonical": 71,
+    "percentage": 100.0,
+    "missing": [],
+    "countsPerVariant": {
+      "penguin": 71,
+      "engineer": 65,
+      "penguin_winter": 55,
+      "penguin_autumn": 55
+    }
+  }
+}

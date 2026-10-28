@@ -1,0 +1,357 @@
+[
+  {
+    "clip": "idle",
+    "targetFrames": 6,
+    "description": "Respira y parpadea suavemente, bucle estable"
+  },
+  {
+    "clip": "blink",
+    "targetFrames": 4,
+    "description": "Parpadeo breve combinable con otras poses"
+  },
+  {
+    "clip": "walk",
+    "targetFrames": 8,
+    "description": "Caminar natural, patas alternadas y ligero balanceo"
+  },
+  {
+    "clip": "run",
+    "targetFrames": 8,
+    "description": "Carrera más rápida para persecuciones"
+  },
+  {
+    "clip": "look_up",
+    "targetFrames": 6,
+    "description": "Eleva cabeza progresivamente hasta mirar las letras o el cielo"
+  },
+  {
+    "clip": "look_around",
+    "targetFrames": 8,
+    "description": "Mira a ambos lados con curiosidad"
+  },
+  {
+    "clip": "curious",
+    "targetFrames": 6,
+    "description": "Se acerca o inclina la cabeza intrigado"
+  },
+  {
+    "clip": "confused",
+    "targetFrames": 6,
+    "description": "Inclinación de cabeza y pausa de confusión"
+  },
+  {
+    "clip": "scared",
+    "targetFrames": 4,
+    "description": "Mira de frente, ojos grandes, leve miedo al ser agarrado"
+  },
+  {
+    "clip": "dragged",
+    "targetFrames": 4,
+    "description": "Pose suspendida que se mantiene mientras se arrastra"
+  },
+  {
+    "clip": "fall_normal",
+    "targetFrames": 8,
+    "description": "Caída asustada sin giro especial"
+  },
+  {
+    "clip": "fall_spin",
+    "targetFrames": 12,
+    "description": "Rotación perceptible, tumbos, expresión de sorpresa"
+  },
+  {
+    "clip": "fall_flap",
+    "targetFrames": 8,
+    "description": "Aletea de forma desesperada mientras desciende"
+  },
+  {
+    "clip": "impact_light",
+    "targetFrames": 5,
+    "description": "Aterrizaje/tropiezo leve"
+  },
+  {
+    "clip": "impact_medium",
+    "targetFrames": 6,
+    "description": "Choque notable, compresión moderada"
+  },
+  {
+    "clip": "impact_heavy",
+    "targetFrames": 8,
+    "description": "Aplastamiento cómico y aturdimiento breve"
+  },
+  {
+    "clip": "get_up",
+    "targetFrames": 8,
+    "description": "Se incorpora tras cualquier caída, termina en pose neutra"
+  },
+  {
+    "clip": "stumble",
+    "targetFrames": 6,
+    "description": "Pierde el equilibrio después de tropezar"
+  },
+  {
+    "clip": "bump",
+    "targetFrames": 6,
+    "description": "Reacción a golpe/empujón de otro pingüino"
+  },
+  {
+    "clip": "push",
+    "targetFrames": 6,
+    "description": "Pequeño empujón con aleta/cuerpo"
+  },
+  {
+    "clip": "sit_down",
+    "targetFrames": 6,
+    "description": "Pasa de pie a sentado"
+  },
+  {
+    "clip": "sit_idle",
+    "targetFrames": 4,
+    "description": "Sentado descansando, bucle"
+  },
+  {
+    "clip": "stand_up",
+    "targetFrames": 6,
+    "description": "Se levanta desde sentado"
+  },
+  {
+    "clip": "enter",
+    "targetFrames": 8,
+    "description": "Entrada inicial (reutiliza caminata si encaja)"
+  },
+  {
+    "clip": "switch_light",
+    "targetFrames": 8,
+    "description": "Extiende aleta, pulsa interruptor, se retira"
+  },
+  {
+    "clip": "notice_name",
+    "targetFrames": 6,
+    "description": "Descubre el nombre colgante y mira arriba"
+  },
+  {
+    "clip": "group_look_up",
+    "targetFrames": 6,
+    "description": "Reacción de los recién llegados hacia el nombre"
+  },
+  {
+    "clip": "carry_ladder",
+    "targetFrames": 8,
+    "description": "Camina transportando escalera/segmento"
+  },
+  {
+    "clip": "place_ladder",
+    "targetFrames": 8,
+    "description": "Deposita y acomoda escalera"
+  },
+  {
+    "clip": "assemble_ladder",
+    "targetFrames": 8,
+    "description": "Alinea/fija segmento si la puesta en escena lo requiere"
+  },
+  {
+    "clip": "hold_ladder",
+    "targetFrames": 6,
+    "description": "Sostiene escalera mientras otro sube"
+  },
+  {
+    "clip": "climb",
+    "targetFrames": 8,
+    "description": "Sube por peldaños; loop estable y manos/patas alineables"
+  },
+  {
+    "clip": "reach_rope",
+    "targetFrames": 6,
+    "description": "Se estira para llegar a la cuerda"
+  },
+  {
+    "clip": "cut_rope",
+    "targetFrames": 8,
+    "description": "Corte claro con herramienta temporal de escena"
+  },
+  {
+    "clip": "react_name_fall",
+    "targetFrames": 8,
+    "description": "Reacciona al desprendimiento de las letras"
+  },
+  {
+    "clip": "celebrate",
+    "targetFrames": 6,
+    "description": "Reacción de logro breve, opcional al acabar"
+  },
+  {
+    "clip": "sleep",
+    "targetFrames": 8,
+    "description": "Dormita/respira, bucle"
+  },
+  {
+    "clip": "wake_up",
+    "targetFrames": 6,
+    "description": "Abre ojos, se incorpora"
+  },
+  {
+    "clip": "greet",
+    "targetFrames": 6,
+    "description": "Saluda con aleta"
+  },
+  {
+    "clip": "play",
+    "targetFrames": 8,
+    "description": "Juego amistoso con otro pingüino"
+  },
+  {
+    "clip": "chase",
+    "targetFrames": 8,
+    "description": "Persigue a otro; puede reutilizar `run` cuando encaje"
+  },
+  {
+    "clip": "laugh",
+    "targetFrames": 6,
+    "description": "Se ríe de una situación cómica"
+  },
+  {
+    "clip": "interact_object",
+    "targetFrames": 8,
+    "description": "Examina o toca un objeto del escenario"
+  },
+  {
+    "clip": "pick_up_object",
+    "targetFrames": 6,
+    "description": "Recoge un objeto pequeño"
+  },
+  {
+    "clip": "put_down_object",
+    "targetFrames": 6,
+    "description": "Lo deja en el suelo"
+  },
+  {
+    "clip": "notice_weather",
+    "targetFrames": 6,
+    "description": "Interrumpe actividad, levanta la cabeza"
+  },
+  {
+    "clip": "weather_confused",
+    "targetFrames": 6,
+    "description": "Breve desconcierto ante estación nueva"
+  },
+  {
+    "clip": "remove_accessories",
+    "targetFrames": 8,
+    "description": "Se quita accesorios de la estación anterior (solo pingüino común)"
+  },
+  {
+    "clip": "resume_after_weather",
+    "targetFrames": 4,
+    "description": "Vuelve a atención normal; la actividad previa se reanuda por lógica"
+  },
+  {
+    "clip": "put_scarf",
+    "targetFrames": 8,
+    "description": "Saca/coloca bufanda en pingüino común"
+  },
+  {
+    "clip": "shiver",
+    "targetFrames": 6,
+    "description": "Tirita por el frío"
+  },
+  {
+    "clip": "make_snowball",
+    "targetFrames": 8,
+    "description": "Forma bola de nieve"
+  },
+  {
+    "clip": "throw_snowball",
+    "targetFrames": 8,
+    "description": "Lanza bola de nieve"
+  },
+  {
+    "clip": "ice_slide",
+    "targetFrames": 8,
+    "description": "Se desliza sobre el hielo"
+  },
+  {
+    "clip": "build_snowman",
+    "targetFrames": 12,
+    "description": "Construye muñeco, preferiblemente por etapas"
+  },
+  {
+    "clip": "put_boots",
+    "targetFrames": 8,
+    "description": "Se pone botas"
+  },
+  {
+    "clip": "open_umbrella",
+    "targetFrames": 8,
+    "description": "Despliega paraguas"
+  },
+  {
+    "clip": "walk_umbrella",
+    "targetFrames": 8,
+    "description": "Camina sosteniéndolo bajo lluvia"
+  },
+  {
+    "clip": "jump_puddle",
+    "targetFrames": 8,
+    "description": "Salta y salpica un charco"
+  },
+  {
+    "clip": "play_leaves",
+    "targetFrames": 8,
+    "description": "Juega con un montón de hojas"
+  },
+  {
+    "clip": "hide_rain",
+    "targetFrames": 6,
+    "description": "Se refugia bajo paraguas"
+  },
+  {
+    "clip": "chase_butterfly",
+    "targetFrames": 8,
+    "description": "Sigue una mariposa"
+  },
+  {
+    "clip": "smell_flower",
+    "targetFrames": 8,
+    "description": "Se acerca y huele/observa flor"
+  },
+  {
+    "clip": "sit_grass",
+    "targetFrames": 6,
+    "description": "Descansa en la hierba"
+  },
+  {
+    "clip": "watch_bloom",
+    "targetFrames": 6,
+    "description": "Reacciona a floración cercana"
+  },
+  {
+    "clip": "apply_sunscreen",
+    "targetFrames": 8,
+    "description": "Se echa protector solar (acción visible)"
+  },
+  {
+    "clip": "build_sandcastle",
+    "targetFrames": 12,
+    "description": "Levanta castillo por etapas"
+  },
+  {
+    "clip": "play_beach",
+    "targetFrames": 8,
+    "description": "Juega en arena"
+  },
+  {
+    "clip": "enter_water",
+    "targetFrames": 8,
+    "description": "Se introduce en el agua"
+  },
+  {
+    "clip": "swim",
+    "targetFrames": 8,
+    "description": "Nada con aletas, loop"
+  },
+  {
+    "clip": "shake_water",
+    "targetFrames": 8,
+    "description": "Se sacude gotas al salir"
+  }
+]

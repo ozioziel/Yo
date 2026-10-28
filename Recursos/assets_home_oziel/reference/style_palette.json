@@ -1,0 +1,20 @@
+{
+  "colors": {
+    "ink": "#080c0b",
+    "body": "#373837",
+    "shade": "#272927",
+    "belly": "#d8d9d8",
+    "bellyShade": "#b8bab8",
+    "ochre": "#b9874c",
+    "ochreShade": "#8b6038",
+    "helmet": "#efb83d",
+    "helmetShade": "#c78b24",
+    "scarf": "#bb5547",
+    "boots": "#ba773d",
+    "umbrella": "#668681"
+  },
+  "lineWidthAt256": 4.1,
+  "style": "2D vectorial suave, cuerpo continuo de pera, dos mechones, vientre gris claro; perfil izquierdo predeterminado.",
+  "baseScale": 0.65,
+  "referenceDifference": "Reconstrucción articulada; rama y puntos excluidos."
+}

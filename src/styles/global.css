@@ -1,0 +1,85 @@
+/* Brand: the penguin's ink outline, its cream belly and the engineer's helmet yellow. */
+:root {
+  --stroke: #080c0b;
+  --ink: #141917;
+  --ink-2: #3a4541;
+  --paper: #f7efdf;
+  --paper-2: #efe5cf;
+  --yellow: #efb83d;
+  --yellow-deep: #c9901d;
+  --ochre: #b9874c;
+  --font-display: 'Fredoka Variable', 'Fredoka', 'Trebuchet MS', system-ui, sans-serif;
+  --font-body: 'Nunito Variable', 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --topbar-h: 76px;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: #e6efe8;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Cursors chosen by the game while hovering penguins / ropes */
+html[data-cursor='grab'],
+html[data-cursor='grab'] * {
+  cursor: url('/assets/ui/grab_cursor.png') 15 17, grab !important;
+}
+html[data-cursor='grabbing'],
+html[data-cursor='grabbing'] * {
+  cursor: grabbing !important;
+}
+html[data-cursor='scissors'],
+html[data-cursor='scissors'] * {
+  cursor: url('/assets/ui/scissors_cursor.png') 27 15, pointer !important;
+}
+
+.route-loading {
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
