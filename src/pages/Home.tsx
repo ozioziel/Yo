@@ -5,6 +5,7 @@ import Backdrop from '../components/Backdrop';
 import Frost from '../components/Frost';
 import { DayNightToggle, SeasonPicker, SoundToggle } from '../components/Controls';
 import GameCanvas from '../components/GameCanvas';
+import SummonPenguin from '../components/SummonPenguin';
 import type { CameraInfo, IntroPhase, RopeHandle } from '../game/bridge';
 import { bridge } from '../game/bridge';
 import { SEASON_KEYS } from '../game/types';
@@ -27,7 +28,10 @@ export default function Home() {
   const [progress, setProgress] = useState(0);
   const [ropes, setRopes] = useState<RopeHandle[]>([]);
   const [cam, setCam] = useState<CameraInfo | null>(null);
+  const [sceneReady, setSceneReady] = useState(false);
+  const [marvel, setMarvel] = useState(false);
   const oRef = useRef<HTMLSpanElement>(null);
+  const marvelTimer = useRef(0);
   const ctaRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
@@ -36,6 +40,12 @@ export default function Home() {
       bridge.on('progress', setProgress),
       bridge.on('ropes', setRopes),
       bridge.on('camera', setCam),
+      bridge.on('sceneReady', setSceneReady),
+      bridge.on('marvel', ms => {
+        setMarvel(true);
+        window.clearTimeout(marvelTimer.current);
+        marvelTimer.current = window.setTimeout(() => setMarvel(false), ms);
+      }, false),
     ];
     bridge.titleOTarget = () => {
       const el = oRef.current;
@@ -49,6 +59,7 @@ export default function Home() {
     bridge.ctaRect = () => ctaRef.current?.getBoundingClientRect() ?? null;
     return () => {
       offs.forEach(off => off());
+      window.clearTimeout(marvelTimer.current);
       bridge.titleOTarget = () => null;
       bridge.ctaRect = () => null;
     };
@@ -68,6 +79,7 @@ export default function Home() {
       data-season={SEASON_KEYS[prefs.season]}
       data-night={prefs.night ? 'true' : 'false'}
       data-phase={phase}
+      data-marvel={marvel ? 'true' : undefined}
       style={heroBottom ? ({ '--hero-bottom': `${heroBottom}px` } as CSSProperties) : undefined}
     >
       <Backdrop season={prefs.season} night={prefs.night} />
@@ -79,6 +91,7 @@ export default function Home() {
             ozi<span>e</span>l
           </span>
         </Link>
+        {revealed && sceneReady && <SummonPenguin />}
         {revealed && (
           <div className="controls">
             <SeasonPicker value={prefs.season} onChange={season => update({ season })} />

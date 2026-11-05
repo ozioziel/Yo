@@ -14,7 +14,9 @@ OUT = os.path.abspath(sys.argv[1])
 manifest = json.load(open(os.path.join(OUT, "data", "manifest.json"), encoding="utf-8"))
 count = 0
 for atlas in manifest["atlases"]:
-    if not atlas["variant"]:
+    # Extra identities get their exact SD half from the sync pipeline (their pages are
+    # trimmed and even-aligned). Do not halve them again or create atlases/sd/sd folders.
+    if not atlas["variant"] or atlas.get("textureScale"):
         continue
     src_png = os.path.join(OUT, atlas["png"])
     src_json = os.path.join(OUT, atlas["json"])

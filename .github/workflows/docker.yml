@@ -1,4 +1,4 @@
-name: Build Oziel Home Docker
+name: CI/CD Oziel Home
 
 on:
   push:
@@ -8,24 +8,35 @@ on:
 
 permissions:
   contents: read
-  packages: write
+
+# Evitar despliegues simultaneos
+concurrency:
+  group: oziel-home-production
+  cancel-in-progress: false
 
 jobs:
+  # ==================================
+  # CI: CONSTRUIR Y PUBLICAR
+  # ==================================
+
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Descargar codigo
         uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - name: Preparar QEMU
         uses: docker/setup-qemu-action@v4
 
       - name: Preparar Docker Buildx
         uses: docker/setup-buildx-action@v4
-
-      - name: Definir nombre de imagen
-        run: echo "IMAGE=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_ENV"
 
       - name: Iniciar sesion en GHCR
         uses: docker/login-action@v4
@@ -41,5 +52,56 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ${{ env.IMAGE }}:latest
-            ${{ env.IMAGE }}:${{ github.sha }}
+            ghcr.io/ozioziel/yo:latest
+            ghcr.io/ozioziel/yo:${{ github.sha }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+
+  # ==================================
+  # CD: DESPLEGAR EN ORACLE CLOUD
+  # ==================================
+
+  deploy:
+    name: Desplegar en Oracle Cloud
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions: {}
+
+    steps:
+      - name: Desplegar mediante SSH
+        shell: bash
+
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ vars.SSH_HOST }}
+          SSH_KNOWN_HOSTS: ${{ vars.SSH_KNOWN_HOSTS }}
+          COMMIT_SHA: ${{ github.sha }}
+
+        run: |
+          set -euo pipefail
+
+          test -n "$SSH_PRIVATE_KEY"
+          test -n "$SSH_HOST"
+          test -n "$SSH_KNOWN_HOSTS"
+
+          umask 077
+          install -d -m 700 ~/.ssh
+
+          printf '%s\n' "$SSH_PRIVATE_KEY" \
+            > ~/.ssh/oziel_home_ci
+
+          chmod 600 ~/.ssh/oziel_home_ci
+
+          printf '%s\n' "$SSH_KNOWN_HOSTS" \
+            > ~/.ssh/known_hosts
+
+          chmod 600 ~/.ssh/known_hosts
+
+          ssh -T \
+            -i ~/.ssh/oziel_home_ci \
+            -o IdentitiesOnly=yes \
+            -o BatchMode=yes \
+            -o StrictHostKeyChecking=yes \
+            ubuntu@"$SSH_HOST" \
+            "deploy $COMMIT_SHA"

@@ -35,6 +35,8 @@ export class WorldScene extends Phaser.Scene {
       bridge.on('muted', m => sfx.setMuted(m)),
       bridge.on('cutRope', id => this.world.sign.cut(id, 'visitor'), false),
     );
+    bridge.summon = id => this.world.summon(id);
+    bridge.marvel = () => this.world.marvel();
     this.bindPointer();
     this.scale.on(Phaser.Scale.Events.RESIZE, this.onResize, this);
     this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => this.teardown());
@@ -104,6 +106,9 @@ export class WorldScene extends Phaser.Scene {
   }
 
   private teardown() {
+    bridge.summon = async () => 'not-ready';
+    bridge.marvel = () => false;
+    bridge.emit('sceneReady', false);
     this.offs.forEach(off => off());
     this.offs = [];
     this.scale.off(Phaser.Scale.Events.RESIZE, this.onResize, this);

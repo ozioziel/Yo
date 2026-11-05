@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/oror.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 271,
+    "top": 60,
+    "width": 716,
+    "height": 1127
+  },
+  "paper": [
+    244,
+    251,
+    251
+  ],
+  "ink": [
+    66,
+    68,
+    69
+  ],
+  "droppedComponents": 12,
+  "droppedPixels": 22
+}

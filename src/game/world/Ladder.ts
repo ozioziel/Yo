@@ -77,7 +77,7 @@ export class Ladder {
       anchor: 'hn',
       depthOffset: -0.5,
       follow: (hand, who) => {
-        const dir = who.sprite.flipX ? -1 : 1; // trailing side
+        const dir = who.facing === 1 ? -1 : 1; // trailing side
         this.angle = dir * CARRY_ANGLE;
         const rad = Phaser.Math.DegToRad(this.angle);
         const grip = GRIP * this.length;

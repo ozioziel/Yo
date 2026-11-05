@@ -376,8 +376,8 @@ export class Brain {
     const key = PART('winter', 'breath_puff');
     if (!this.scene.textures.exists(key)) return;
     const head = p.anchor('hm');
-    const b = this.scene.add.image(head.x + (p.sprite.flipX ? 40 : -40) * p.size, head.y + 60 * p.size, key).setScale(0.18).setAlpha(0.8).setDepth(p.sprite.depth + 1);
-    this.scene.tweens.add({ targets: b, scale: 0.4, alpha: 0, x: b.x + (p.sprite.flipX ? 30 : -30), duration: 1200, onComplete: () => b.destroy() });
+    const b = this.scene.add.image(head.x + (p.facing === 1 ? 40 : -40) * p.size, head.y + 60 * p.size, key).setScale(0.18).setAlpha(0.8).setDepth(p.sprite.depth + 1);
+    this.scene.tweens.add({ targets: b, scale: 0.4, alpha: 0, x: b.x + (p.facing === 1 ? 30 : -30), duration: 1200, onComplete: () => b.destroy() });
   }
 
   private snowballFight(p: Penguin, target: Penguin): Task {

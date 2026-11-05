@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/Aylen.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 220,
+    "top": 57,
+    "width": 811,
+    "height": 1139
+  },
+  "paper": [
+    244,
+    251,
+    252
+  ],
+  "ink": [
+    69,
+    70,
+    71
+  ],
+  "droppedComponents": 7,
+  "droppedPixels": 12
+}

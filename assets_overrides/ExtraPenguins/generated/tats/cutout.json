@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/Tats.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 233,
+    "top": 51,
+    "width": 754,
+    "height": 1146
+  },
+  "paper": [
+    244,
+    253,
+    253
+  ],
+  "ink": [
+    69,
+    70,
+    70
+  ],
+  "droppedComponents": 21,
+  "droppedPixels": 44
+}

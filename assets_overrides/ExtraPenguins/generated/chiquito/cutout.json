@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/Chiquito.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 147,
+    "top": 138,
+    "width": 868,
+    "height": 1042
+  },
+  "paper": [
+    248,
+    253,
+    253
+  ],
+  "ink": [
+    65,
+    65,
+    65
+  ],
+  "droppedComponents": 60,
+  "droppedPixels": 108
+}

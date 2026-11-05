@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/boris.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 229,
+    "top": 32,
+    "width": 769,
+    "height": 1158
+  },
+  "paper": [
+    243,
+    250,
+    250
+  ],
+  "ink": [
+    68,
+    71,
+    71
+  ],
+  "droppedComponents": 16,
+  "droppedPixels": 20
+}

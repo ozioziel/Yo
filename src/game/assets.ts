@@ -17,15 +17,26 @@ export function chooseTextureQuality() {
 }
 
 const CORE_GROUPS = ['base', 'intro', 'daily', 'weather'];
+/** Summoned identities arrive after the intro: everyday life, home tasks and weather. */
+const EXTRA_GROUPS = ['base', 'tasks', 'daily', 'weather'];
+
+/** Atlases a summoned identity needs in a season (its own clothes, never the intro set). */
+export function extraAtlases(data: GameData, variant: Variant, level: Season): string[] {
+  const season = SEASON_KEYS[level];
+  return data.manifest.atlases
+    .filter(a => a.variant === variant && (EXTRA_GROUPS.includes(a.group ?? '') || a.group === season))
+    .map(a => a.id);
+}
 
 /**
  * Atlases needed while a season is active. Only one dressed variant is resident:
  * the bare `penguin` variant is kept in winter/autumn just for the clips an
  * ex-engineer needs before dressing (falls, recovery, put on scarf/boots).
  */
-export function atlasesForSeason(data: GameData, level: Season): Set<string> {
+export function atlasesForSeason(data: GameData, level: Season, extras: Iterable<Variant> = []): Set<string> {
   const season = SEASON_KEYS[level];
   const keep = new Set<string>();
+  for (const variant of extras) extraAtlases(data, variant, level).forEach(id => keep.add(id));
   for (const atlas of data.manifest.atlases) {
     if (!atlas.variant) continue;
     const g = atlas.group ?? '';
@@ -80,6 +91,12 @@ export function loadAtlases(scene: Phaser.Scene, data: GameData, ids: Iterable<s
 }
 
 export const animKey = (variant: Variant, clip: string) => `${variant}:${clip}`;
+
+/** Texture px per logical 256 px cell unit for an atlas (HD 1, SD 0.5; extras 0.75 / 0.375). */
+export function atlasScale(data: GameData, id: string) {
+  const entry = data.manifest.atlases.find(a => a.id === id);
+  return (entry?.textureScale ?? 1) * TEX_SCALE;
+}
 
 /** Registers every clip whose atlas is resident. Safe to call repeatedly. */
 export function registerCharacterAnims(scene: Phaser.Scene, data: GameData) {

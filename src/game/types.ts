@@ -2,7 +2,10 @@ export type Season = 0 | 1 | 2 | 3;
 export const SEASON_KEYS = ['winter', 'autumn', 'spring', 'summer'] as const;
 export type SeasonKey = (typeof SEASON_KEYS)[number];
 
-export type Variant = 'penguin' | 'engineer' | 'penguin_winter' | 'penguin_autumn';
+export type BaseVariant = 'penguin' | 'engineer' | 'penguin_winter' | 'penguin_autumn';
+/** Summoned identities (`extra_<id>__penguin`): their own clothes in every season. */
+export type ExtraVariant = `extra_${string}`;
+export type Variant = BaseVariant | ExtraVariant;
 
 export type Point = [number, number];
 
@@ -44,6 +47,8 @@ export interface AtlasEntry {
   clips: string[];
   width: number;
   height: number;
+  /** Cell size of the page relative to the 256-unit cell (extras: 192 px → 0.75); SD halves it. */
+  textureScale?: number;
 }
 
 export interface ManifestLite {
@@ -60,6 +65,6 @@ export interface GameData {
   env: EnvData;
 }
 
-export function seasonVariant(level: Season): Variant {
+export function seasonVariant(level: Season): BaseVariant {
   return level === 0 ? 'penguin_winter' : level === 1 ? 'penguin_autumn' : 'penguin';
 }

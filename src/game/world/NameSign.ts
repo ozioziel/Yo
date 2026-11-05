@@ -58,6 +58,8 @@ export class NameSign {
   isCut = false;
   cutBy: Cutter | null = null;
   formed = false;
+  /** The frayed ropes and anchors have retracted: nothing of the intro set is left. */
+  cleared = false;
   private cutAt = 0;
   private forming = false;
   /** Rope the climber cuts, and where the ladder goes. */
@@ -445,7 +447,10 @@ export class NameSign {
       delay: 900,
       duration: 1100,
       ease: 'Sine.easeIn',
-      onComplete: () => leftovers.forEach(o => o.setVisible(false)),
+      onComplete: () => {
+        leftovers.forEach(o => o.setVisible(false));
+        this.cleared = true;
+      },
     });
     this.formed = true;
     this.world.titleFormed = true;

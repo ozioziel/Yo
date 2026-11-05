@@ -69,6 +69,9 @@ const AERIAL = new Set(['dragged', 'fall_normal', 'fall_spin', 'fall_flap']);
 const AERIAL_SCALE = 0.87;
 const AERIAL_PIVOT = 46; // cell y of the point the aerial rig was scaled around
 const GRAVITY = 2600;
+/** Explicit right-facing drawing of a clip (identities with text or asymmetric details). */
+const RIGHT = '__right';
+const sameClip = (a: string, b: string) => a.replace(RIGHT, '') === b.replace(RIGHT, '');
 let nextId = 1;
 
 export class Penguin {
@@ -77,8 +80,14 @@ export class Penguin {
   readonly shadow: Phaser.GameObjects.Image;
   variant: Variant;
   engineer: boolean;
+  /** Registry id of a summoned identity; it keeps its own clothes and never takes the helmet. */
+  readonly identity: string | null;
   /** World units per 256 px cell. */
   readonly size: number;
+  /** Texture px per cell px of this penguin's atlases (HD 1, SD 0.5). */
+  readonly texScale: number;
+  /** Drawn size relative to a base penguin (summoned identities are bigger, with hair). */
+  readonly bodyScale: number;
   x: number;
   y: number;
   laneY: number;
@@ -89,6 +98,8 @@ export class Penguin {
   task: Task | null = null;
   wantsTask = false;
   clip = 'idle';
+  /** Clip actually drawn: `clip`, or its explicit right-facing version. */
+  private action = 'idle';
   present = false; // false while waiting off-stage before its intro entrance
   /** Season whose outfit this penguin is already wearing. */
   seasonApplied: Season = 2;
@@ -128,11 +139,17 @@ export class Penguin {
   private squash = { sx: 1, sy: 1 };
   private bob = 0;
 
-  constructor(readonly world: World, opts: { variant: Variant; engineer: boolean; x: number; laneY: number; size: number }) {
+  constructor(
+    readonly world: World,
+    opts: { variant: Variant; engineer: boolean; x: number; laneY: number; size: number; identity?: string; texScale?: number; bodyScale?: number },
+  ) {
     const scene = world.scene;
     this.variant = opts.variant;
     this.engineer = opts.engineer;
+    this.identity = opts.identity ?? null;
     this.size = opts.size;
+    this.texScale = opts.texScale ?? TEX_SCALE;
+    this.bodyScale = opts.bodyScale ?? 1;
     this.x = opts.x;
     this.laneY = opts.laneY;
     this.y = opts.laneY;
@@ -172,11 +189,11 @@ export class Penguin {
   }
 
   get headY() {
-    return this.y - 200 * this.size;
+    return this.y - 200 * this.size * this.bodyScale;
   }
 
   get halfW() {
-    return 44 * this.size;
+    return 44 * this.size * Math.sqrt(this.bodyScale);
   }
 
   /**
@@ -190,20 +207,30 @@ export class Penguin {
 
   applyScale() {
     const k = this.aerial ? 1 / AERIAL_SCALE : 1;
-    this.sprite.setScale((this.size / TEX_SCALE) * this.squash.sx * k, (this.size / TEX_SCALE) * this.squash.sy * k);
+    this.sprite.setScale((this.size / this.texScale) * this.squash.sx * k, (this.size / this.texScale) * this.squash.sy * k);
+  }
+
+  /** Facing right uses the explicit right-facing drawing when there is one, else a mirror. */
+  private directed(clip: string) {
+    if (this.facing === 1) {
+      const key = animKey(this.variant, clip + RIGHT);
+      if (this.scene.anims.exists(key)) return { key, action: clip + RIGHT, flip: false };
+    }
+    return { key: animKey(this.variant, clip), action: clip, flip: this.facing === 1 };
   }
 
   play(clip: string) {
-    let key = animKey(this.variant, clip);
-    if (!this.scene.anims.exists(key)) {
+    if (!this.can(clip)) {
       // Missing clip for this variant (not resident): fall back without breaking the state machine.
-      const fallback = ['idle', 'look_around'].find(c => this.scene.anims.exists(animKey(this.variant, c)));
+      const fallback = ['idle', 'look_around'].find(c => this.can(c));
       if (!fallback) return;
-      key = animKey(this.variant, fallback);
       clip = fallback;
     }
+    const d = this.directed(clip);
     this.clip = clip;
-    this.sprite.play(key, false);
+    this.action = d.action;
+    this.sprite.setFlipX(d.flip);
+    this.sprite.play(d.key, false);
   }
 
   setVariant(variant: Variant) {
@@ -219,12 +246,20 @@ export class Penguin {
 
   face(dir: 1 | -1) {
     this.facing = dir;
-    this.sprite.setFlipX(dir === 1);
+    const d = this.directed(this.clip);
+    this.sprite.setFlipX(d.flip);
+    if (d.action === this.action || !this.scene.anims.exists(d.key)) return;
+    // same pose drawn for the other side: keep the frame, the routine is waiting on this clip
+    const index = this.sprite.anims.currentFrame?.index ?? 1;
+    this.action = d.action;
+    this.sprite.play(d.key, false);
+    const anim = this.sprite.anims.currentAnim;
+    if (anim && index > 1) this.sprite.anims.setCurrentFrame(anim.frames[Math.min(index, anim.frames.length) - 1]);
   }
 
   /** World position of a per-frame anchor (cell coordinates from Codex frameAnchors). */
   anchor(name: 'hn' | 'hf' | 'hm'): { x: number; y: number } {
-    const def = this.def(this.clip);
+    const def = this.def(this.action) ?? this.def(this.clip);
     const idx = def ? Math.max(0, def.frames.indexOf(this.sprite.frame.name)) : 0;
     const a = def?.anchors[idx]?.[name] ?? (name === 'hm' ? [128, 46] : name === 'hn' ? [164, 190] : [88, 179]);
     const ax = this.sprite.flipX ? 256 - a[0] : a[0];
@@ -236,10 +271,11 @@ export class Penguin {
 
   hitTest(wx: number, wy: number, slop: number) {
     if (!this.present) return false;
+    const k = this.size * this.bodyScale;
     const cx = this.x;
-    const cy = this.y - 102 * this.size;
-    const rx = 64 * this.size + slop;
-    const ry = 108 * this.size + slop;
+    const cy = this.y - 102 * k;
+    const rx = 64 * k + slop;
+    const ry = 108 * k + slop;
     const dx = (wx - cx) / rx;
     const dy = (wy - cy) / ry;
     return dx * dx + dy * dy <= 1;
@@ -319,7 +355,7 @@ export class Penguin {
           p.frameHooks = hooks ? { key: animKey(p.variant, clip), hooks, fired: new Set() } : null;
           const key = p.sprite.anims.currentAnim?.key;
           const done = (anim: Phaser.Animations.Animation) => {
-            if (anim.key === key) resolve();
+            if (key && sameClip(anim.key, key)) resolve();
           };
           // looping clips count as "once" after one full cycle
           p.sprite.on(Phaser.Animations.Events.ANIMATION_COMPLETE, done);
@@ -394,7 +430,7 @@ export class Penguin {
 
   private onAnimUpdate(anim: Phaser.Animations.Animation, frame: Phaser.Animations.AnimationFrame) {
     const h = this.frameHooks;
-    if (!h || anim.key !== h.key) return;
+    if (!h || !sameClip(anim.key, h.key)) return;
     const index = anim.frames.indexOf(frame);
     for (const [k, fn] of Object.entries(h.hooks)) {
       const at = Number(k);
@@ -514,7 +550,7 @@ export class Penguin {
   private updateAttachments() {
     for (const a of this.attachments) {
       const pos = this.anchor(a.anchor);
-      pos.x += (a.dx ?? 0) * (this.sprite.flipX ? -1 : 1);
+      pos.x += (a.dx ?? 0) * (this.facing === 1 ? -1 : 1);
       pos.y += a.dy ?? 0;
       if (a.follow) a.follow(pos, this);
       else a.obj.setPosition(pos.x, pos.y);
@@ -707,7 +743,7 @@ export class Penguin {
         sfx.tok(0.6);
       }
       const ceiling = l.top + 200 * this.size;
-      if (this.y < ceiling) {
+      if (this.y < ceiling && this.vy < 0) {
         this.y = ceiling;
         this.vy = Math.abs(this.vy) * 0.3;
       }
@@ -761,12 +797,12 @@ export class Penguin {
     const k = Phaser.Math.Clamp(1 - height / 700, 0.25, 1);
     this.shadow
       .setPosition(this.x, this.laneY + 3)
-      .setScale(this.size * 0.8 * k, this.size * 0.75 * k)
+      .setScale(this.size * this.bodyScale * 0.8 * k, this.size * this.bodyScale * 0.75 * k)
       .setAlpha(this.present && !this.swimming && !this.inWater ? 0.3 * k : 0)
       .setDepth(1000 + this.laneY - 2);
     this.sprite.setVisible(this.present);
     this.updateAttachments();
-    if (this.bubble) this.bubble.setPosition(this.x + 34 * this.size * (this.sprite.flipX ? 1 : -1), this.headY - 34 * this.size).setDepth(depth + 2);
+    if (this.bubble) this.bubble.setPosition(this.x + 34 * this.size * (this.facing === 1 ? 1 : -1), this.headY - 34 * this.size).setDepth(depth + 2);
     if (this.stars.length) {
       const t = this.scene.time.now / 260;
       this.stars.forEach(s => {
@@ -800,7 +836,9 @@ export class Penguin {
     }
     const f = this.sprite.frame;
     const cut = Math.max(0, Math.min(256, cutRow));
-    this.sprite.setCrop(0, 0, f.realWidth, (f.realHeight * cut) / 256);
+    // rows are cell units from the top of a 256 cell; measured from the feet (0.9 of the
+    // frame height) they also fit the taller cells of the summoned identities
+    this.sprite.setCrop(0, 0, f.realWidth, f.realHeight * 0.9 + (cut - ORIGIN[1]) * this.texScale);
     if (!this.ring) this.ring = this.scene.add.image(0, 0, 'water_ring');
     const y = this.y + (cut - ORIGIN[1]) * this.size;
     const t = this.scene.time.now / 380 + this.id;
@@ -813,8 +851,9 @@ export class Penguin {
       .setDepth(this.sprite.depth + 0.5);
   }
 
-  /** Change outfit for a season, used by the weather routine. */
+  /** Change outfit for a season, used by the weather routine. Identities keep their own. */
   targetVariant(level: Season): Variant {
+    if (this.identity) return this.variant;
     return this.engineer ? 'engineer' : seasonVariant(level);
   }
 

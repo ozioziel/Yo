@@ -1,8 +1,10 @@
 import Phaser from 'phaser';
-import { atlasesForSeason, loadAtlases, unloadAtlases } from '../assets';
+import { animKey, atlasesForSeason, atlasScale, extraAtlases, loadAtlases, unloadAtlases } from '../assets';
 import { bridge } from '../bridge';
-import type { IntroPhase } from '../bridge';
+import type { IntroPhase, SummonResult } from '../bridge';
+import { extraById } from '../characters';
 import type { Layout } from '../layout';
+import { GROUND_TOP } from '../layout';
 import { sfx } from '../sfx';
 import type { GameData, Season, Variant } from '../types';
 import { seasonVariant } from '../types';
@@ -49,6 +51,12 @@ export class World {
   nextAccidentAt = 0;
   nextBumpAt = 0;
   titleFormed = false;
+  /** Intro over and its set cleared away: new identities may drop in. */
+  ready = false;
+  /** Summoned identities by registry id; null while its atlases are loading. */
+  readonly extras = new Map<string, Penguin | null>();
+  private destroyed = false;
+  private marvelUntil = 0;
   private readyLevels = new Set<Season>();
   private unloadCheckAt = 0;
   private dragging = new Map<number, Penguin>();
@@ -77,24 +85,136 @@ export class World {
   private spawn() {
     const total = this.layout.compact ? 10 : 15;
     const l = this.layout;
-    // on a narrow portrait slice the world is zoomed out: penguins get a bit bigger
-    const k = l.portrait ? 1.18 : 1;
     for (let i = 0; i < total; i++) {
       const engineer = i === 0;
-      const size = (engineer ? 0.58 : Phaser.Math.FloatBetween(0.5, 0.6)) * k;
-      const laneY = Phaser.Math.Between(l.laneMin, l.laneMax);
       const fromLeft = engineer || i % 2 === 0;
-      const p = new Penguin(this, {
+      const p = this.create({
         variant: engineer ? 'engineer' : seasonVariant(this.season),
         engineer,
         x: fromLeft ? l.left - 140 : l.right + 140,
-        laneY,
-        size,
+        size: engineer ? 0.58 : undefined,
       });
-      p.seasonApplied = this.season;
       p.present = false;
-      this.penguins.push(p);
     }
+  }
+
+  /** Every penguin, original or summoned, is made here and joins the same update/brain. */
+  private create(opts: { variant: Variant; engineer: boolean; x: number; size?: number; identity?: string; bodyScale?: number }) {
+    const l = this.layout;
+    // on a narrow portrait slice the world is zoomed out: penguins get a bit bigger
+    const k = l.portrait ? 1.18 : 1;
+    const idle = this.data.anims.characters[opts.variant].idle;
+    const p = new Penguin(this, {
+      ...opts,
+      size: (opts.size ?? Phaser.Math.FloatBetween(0.5, 0.6)) * k,
+      laneY: Phaser.Math.Between(l.laneMin, l.laneMax),
+      texScale: atlasScale(this.data, idle.atlas),
+    });
+    p.seasonApplied = this.season;
+    p.sprite.setTint(this.tint);
+    this.penguins.push(p);
+    return p;
+  }
+
+  // ------------------------------------------------------------------ summoned identities
+  private get extraVariants(): Variant[] {
+    return [...this.extras.keys()].map(id => extraById(id)!.variant);
+  }
+
+  /**
+   * Drops a registered identity from above the view once the intro is over. It is a
+   * normal penguin from then on: falls, lands, gets up and the brain gives it things to do.
+   * One per identity; repeated or concurrent requests for the same name are refused.
+   */
+  async summon(id: string): Promise<SummonResult> {
+    const character = extraById(id);
+    if (!character || !this.ready || this.destroyed) return 'not-ready';
+    if (this.extras.has(id)) return 'present';
+    this.extras.set(id, null);
+    const { variant } = character;
+    let level: Season;
+    let atlases: string[];
+    try {
+      // the season may change while loading: then load the new one's group too
+      do {
+        level = this.season;
+        atlases = extraAtlases(this.data, variant, level);
+        await loadAtlases(this.scene, this.data, atlases);
+      } while (level !== this.season && !this.destroyed);
+    } catch (e) {
+      console.error(e);
+      this.extras.delete(id);
+      return 'failed';
+    }
+    if (this.destroyed) return 'failed';
+    // never create a half-dressed penguin: every clip of the loaded groups must be playable
+    const clips = Object.entries(this.data.anims.characters[variant] ?? {});
+    const complete = clips.length > 0 && clips.every(([clip, def]) => !atlases.includes(def.atlas) || this.scene.anims.exists(animKey(variant, clip)));
+    if (!atlases.length || !complete) {
+      console.error(`[oziel] recursos incompletos de ${id}`);
+      this.extras.delete(id);
+      return 'failed';
+    }
+    this.extras.set(id, this.dropIn(variant, id));
+    return 'falling';
+  }
+
+  /** "oziel": every penguin stops to look up while the scene sparkles and the O lights up. */
+  marvel() {
+    const now = this.scene.time.now;
+    if (!this.ready || this.destroyed || now < this.marvelUntil) return false;
+    const MS = 3000;
+    this.marvelUntil = now + MS;
+    for (const p of this.penguins) {
+      // up the ladder or in the sea it finishes first, as with a change of season
+      if (!p.present || p.swimming || p.y < p.laneY - 6) continue;
+      p.react(async act => {
+        act.p.vx = 0;
+        await act.wait(Phaser.Math.Between(0, 250));
+        await act.once('look_up');
+        await act.wait(MS - 1100);
+      }, { force: true });
+    }
+    const l = this.layout;
+    this.scene.time.addEvent({
+      delay: 110,
+      repeat: Math.floor(MS / 110),
+      callback: () => {
+        const ps = this.penguins.filter(p => p.present);
+        if (ps.length && Math.random() < 0.6) {
+          const p = Phaser.Utils.Array.GetRandom(ps);
+          this.env.sparkle(p.x + Phaser.Math.Between(-30, 30) * p.size, p.headY);
+        } else {
+          this.env.sparkle(Phaser.Math.FloatBetween(l.left + 40, l.right - 40), Phaser.Math.FloatBetween(l.top + 40, GROUND_TOP));
+        }
+      },
+    });
+    // the O of hOme glows, as when it lands at the end of the intro
+    const target = bridge.titleOTarget();
+    if (target && this.scene.anims.exists('fx:fx_o_glow')) {
+      const x = l.scrollX + target.cx / l.zoomCss, y = l.scrollY + target.cy / l.zoomCss;
+      for (const at of [0, 1000, 2000]) {
+        this.scene.time.delayedCall(at, () => {
+          const glow = this.scene.add.sprite(x, y, 'fx_o_glow', 'fx_o_glow_000').setScale(target.fontSize / l.zoomCss / 90).setDepth(6790);
+          glow.play('fx:fx_o_glow').once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => glow.destroy());
+        });
+      }
+    }
+    sfx.sparkle();
+    bridge.emit('marvel', MS);
+    return true;
+  }
+
+  private dropIn(variant: Variant, identity: string) {
+    const l = this.layout;
+    const p = this.create({ variant, engineer: false, identity, bodyScale: extraById(identity)?.bodyScale, x: (l.left + l.right) / 2 });
+    p.x = this.freeX(p, { min: l.left + 120, max: l.right - 120 });
+    p.y = l.top - 30; // feet just above the view: the whole body enters falling
+    p.present = true;
+    p.face(Math.random() < 0.5 ? 1 : -1);
+    p.launch(Phaser.Math.Between(-40, 40), 0, 1);
+    sfx.whoosh(0.5);
+    return p;
   }
 
   get engineerPenguin() {
@@ -157,8 +277,12 @@ export class World {
     this.applyTint();
   }
 
+  private get tint() {
+    return this.night ? 0xb9c4d6 : 0xffffff;
+  }
+
   applyTint() {
-    const tint = this.night ? 0xb9c4d6 : 0xffffff;
+    const tint = this.tint;
     for (const p of this.penguins) p.sprite.setTint(tint);
     this.env.tintProps(tint);
     this.ladder.setTint(tint);
@@ -189,7 +313,7 @@ export class World {
         p.react(act => this.weatherRoutine(p, act, level), { force: true });
       });
     }
-    await loadAtlases(this.scene, this.data, atlasesForSeason(this.data, level));
+    await loadAtlases(this.scene, this.data, atlasesForSeason(this.data, level, this.extraVariants));
     if (this.season === level) this.readyLevels.add(level);
     this.unloadCheckAt = this.scene.time.now + 1500;
     void previous;
@@ -206,7 +330,8 @@ export class World {
       await act.until(() => this.readyLevels.has(level) || this.season !== level, 15000);
     }
     if (this.season !== level) return; // a newer season will run its own routine
-    if (p.engineer) {
+    if (p.engineer || p.identity) {
+      // the helmet stays on and a summoned identity keeps its own clothes
       if (level === 3 && p.can('apply_sunscreen')) await act.once('apply_sunscreen');
       else if (level === 0 && p.can('shiver')) await act.loop('shiver', 1000);
     } else {
@@ -344,7 +469,7 @@ export class World {
       let best: Penguin | null = null;
       let bestD = Infinity;
       for (const p of this.penguins) {
-        if (!p.free || p.engineer) continue;
+        if (!p.free || p.engineer || p.identity) continue;
         const d = Math.abs(p.x - h.x) + (p.task?.tag === 'climb' ? 2000 : 0);
         if (d < bestD) {
           bestD = d;
@@ -537,6 +662,10 @@ export class World {
     this.ladder.update();
     this.env.update(dtMs);
     if (this.phase === 'home') this.brain.update();
+    if (!this.ready && this.phase === 'home' && this.sign.cleared) {
+      this.ready = true;
+      bridge.emit('sceneReady', true);
+    }
     this.director.update();
     if (this.polls.length) {
       const now = this.scene.time.now;
@@ -551,8 +680,8 @@ export class World {
     if (this.unloadCheckAt && this.scene.time.now > this.unloadCheckAt) {
       this.unloadCheckAt = this.scene.time.now + 1500;
       if (this.penguins.every(p => p.seasonApplied === this.season && (p.mode === 'normal' || p.mode === 'reaction'))) {
-        const inUse = new Set(this.penguins.map(p => p.def(p.clip)?.atlas).filter(Boolean) as string[]);
-        unloadAtlases(this.scene, this.data, atlasesForSeason(this.data, this.season), inUse);
+        const inUse = new Set(this.penguins.map(p => p.sprite.texture.key));
+        unloadAtlases(this.scene, this.data, atlasesForSeason(this.data, this.season, this.extraVariants), inUse);
         this.unloadCheckAt = 0;
       }
     }
@@ -592,6 +721,8 @@ export class World {
   }
 
   destroy() {
+    this.destroyed = true;
+    this.ready = false;
     this.director.cancel();
     this.penguins.forEach(p => p.destroy());
     this.env.destroy();

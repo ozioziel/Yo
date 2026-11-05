@@ -6,6 +6,7 @@ import '../styles/portfolio.css';
 
 const USER = 'ozioziel';
 const CACHE = 'oziel.github.v1';
+const INSTAGRAM = 'https://www.instagram.com/ozi_ozi_oziel/';
 
 type Snapshot = typeof snapshot;
 type Repo = Snapshot['repos'][number];
@@ -94,9 +95,14 @@ export default function Portfolio() {
               {p.location && <span>{p.location}</span>}
               <span>{p.public_repos} repositorios públicos</span>
             </p>
-            <a className="pf-button" href={p.html_url} target="_blank" rel="noreferrer">
-              Ver @{p.login} en GitHub
-            </a>
+            <div className="pf-links">
+              <a className="pf-button" href={p.html_url} target="_blank" rel="noreferrer">
+                Ver @{p.login} en GitHub
+              </a>
+              <a className="pf-button pf-button--alt" href={INSTAGRAM} target="_blank" rel="noreferrer">
+                Instagram @ozi_ozi_oziel
+              </a>
+            </div>
           </div>
         </section>
 

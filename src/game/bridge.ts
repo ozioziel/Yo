@@ -16,6 +16,9 @@ export interface CameraInfo {
 
 export type IntroPhase = 'loading' | 'intro' | 'falling' | 'reveal' | 'home';
 
+/** Outcome of asking the world for a summoned identity. */
+export type SummonResult = 'falling' | 'present' | 'not-ready' | 'failed';
+
 export interface RopeHandle {
   id: number;
   cssX: number;
@@ -32,6 +35,10 @@ interface Events {
   ropes: RopeHandle[];
   cutRope: number;
   progress: number;
+  /** Intro finished and its set cleared: the world can take new arrivals. */
+  sceneReady: boolean;
+  /** "oziel" was typed: every penguin looks up and the scene sparkles (ms it lasts). */
+  marvel: number;
 }
 
 type Listener<T> = (value: T) => void;
@@ -44,6 +51,10 @@ class Bridge {
   titleOTarget: () => { cx: number; cy: number; fontSize: number } | null = () => null;
   /** DOM rect of the portfolio button (penguins occasionally polish it). */
   ctaRect: () => DOMRect | null = () => null;
+  /** Drops a registered identity into the world, provided by the world scene. */
+  summon: (id: string) => Promise<SummonResult> = async () => 'not-ready';
+  /** Everyone looks up and the scene sparkles; false while the world cannot. */
+  marvel: () => boolean = () => false;
 
   emit<K extends keyof Events>(key: K, value: Events[K]) {
     this.last.set(key, value);
@@ -66,6 +77,8 @@ class Bridge {
     this.last.delete('phase');
     this.last.delete('ropes');
     this.last.delete('progress');
+    this.last.delete('sceneReady');
+    this.last.delete('marvel');
   }
 }
 

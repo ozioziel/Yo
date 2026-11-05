@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/zorro negro.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 166,
+    "top": 31,
+    "width": 889,
+    "height": 1179
+  },
+  "paper": [
+    244,
+    252,
+    253
+  ],
+  "ink": [
+    63,
+    64,
+    64
+  ],
+  "droppedComponents": 20,
+  "droppedPixels": 33
+}

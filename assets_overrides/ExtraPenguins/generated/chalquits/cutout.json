@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/Chalquits.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 227,
+    "top": 63,
+    "width": 815,
+    "height": 1130
+  },
+  "paper": [
+    243,
+    250,
+    251
+  ],
+  "ink": [
+    62,
+    63,
+    64
+  ],
+  "droppedComponents": 8,
+  "droppedPixels": 8
+}

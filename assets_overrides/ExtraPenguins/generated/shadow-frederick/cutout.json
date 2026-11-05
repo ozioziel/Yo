@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/Shadow Frederick.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 187,
+    "top": 62,
+    "width": 866,
+    "height": 1128
+  },
+  "paper": [
+    241,
+    253,
+    253
+  ],
+  "ink": [
+    61,
+    64,
+    64
+  ],
+  "droppedComponents": 26,
+  "droppedPixels": 1554
+}

@@ -13,7 +13,10 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "audit:assets": "python -I tools/audit/audit_assets.py Recursos/assets_home_oziel docs/audit",
-    "rig": "node tools/rig/build_characters.cjs && node scripts/sync-assets.mjs"
+    "rig": "node tools/rig/build_characters.cjs && node scripts/sync-assets.mjs",
+    "rig:extras": "node tools/extras/cutout.cjs && node tools/extras/build.cjs --rebuild-rig && node tools/extras/validate.cjs && node scripts/sync-assets.mjs && node tools/extras/validate.cjs --runtime-only",
+    "check:extras": "node tools/extras/validate.cjs && node tools/extras/validate.cjs --runtime-only",
+    "test:extras": "node scripts/test-extra-penguins.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fredoka": "5.3.0",

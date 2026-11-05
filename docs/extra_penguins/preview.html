@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Control de animaciones · Pingüinos extra</title>
+<style>body{font:16px system-ui;background:#e5ede9;color:#182720;margin:24px}label{display:inline-block;margin:8px}select,button{font:inherit;padding:8px}canvas{max-width:100%;background:repeating-conic-gradient(#dce4df 0% 25%,#edf2ef 0% 50%) 0/24px 24px;border:1px solid #8d9b93}p{max-width:850px}</style>
+<h1>Control de animaciones</h1><p>Marionetas hechas con el propio PNG de cada personaje. La derecha usa los mismos fotogramas: nunca se refleja la textura. Línea horizontal: apoyo fijo de la celda (y=230). Esta página solo sirve para revisión.</p>
+<label>Personaje <select id="character"></select></label><label>Vestimenta <select id="outfit"><option value="penguin">ropa propia</option></select></label><label>Acción <select id="clip"></select></label><button id="pause">Pausar</button><button id="step">Fotograma siguiente</button><p id="status" role="status"></p><canvas width="768" height="300"></canvas>
+<script type="module">
+const registry=await(await fetch('/src/game/extraPenguins.json')).json();
+const data=await(await fetch('/assets/data/animations.json')).json();
+const manifest=await(await fetch('/assets/data/manifest.json')).json();
+const char=document.querySelector('#character'),outfit=document.querySelector('#outfit'),clip=document.querySelector('#clip'),status=document.querySelector('#status'),canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');
+for(const p of registry)char.add(new Option(p.name,p.variantPrefix));
+let frame=0,elapsed=0,paused=false,loaded=[],token=0;
+const cache=new Map();
+async function resource(def){if(!def)return null;const atlas=manifest.atlases.find(a=>a.id===def.atlas);if(!cache.has(atlas.id))cache.set(atlas.id,(async()=>{const map=await(await fetch('/assets/'+atlas.json)).json(),image=new Image();image.src='/assets/'+atlas.png;await image.decode();return {map,image};})());return {...await cache.get(atlas.id),def};}
+async function change(reset){const key=char.value+'__'+outfit.value,clips=data.characters[key];if(reset){const previous=clip.value;clip.replaceChildren();for(const c of Object.keys(clips).filter(c=>!c.endsWith('__right')))clip.add(new Option(c,c));if(clips[previous])clip.value=previous;}const generation=++token;status.textContent='Cargando…';const result=await Promise.all([resource(clips[clip.value]),resource(clips[clip.value+'__right']),resource(data.characters[outfit.value][clip.value])]);if(generation!==token)return;loaded=result;frame=elapsed=0;draw();}
+function draw(){ctx.clearRect(0,0,768,300);ctx.strokeStyle='#83988c';ctx.beginPath();ctx.moveTo(0,230);ctx.lineTo(768,230);ctx.stroke();loaded.forEach((r,i)=>{if(!r)return;const fr=r.map.frames[r.def.frames[frame%r.def.frames.length]],f=fr.frame,src=fr.spriteSourceSize??{x:0,y:0},k=256/(fr.sourceSize?.w??f.w);ctx.drawImage(r.image,f.x,f.y,f.w,f.h,i*256+src.x*k,src.y*k,f.w*k,f.h*k);ctx.fillStyle='#182720';ctx.font='15px system-ui';ctx.fillText(['Izquierda','Derecha (mismo dibujo)','Pingüino base'][i],i*256+12,280);});if(loaded[0])status.textContent=`${clip.value} · fotograma ${frame+1}/${loaded[0].def.frames.length} · ${loaded[0].def.fps} fps · ${loaded[0].def.repeat===-1?'bucle':'una vez (repetida aquí para revisar)'}`;}
+char.onchange=outfit.onchange=()=>change(true);clip.onchange=()=>change(false);document.querySelector('#pause').onclick=e=>{paused=!paused;e.target.textContent=paused?'Reproducir':'Pausar';};document.querySelector('#step').onclick=()=>{paused=true;if(loaded[0])frame=(frame+1)%loaded[0].def.frames.length;draw();};let last=performance.now();function tick(t){if(!paused&&loaded[0]){elapsed+=t-last;if(elapsed>=1000/loaded[0].def.fps){elapsed=0;frame=(frame+1)%loaded[0].def.frames.length;draw();}}last=t;requestAnimationFrame(tick);}await change(true);requestAnimationFrame(tick);
+</script></html>
