@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oziel.dev/sitemap.xml
