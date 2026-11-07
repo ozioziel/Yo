@@ -56,6 +56,8 @@ export class World {
   /** Summoned identities by registry id; null while its atlases are loading. */
   readonly extras = new Map<string, Penguin | null>();
   private destroyed = false;
+  /** pending bursts of a pop, or arrivals of a "no pop" */
+  private popTimers: Phaser.Time.TimerEvent[] = [];
   private marvelUntil = 0;
   private readyLevels = new Set<Season>();
   private unloadCheckAt = 0;
@@ -211,12 +213,58 @@ export class World {
    */
   popAll(): number {
     if (this.destroyed) return 0;
+    this.clearPopTimers();
     const ps = Phaser.Utils.Array.Shuffle(this.penguins.filter(p => p.present && !p.gone));
     if (!ps.length) return 0;
     const step = this.reducedMotion ? 0 : Math.min(75, 950 / ps.length);
-    ps.forEach((p, i) => this.scene.time.delayedCall(i * step, () => this.popOne(p)));
+    ps.forEach((p, i) => this.popTimers.push(this.scene.time.delayedCall(i * step, () => this.popOne(p))));
     this.setCursor(null);
     return Math.round(ps.length * step + 200);
+  }
+
+  /**
+   * "no pop": everyone who burst walks back in from the sides, one by one, and looks
+   * around before carrying on. Returns how many come back (0 when nobody is gone).
+   */
+  unpopAll(): number {
+    if (this.destroyed) return 0;
+    this.clearPopTimers(); // a pop still bursting through the crowd stops here
+    const l = this.layout;
+    const back = Phaser.Utils.Array.Shuffle(
+      // a name summoned again meanwhile already has its penguin: that one stays
+      this.penguins.filter(p => p.gone && !(p.identity && this.extras.has(p.identity))),
+    );
+    let at = 0;
+    for (const p of back) {
+      this.popTimers.push(
+        this.scene.time.delayedCall(at, () => {
+          if (this.destroyed || !p.gone) return;
+          if (p.identity) {
+            if (this.extras.has(p.identity)) return;
+            this.extras.set(p.identity, p);
+          }
+          const fromLeft = Math.random() < 0.5;
+          p.revive(fromLeft ? l.left - 140 : l.right + 140);
+          p.face(fromLeft ? 1 : -1);
+          p.setTask({
+            name: 'return-after-pop',
+            owner: 'world',
+            run: async act => {
+              await act.walkTo(this.freeX(act.p), { offscreen: true, speed: Phaser.Math.Between(170, 230) });
+              await act.once('curious');
+              await act.once('look_around');
+            },
+          });
+        }),
+      );
+      at += this.reducedMotion ? 0 : Phaser.Math.Between(220, 520);
+    }
+    return back.length;
+  }
+
+  private clearPopTimers() {
+    this.popTimers.forEach(t => t.remove(false));
+    this.popTimers = [];
   }
 
   private popOne(p: Penguin) {

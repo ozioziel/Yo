@@ -889,6 +889,21 @@ export class Penguin {
     this.shadow.setAlpha(0);
   }
 
+  /** Back after "no pop": present again, standing just off-stage at x, ready to walk in. */
+  revive(x: number) {
+    if (!this.gone) return;
+    this.gone = false;
+    this.present = true;
+    this.mode = 'normal';
+    this.x = x;
+    this.y = this.laneY;
+    this.vx = this.vy = 0;
+    this.squash = { sx: 1, sy: 1 };
+    this.sprite.setVisible(true).setAlpha(1);
+    this.play(this.world.restClip(this));
+    this.sync();
+  }
+
   destroy() {
     this.cancelAll();
     this.sprite.destroy();
