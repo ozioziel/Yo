@@ -144,6 +144,14 @@ class Sfx {
     this.tone('sine', 420, 900, 0.07, 0.12);
   }
 
+  /** A penguin bursting like a soap bubble: tiny, soft, a different pitch each time. */
+  bubblePop() {
+    if (!this.allow('bubblePop', 28)) return;
+    const k = 0.85 + Math.random() * 0.4;
+    this.tone('sine', 380 * k, 1150 * k, 0.045, 0.085);
+    this.burst('highpass', 2600, 0.8, 0.016, 0.035);
+  }
+
   splash() {
     if (!this.allow('splash', 150)) return;
     this.burst('lowpass', 2200, 0.6, 0.25, 0.18, 0, 500);

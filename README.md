@@ -38,7 +38,19 @@ Otros comandos:
 | `npm run audit:assets` | Re-ejecuta la auditoría automática de toda la biblioteca de Codex |
 | `npm run rig` | Regenera los personajes con el rig corregido (`tools/rig/`) y vuelve a sincronizar |
 | `npm run typecheck` | Comprueba los tipos |
-| `node scripts/github-snapshot.mjs` | Actualiza la copia de respaldo del GitHub usada por /portafolio |
+| `node scripts/github-snapshot.mjs` | Actualiza las fechas y lenguajes de GitHub que muestra /portafolio |
+| `npm run silhouette` | Regenera la silueta de estrellas de /portafolio desde `Planificacion/silueta/foto-pose.png` (Python con Pillow, numpy y rembg) |
+
+### /portafolio
+
+Un viaje con scroll (Three.js + GSAP ScrollTrigger/SplitText + Lenis): la silueta de Oziel hecha de
+estrellas se dispersa, pasa por el sistema solar y tres galaxias, y las estrellas se juntan en una
+constelación en forma de "O" con una estrella por proyecto. Al llegar se abre el visor: cada
+proyecto tiene su pantalla y se cambia con las flechas, el teclado (← →) o deslizando en el celular.
+
+- Textos de los proyectos: [src/pages/portfolio/projects.ts](src/pages/portfolio/projects.ts) (campo `media` reservado para capturas y videos)
+- Escena 3D: [src/pages/portfolio/space/](src/pages/portfolio/space/) — `SpaceScene.ts` (qué se dibuja), `Journey.ts` (scroll, cámara, textos, visor)
+- Silueta: [tools/portfolio/build_silhouette.py](tools/portfolio/build_silhouette.py) → `src/pages/portfolio/space/silhouette.json`
 
 Parámetros de prueba (no visibles para el visitante): `?hd=1` / `?sd=1` fuerzan la calidad de
 texturas, `?reduced=1` simula movimiento reducido y `?loop=timeout` mantiene el bucle de Phaser

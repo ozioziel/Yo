@@ -37,6 +37,7 @@ export class WorldScene extends Phaser.Scene {
     );
     bridge.summon = id => this.world.summon(id);
     bridge.marvel = () => this.world.marvel();
+    bridge.popAll = () => this.world.popAll();
     this.bindPointer();
     this.scale.on(Phaser.Scale.Events.RESIZE, this.onResize, this);
     this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => this.teardown());
@@ -108,6 +109,7 @@ export class WorldScene extends Phaser.Scene {
   private teardown() {
     bridge.summon = async () => 'not-ready';
     bridge.marvel = () => false;
+    bridge.popAll = () => 0;
     bridge.emit('sceneReady', false);
     this.offs.forEach(off => off());
     this.offs = [];

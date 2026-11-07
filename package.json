@@ -16,19 +16,24 @@
     "rig": "node tools/rig/build_characters.cjs && node scripts/sync-assets.mjs",
     "rig:extras": "node tools/extras/cutout.cjs && node tools/extras/build.cjs --rebuild-rig && node tools/extras/validate.cjs && node scripts/sync-assets.mjs && node tools/extras/validate.cjs --runtime-only",
     "check:extras": "node tools/extras/validate.cjs && node tools/extras/validate.cjs --runtime-only",
-    "test:extras": "node scripts/test-extra-penguins.mjs"
+    "test:extras": "node scripts/test-extra-penguins.mjs",
+    "silhouette": "python -I tools/portfolio/build_silhouette.py"
   },
   "dependencies": {
     "@fontsource-variable/fredoka": "5.3.0",
     "@fontsource-variable/nunito": "5.3.0",
+    "gsap": "3.15.1",
+    "lenis": "1.3.27",
     "phaser": "3.90.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "react-router-dom": "7.9.4"
+    "react-router-dom": "7.9.4",
+    "three": "0.187.0"
   },
   "devDependencies": {
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
+    "@types/three": "0.187.0",
     "@vitejs/plugin-react": "5.0.4",
     "sharp": "^0.34.4",
     "typescript": "5.9.3",

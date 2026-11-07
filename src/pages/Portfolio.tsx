@@ -1,205 +1,197 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Markdown } from "./portfolio/markdown";
-import snapshot from "./portfolio/github-snapshot.json";
-import "../styles/portfolio.css";
+import 'lenis/dist/lenis.css';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/portfolio.css';
+import ProjectViewer, { type RepoMeta } from './portfolio/ProjectViewer';
+import snapshot from './portfolio/github-snapshot.json';
+import { PROJECTS } from './portfolio/projects';
+import { Journey, type ViewerState } from './portfolio/space/Journey';
 
-const USER = "ozioziel";
-const CACHE = "oziel.github.v1";
-const INSTAGRAM = "https://www.instagram.com/oziel_ramos_torrez";
+const LINKS = [
+  { label: 'GitHub', href: 'https://github.com/ozioziel' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/oziel-rodman-ramos-torrez-98b914403' },
+  { label: 'Instagram', href: 'https://www.instagram.com/oziel_ramos_torrez' },
+];
 
-type Snapshot = typeof snapshot;
-type Repo = Snapshot["repos"][number];
+/** Texts that appear along the journey; band = journey times (fade in from-to, fade out from-to). */
+const CAPTIONS = [
+  { band: '1.45,1.9,2.6,3.0', kicker: 'Origen', text: 'Del frontend al backend, de la web al móvil.' },
+  { band: '3.7,4.1,4.8,5.2', kicker: 'Full Stack Developer', text: 'React · NestJS · Flutter · Python · IA & Cloud' },
+  { band: '5.75,6.2,6.95,7.4', kicker: 'Lo que construyo', text: 'Juegos, blockchain, inteligencia artificial, mapas y hardware.' },
+  { band: '8.0,8.45,9.15,9.55', kicker: 'Constelación', text: `${PROJECTS.length} proyectos. Cada uno, una estrella.` },
+];
 
-const LANG_COLORS: Record<string, string> = {
-  TypeScript: "#3178c6",
-  JavaScript: "#e7c52a",
-  Python: "#3572a5",
-  Dart: "#00b4ab",
-  Vue: "#41b883",
-  HTML: "#e34c26",
-  CSS: "#563d7c",
-};
+const META: Record<string, RepoMeta | undefined> = Object.fromEntries(
+  snapshot.repos.map(r => [r.name, { language: r.language, pushed_at: r.pushed_at }]),
+);
 
-async function fetchLive(): Promise<Snapshot> {
-  const headers = { Accept: "application/vnd.github+json" };
-  const [profile, repos, readme] = await Promise.all([
-    fetch(`https://api.github.com/users/${USER}`, { headers }).then((r) =>
-      r.ok ? r.json() : Promise.reject(r.status),
-    ),
-    fetch(
-      `https://api.github.com/users/${USER}/repos?per_page=100&sort=pushed`,
-      { headers },
-    ).then((r) => (r.ok ? r.json() : Promise.reject(r.status))),
-    fetch(
-      `https://raw.githubusercontent.com/${USER}/${USER}/HEAD/README.md`,
-    ).then((r) => (r.ok ? r.text() : "")),
-  ]);
-  return {
-    savedAt: new Date().toISOString(),
-    profile: { ...snapshot.profile, ...profile },
-    readme: readme || snapshot.readme,
-    repos: (repos as (Repo & { fork: boolean })[]).filter(
-      (r) => !r.fork && r.name !== USER,
-    ),
-  } as Snapshot;
+function prefersReducedMotion() {
+  return (
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+    new URLSearchParams(window.location.search).get('reduced') === '1'
+  );
 }
 
-/** Everything on Oziel's public GitHub: profile README and repositories. */
+/**
+ * /portafolio: Oziel's silhouette made of stars. Scrolling scatters it across
+ * the solar system and the galaxies until the stars gather into one star per
+ * project; then each project gets its own screen, changed with the arrows.
+ */
 export default function Portfolio() {
-  const [data, setData] = useState<Snapshot>(() => {
-    try {
-      const cached = sessionStorage.getItem(CACHE);
-      if (cached) return JSON.parse(cached) as Snapshot;
-    } catch {
-      /* ignore */
-    }
-    return snapshot;
-  });
-  const [live, setLive] = useState<"loading" | "live" | "snapshot">("loading");
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const introRef = useRef<HTMLElement>(null);
+  const hudRef = useRef<HTMLDivElement>(null);
+  const captionRefs = useRef<HTMLElement[]>([]);
+  const labelRefs = useRef<HTMLButtonElement[]>([]);
+  const journeyRef = useRef<Journey | null>(null);
+  const [reduced] = useState(prefersReducedMotion);
+  const [viewer, setViewer] = useState<ViewerState>({ open: false, index: 0 });
 
   useEffect(() => {
-    document.title = "Portafolio · Oziel Rodman Ramos Torrez";
-    let cancelled = false;
-    fetchLive()
-      .then((d) => {
-        if (cancelled) return;
-        setData(d);
-        setLive("live");
-        try {
-          sessionStorage.setItem(CACHE, JSON.stringify(d));
-        } catch {
-          /* ignore */
-        }
-      })
-      .catch(() => !cancelled && setLive("snapshot"));
+    const restore = history.scrollRestoration;
+    history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+    document.documentElement.classList.add('pf-dark');
+    const journey = new Journey({
+      canvas: canvasRef.current!,
+      track: trackRef.current!,
+      intro: introRef.current!,
+      captions: captionRefs.current,
+      labels: labelRefs.current,
+      hud: hudRef.current!,
+      count: PROJECTS.length,
+      reduced,
+      onViewer: setViewer,
+    });
+    journeyRef.current = journey;
     return () => {
-      cancelled = true;
-      document.title = "hOme · Oziel Rodman Ramos Torrez";
+      journey.destroy();
+      journeyRef.current = null;
+      document.documentElement.classList.remove('pf-dark');
+      history.scrollRestoration = restore;
+      window.scrollTo(0, 0);
     };
-  }, []);
+  }, [reduced]);
 
-  const repos = [...data.repos].sort(
-    (a, b) => +new Date(b.pushed_at) - +new Date(a.pushed_at),
-  );
-  const p = data.profile;
+  useEffect(() => {
+    if (!viewer.open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLElement && e.target.closest('input, textarea')) return;
+      if (e.key === 'ArrowRight') journeyRef.current?.next();
+      else if (e.key === 'ArrowLeft') journeyRef.current?.prev();
+      else if (e.key === 'Escape') journeyRef.current?.closeViewer();
+      else return;
+      e.preventDefault();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [viewer.open]);
+
+  const prev = useCallback(() => journeyRef.current?.prev(), []);
+  const next = useCallback(() => journeyRef.current?.next(), []);
+  const select = useCallback((i: number) => journeyRef.current?.goTo(i), []);
+  const close = useCallback(() => journeyRef.current?.closeViewer(), []);
 
   return (
-    <div className="portfolio">
-      <header className="pf-top">
-        <Link to="/" className="pf-back">
-          <img
-            src="/assets/overrides/brand/mark.png"
-            alt=""
-            width={38}
-            height={38}
-          />
+    <div className="pf-space" data-viewer={viewer.open ? 'open' : 'closed'}>
+      <canvas ref={canvasRef} className="pf-canvas" aria-hidden="true" />
+
+      <header className="pf-bar">
+        <Link to="/" className="pf-home" viewTransition>
+          <img src="/assets/overrides/brand/mark.png" alt="" width={34} height={34} />
           <span>
             Volver a h<b>O</b>me
           </span>
         </Link>
+        <nav className="pf-social" aria-label="Perfiles de Oziel">
+          {LINKS.map(l => (
+            <a key={l.href} href={l.href} target="_blank" rel="noreferrer">
+              {l.label}
+            </a>
+          ))}
+        </nav>
       </header>
 
-      <main className="pf-main">
-        <section className="pf-profile" aria-labelledby="pf-title">
-          <img
-            className="pf-avatar"
-            src={p.avatar_url}
-            alt={`Avatar de GitHub de ${p.login}`}
-            width={120}
-            height={120}
-          />
-          <div>
-            <p className="pf-kicker">Portafolio · GitHub</p>
-            <h1 id="pf-title">Oziel Rodman Ramos Torrez</h1>
-            {p.bio && <p className="pf-bio">{p.bio}</p>}
-            <p className="pf-meta">
-              {p.location && <span>{p.location}</span>}
-              <span>{p.public_repos} repositorios públicos</span>
-            </p>
-            <div className="pf-links">
-              <a
-                className="pf-button"
-                href={p.html_url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Ver @{p.login} en GitHub
-              </a>
-              <a
-                className="pf-button pf-button--alt"
-                href={INSTAGRAM}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram @ozi_ozi_oziel
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="pf-repos" aria-labelledby="pf-repos-title">
-          <h2 id="pf-repos-title">Repositorios</h2>
-          <ul>
-            {repos.map((r) => (
-              <li key={r.name} className="pf-repo">
-                <a
-                  href={r.html_url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="pf-repo-name"
-                >
-                  {r.name}
-                </a>
-                <p>{r.description || "Sin descripción en GitHub."}</p>
-                <div className="pf-repo-meta">
-                  {r.language && (
-                    <span>
-                      <i
-                        style={{
-                          background: LANG_COLORS[r.language] ?? "#8a8f8c",
-                        }}
-                        aria-hidden="true"
-                      />
-                      {r.language}
-                    </span>
-                  )}
-                  <span>
-                    Actualizado{" "}
-                    {new Date(r.pushed_at).toLocaleDateString("es-BO", {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </span>
-                  {r.homepage && (
-                    <a href={r.homepage} target="_blank" rel="noreferrer">
-                      Demo
-                    </a>
-                  )}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        {data.readme && (
-          <article
-            className="pf-readme"
-            aria-label="README del perfil de GitHub"
-          >
-            <Markdown source={data.readme} />
-          </article>
-        )}
-
-        <p className="pf-source">
-          {live === "live"
-            ? "Datos en vivo desde GitHub."
-            : live === "snapshot"
-              ? `GitHub no respondió: mostrando la copia guardada el ${new Date(data.savedAt).toLocaleDateString("es-BO")}.`
-              : "Actualizando desde GitHub…"}
+      <section className="pf-intro" ref={introRef} aria-labelledby="pf-name">
+        <p className="pf-kicker" data-intro>
+          Portafolio · 2026
         </p>
-      </main>
+        <h1 id="pf-name">Oziel Rodman Ramos Torrez</h1>
+        <p className="pf-role" data-intro>
+          Full Stack Developer · La Paz, Bolivia
+        </p>
+        <div className="pf-intro-actions" data-intro>
+          <span className="pf-scroll-hint" aria-hidden="true">
+            <i />
+            Desliza para explorar
+          </span>
+          <button type="button" className="pf-skip" onClick={() => journeyRef.current?.skipToProjects()}>
+            Ir directo a los proyectos
+          </button>
+        </div>
+      </section>
+
+      <div className="pf-captions">
+        {CAPTIONS.map((c, i) => (
+          <p
+            key={c.band}
+            className="pf-caption"
+            data-band={c.band}
+            ref={el => {
+              if (el) captionRefs.current[i] = el;
+            }}
+          >
+            <span className="pf-caption-kicker" data-kicker>
+              {c.kicker}
+            </span>
+            <span className="pf-caption-text" data-split>
+              {c.text}
+            </span>
+          </p>
+        ))}
+      </div>
+
+      <div className="pf-labels">
+        {PROJECTS.map((p, i) => (
+          <button
+            key={p.repo}
+            type="button"
+            className="pf-label"
+            aria-label={`Ver ${p.name}`}
+            style={{ color: p.color }}
+            ref={el => {
+              if (el) labelRefs.current[i] = el;
+            }}
+            onClick={() => select(i)}
+          >
+            <span className="pf-label-num">{String(i + 1).padStart(2, '0')}</span>
+            <span className="pf-label-name">{p.name}</span>
+          </button>
+        ))}
+      </div>
+
+      <div className="pf-hud" ref={hudRef} aria-hidden="true">
+        <span data-hud-stage>01 · Origen</span>
+        <span className="pf-hud-bar">
+          <i />
+        </span>
+        <span data-hud-pct>0%</span>
+      </div>
+
+      <div className="pf-track" ref={trackRef} aria-hidden="true" />
+
+      <ProjectViewer
+        projects={PROJECTS}
+        meta={META}
+        open={viewer.open}
+        index={viewer.index}
+        reduced={reduced}
+        onPrev={prev}
+        onNext={next}
+        onSelect={select}
+        onClose={close}
+      />
     </div>
   );
 }

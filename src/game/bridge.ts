@@ -55,6 +55,8 @@ class Bridge {
   summon: (id: string) => Promise<SummonResult> = async () => 'not-ready';
   /** Everyone looks up and the scene sparkles; false while the world cannot. */
   marvel: () => boolean = () => false;
+  /** Every penguin bursts ("pop"); returns how many ms it takes, 0 when nobody is there. */
+  popAll: () => number = () => 0;
 
   emit<K extends keyof Events>(key: K, value: Events[K]) {
     this.last.set(key, value);

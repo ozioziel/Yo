@@ -1,7 +1,7 @@
-import type { CSSProperties } from 'react';
+import type { CSSProperties, MouseEvent } from 'react';
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Backdrop from '../components/Backdrop';
+import { Link, useNavigate } from 'react-router-dom';
+import Backdrop, { SKY_TOP } from '../components/Backdrop';
 import Frost from '../components/Frost';
 import { DayNightToggle, SeasonPicker, SoundToggle } from '../components/Controls';
 import GameCanvas from '../components/GameCanvas';
@@ -14,6 +14,7 @@ import '../styles/home.css';
 
 const GROUND_TOP = 900;
 const PENGUIN_ZONE = 175; // world units above the ground kept free for the penguins
+const ASCENT_MS = 1900; // the view rises from the meadow to space before the portfolio opens
 
 export default function Home() {
   const [prefs, update] = usePrefs();
@@ -33,6 +34,10 @@ export default function Home() {
   const oRef = useRef<HTMLSpanElement>(null);
   const marvelTimer = useRef(0);
   const ctaRef = useRef<HTMLAnchorElement>(null);
+  const navigate = useNavigate();
+  /** Leaving for the portfolio: the penguins pop, then the view rises into space. */
+  const [leaving, setLeaving] = useState<'pop' | 'ascent' | null>(null);
+  const leaveTimers = useRef<number[]>([]);
 
   useEffect(() => {
     const offs = [
@@ -62,8 +67,25 @@ export default function Home() {
       window.clearTimeout(marvelTimer.current);
       bridge.titleOTarget = () => null;
       bridge.ctaRect = () => null;
+      leaveTimers.current.forEach(t => window.clearTimeout(t));
     };
   }, []);
+
+  const leaveForPortfolio = (e: MouseEvent<HTMLAnchorElement>) => {
+    // a new tab / window keeps the normal link behaviour
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    if (leaving) return;
+    const reduced =
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(window.location.search).get('reduced') === '1';
+    const popMs = bridge.popAll();
+    setLeaving('pop');
+    const rise = popMs + (popMs ? 150 : 0);
+    leaveTimers.current.push(
+      window.setTimeout(() => setLeaving('ascent'), rise),
+      window.setTimeout(() => navigate('/portafolio', { viewTransition: true }), rise + (reduced ? 0 : ASCENT_MS) + 100),
+    );
+  };
 
   useEffect(() => bridge.emit('season', prefs.season), [prefs.season]);
   useEffect(() => bridge.emit('night', prefs.night), [prefs.night]);
@@ -72,6 +94,8 @@ export default function Home() {
   const revealed = phase === 'reveal' || phase === 'home';
   const frozen = revealed && prefs.season === 0;
   const heroBottom = cam ? Math.max(cam.cssH * 0.45, (GROUND_TOP - PENGUIN_ZONE - cam.scrollY) * cam.zoomCss) : undefined;
+  const [skyDeep, skyTop] = SKY_TOP[`${SEASON_KEYS[prefs.season]}-${prefs.night ? 'night' : 'day'}`];
+  const homeStyle = { '--sky-deep': skyDeep, '--sky-top': skyTop, ...(heroBottom ? { '--hero-bottom': `${heroBottom}px` } : {}) } as CSSProperties;
 
   return (
     <div
@@ -80,8 +104,11 @@ export default function Home() {
       data-night={prefs.night ? 'true' : 'false'}
       data-phase={phase}
       data-marvel={marvel ? 'true' : undefined}
-      style={heroBottom ? ({ '--hero-bottom': `${heroBottom}px` } as CSSProperties) : undefined}
+      data-leaving={leaving ?? undefined}
+      style={homeStyle}
     >
+      {/* the sky above the meadow, darkening into space: revealed when leaving for the portfolio */}
+      <div className="ascent" aria-hidden="true" />
       <Backdrop season={prefs.season} night={prefs.night} />
 
       <header className={`topbar${revealed ? ' is-visible' : ''}`} aria-hidden={!revealed}>
@@ -136,7 +163,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="hero-tagline">Full Stack Developer · React · NestJS · Flutter · Python · AI &amp; Cloud</p>
-        <Link ref={ctaRef} to="/portafolio" className="cta" tabIndex={revealed ? 0 : -1}>
+        <Link ref={ctaRef} to="/portafolio" viewTransition className="cta" tabIndex={revealed ? 0 : -1} onClick={leaveForPortfolio}>
           Ver portafolio
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />

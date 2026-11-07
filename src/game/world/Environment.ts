@@ -447,6 +447,29 @@ export class Environment {
     this.scene.time.delayedCall(900, () => e.destroy());
   }
 
+  /** A penguin bursting like a bubble: a puff, a thin ring and a few sparks flying out. */
+  pop(x: number, y: number, s: number) {
+    const scene = this.scene;
+    this.puff(x, y + 26 * s, s * 1.5);
+    const ring = scene.add.circle(x, y, 70 * s).setStrokeStyle(Math.max(2, 7 * s), 0xffffff, 0.95).setDepth(6960);
+    ring.isFilled = false;
+    scene.tweens.add({ targets: ring, scale: 2.1, alpha: 0, duration: 360, ease: 'Quad.easeOut', onComplete: () => ring.destroy() });
+    const key = 'environments_common_particles_star';
+    if (!scene.textures.exists(key)) return;
+    const sparks = scene.add.particles(x, y, key, {
+      speed: { min: 220 * s, max: 620 * s },
+      angle: { min: 0, max: 360 },
+      lifespan: 480,
+      scale: { start: 0.11 * s * 1.8, end: 0 },
+      alpha: { start: 1, end: 0 },
+      rotate: { min: 0, max: 360 },
+      emitting: false,
+    }).setDepth(6955);
+    sparks.setParticleTint(this.tint);
+    sparks.explode(9);
+    scene.time.delayedCall(650, () => sparks.destroy());
+  }
+
   splash(x: number, y: number, water = false) {
     const scene = this.scene;
     // a burst of outlined droplets reads at any size, plus an expanding ring on the surface

@@ -6,7 +6,7 @@ import { SEASON_KEYS } from '../game/types';
 
 const LAYERS = ['sky', 'far_background', 'midground', 'ground'] as const;
 /** Top colour of each sky layer, used to extend the sky above y=0 on tall screens. */
-const SKY_TOP: Record<string, [string, string]> = {
+export const SKY_TOP: Record<string, [string, string]> = {
   'winter-day': ['#c9e4ee', '#dbeef1'],
   'winter-night': ['#16283b', '#243d56'],
   'autumn-day': ['#cbd9d6', '#d9e4df'],

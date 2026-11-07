@@ -72,7 +72,7 @@ html[data-cursor='scissors'] * {
 
 .route-loading {
   min-height: 100vh;
-  background: var(--paper);
+  background: #02030a;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -102,6 +102,8 @@ export class Penguin {
   /** Clip actually drawn: `clip`, or its explicit right-facing version. */
   private action = 'idle';
   present = false; // false while waiting off-stage before its intro entrance
+  /** Popped: it has burst and is gone for good (nothing drives or draws it any more). */
+  gone = false;
   /** Season whose outfit this penguin is already wearing. */
   seasonApplied: Season = 2;
   needsDressing = false;
@@ -448,12 +450,14 @@ export class Penguin {
 
   /** Assign (or replace) the current long-running task. */
   setTask(task: Task | null) {
+    if (this.gone) return;
     this.task = task;
     this.wantsTask = false;
     if (this.mode === 'normal') this.resumeTask();
   }
 
   resumeTask() {
+    if (this.gone) return;
     this.cancelAll();
     this.mode = 'normal';
     const token = this.token;
@@ -493,6 +497,7 @@ export class Penguin {
 
   /** Short higher-priority sequence (bumps, weather, dressing). The task resumes afterwards. */
   react(fn: (act: Act) => Promise<void>, opts: { force?: boolean } = {}) {
+    if (this.gone) return false;
     if (this.mode === 'grabbed' || this.mode === 'airborne' || this.mode === 'down') return false;
     if (this.mode === 'reaction' && !opts.force) return false;
     this.cancelAll();
@@ -652,6 +657,7 @@ export class Penguin {
 
   /** Enter free flight (released by the visitor or knocked over). */
   launch(vx: number, vy: number, minImpact: 0 | 1 | 2, chainDepth = 0) {
+    if (this.gone) return;
     this.lifting = true;
     this.cancelAll();
     this.lifting = false;
@@ -717,6 +723,7 @@ export class Penguin {
 
   // ------------------------------------------------------------------ per frame
   update(dtMs: number) {
+    if (this.gone) return;
     const dt = Math.min(dtMs, 50) / 1000;
     const l = this.world.layout;
     if (this.mode === 'grabbed') {
@@ -856,6 +863,30 @@ export class Penguin {
   targetVariant(level: Season): Variant {
     if (this.identity) return this.variant;
     return this.engineer ? 'engineer' : seasonVariant(level);
+  }
+
+  /**
+   * It bursts ("pop"): every routine stops, it leaves the world's bookkeeping (not present,
+   * no task) and only the sprite is left for the caller's pop animation, which hides it.
+   */
+  vanish() {
+    if (this.gone) return;
+    this.cancelAll();
+    this.gone = true;
+    this.present = false;
+    this.task = null;
+    this.wantsTask = false;
+    this.mode = 'normal';
+    this.vx = this.vy = 0;
+    this.swimming = false;
+    this.wading = null;
+    this.waterCut = null;
+    this.bubble?.destroy();
+    this.bubble = null;
+    this.stars.forEach(s => s.destroy());
+    this.stars = [];
+    this.ring?.setVisible(false);
+    this.shadow.setAlpha(0);
   }
 
   destroy() {

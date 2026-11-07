@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content="Portafolio de Oziel Rodman Ramos Torrez, Full Stack Developer: React, NestJS, Flutter, Python, IA y Cloud. Un pequeño mundo de pingüinos." />
+    <title>Oziel Rodman Ramos Torrez · Full Stack Developer | Oziel</title>
+    <meta name="description" content="Oziel Rodman Ramos Torrez (Oziel), Full Stack Developer de La Paz, Bolivia: React, NestJS, Flutter, Python, IA y Cloud. Portafolio, proyectos y contacto." />
+    <meta name="author" content="Oziel Rodman Ramos Torrez" />
+    <meta name="keywords" content="Oziel, Oziel Ramos, Oziel Ramos Torrez, Oziel Rodman Ramos Torrez, ozioziel, Full Stack Developer, La Paz, Bolivia, portafolio" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#efb83d" />
     <link rel="icon" type="image/png" href="/assets/overrides/brand/favicon.png" />
-    <title>hOme · Oziel Rodman Ramos Torrez</title>
+    <link rel="apple-touch-icon" href="/assets/overrides/brand/apple-touch.png" />
+
+    <!-- Perfiles que pertenecen a la misma persona -->
+    <link rel="me" href="https://github.com/ozioziel" />
+    <link rel="me" href="https://www.linkedin.com/in/oziel-rodman-ramos-torrez-98b914403" />
+    <link rel="me" href="https://www.instagram.com/oziel_ramos_torrez" />
 
     <!-- Vista previa al compartir el enlace (WhatsApp, LinkedIn, X...) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="oziel" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Oziel" />
+    <meta property="og:locale" content="es_BO" />
     <meta property="og:title" content="Oziel Rodman Ramos Torrez · Full Stack Developer" />
     <meta property="og:description" content="Portafolio de Oziel Rodman Ramos Torrez, Full Stack Developer: React, NestJS, Flutter, Python, IA y Cloud. Un pequeño mundo de pingüinos." />
     <meta property="og:url" content="https://oziel.dev/" />
@@ -18,12 +28,16 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="hOme: Oziel Rodman Ramos Torrez, Full Stack Developer, con pingüinos en un prado" />
+    <meta property="profile:first_name" content="Oziel Rodman" />
+    <meta property="profile:last_name" content="Ramos Torrez" />
+    <meta property="profile:username" content="ozioziel" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Oziel Rodman Ramos Torrez · Full Stack Developer" />
     <meta name="twitter:description" content="Portafolio de Oziel Rodman Ramos Torrez, Full Stack Developer: React, NestJS, Flutter, Python, IA y Cloud." />
     <meta name="twitter:image" content="https://oziel.dev/og.jpg" />
 
-    <!-- Datos para buscadores: quién es el dueño del sitio y sus perfiles -->
+    <!-- Datos para buscadores: quién es el dueño del sitio y sus perfiles.
+         WebSite.name es el nombre que Google muestra encima del resultado. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -32,18 +46,37 @@
             "@type": "WebSite",
             "@id": "https://oziel.dev/#website",
             "url": "https://oziel.dev/",
-            "name": "oziel",
-            "alternateName": "Oziel Rodman Ramos Torrez",
+            "name": "Oziel",
+            "alternateName": ["Oziel Ramos Torrez", "Oziel Rodman Ramos Torrez", "oziel.dev"],
             "inLanguage": "es",
-            "author": { "@id": "https://oziel.dev/#person" }
+            "publisher": { "@id": "https://oziel.dev/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://oziel.dev/#profilepage",
+            "url": "https://oziel.dev/",
+            "name": "Oziel Rodman Ramos Torrez · Full Stack Developer",
+            "inLanguage": "es",
+            "isPartOf": { "@id": "https://oziel.dev/#website" },
+            "mainEntity": { "@id": "https://oziel.dev/#person" }
           },
           {
             "@type": "Person",
             "@id": "https://oziel.dev/#person",
             "name": "Oziel Rodman Ramos Torrez",
+            "givenName": "Oziel Rodman",
+            "familyName": "Ramos Torrez",
+            "alternateName": ["Oziel", "Oziel Ramos", "Oziel Ramos Torrez", "ozioziel", "Oziel_Ramos_Torrez"],
             "url": "https://oziel.dev/",
+            "image": "https://oziel.dev/og.jpg",
+            "description": "Full Stack Developer de La Paz, Bolivia: React, NestJS, Flutter, Python, IA y Cloud.",
             "jobTitle": "Full Stack Developer",
-            "knowsAbout": ["React", "NestJS", "Flutter", "Python", "Inteligencia artificial", "Cloud"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "La Paz",
+              "addressCountry": "BO"
+            },
+            "knowsAbout": ["React", "NestJS", "Flutter", "Python", "TypeScript", "Inteligencia artificial", "Cloud"],
             "sameAs": [
               "https://github.com/ozioziel",
               "https://www.linkedin.com/in/oziel-rodman-ramos-torrez-98b914403",
@@ -53,10 +86,40 @@
         ]
       }
     </script>
+
+    <style>
+      /* Contenido estático que ven los buscadores y quien abre la página antes de
+         que cargue JavaScript. React lo reemplaza al arrancar. */
+      .seo-shell {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        gap: 0.6rem;
+        padding: 24px 16px;
+        text-align: center;
+        font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+        color: #141917;
+        background: #e6efe8;
+      }
+      .seo-shell h1 { margin: 0; font-size: clamp(1.6rem, 5vw, 2.6rem); }
+      .seo-shell p { margin: 0; color: #3a4541; }
+      .seo-shell nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1rem; margin-top: 0.4rem; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <noscript>Oziel Rodman Ramos Torrez — Full Stack Developer. Activa JavaScript para ver el mundo de los pingüinos.</noscript>
+    <div id="root">
+      <main class="seo-shell">
+        <h1>Oziel Rodman Ramos Torrez</h1>
+        <p>Oziel · Full Stack Developer en La Paz, Bolivia · React · NestJS · Flutter · Python · IA y Cloud</p>
+        <nav aria-label="Enlaces de Oziel">
+          <a href="/portafolio">Portafolio de Oziel</a>
+          <a href="https://github.com/ozioziel">GitHub @ozioziel</a>
+          <a href="https://www.linkedin.com/in/oziel-rodman-ramos-torrez-98b914403">LinkedIn</a>
+          <a href="https://www.instagram.com/oziel_ramos_torrez">Instagram @Oziel_Ramos_Torrez</a>
+        </nav>
+      </main>
+    </div>
+    <noscript>Activa JavaScript para ver el mundo de los pingüinos de Oziel.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

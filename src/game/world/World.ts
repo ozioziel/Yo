@@ -205,6 +205,46 @@ export class World {
     return true;
   }
 
+  /**
+   * "pop" (typed, or leaving for the portfolio): every penguin bursts like a soap bubble,
+   * one after another, and is gone for good. Returns how long the whole thing takes (ms).
+   */
+  popAll(): number {
+    if (this.destroyed) return 0;
+    const ps = Phaser.Utils.Array.Shuffle(this.penguins.filter(p => p.present && !p.gone));
+    if (!ps.length) return 0;
+    const step = this.reducedMotion ? 0 : Math.min(75, 950 / ps.length);
+    ps.forEach((p, i) => this.scene.time.delayedCall(i * step, () => this.popOne(p)));
+    this.setCursor(null);
+    return Math.round(ps.length * step + 200);
+  }
+
+  private popOne(p: Penguin) {
+    if (this.destroyed || p.gone) return;
+    for (const [id, q] of this.dragging) if (q === p) this.dragging.delete(id);
+    if (p.identity) this.extras.delete(p.identity); // its name can bring it back later
+    const s = p.size * p.bodyScale;
+    const cx = p.x;
+    const cy = p.y - 100 * s;
+    p.vanish();
+    const sprite = p.sprite;
+    const sx = sprite.scaleX;
+    const sy = sprite.scaleY;
+    // it swells for an instant, then bursts
+    this.scene.tweens.add({
+      targets: sprite,
+      scaleX: sx * 1.2,
+      scaleY: sy * 1.14,
+      duration: this.reducedMotion ? 1 : 110,
+      ease: 'Quad.easeIn',
+      onComplete: () => {
+        sprite.setVisible(false).setScale(sx, sy);
+        this.env.pop(cx, cy, s);
+        sfx.bubblePop();
+      },
+    });
+  }
+
   private dropIn(variant: Variant, identity: string) {
     const l = this.layout;
     const p = this.create({ variant, engineer: false, identity, bodyScale: extraById(identity)?.bodyScale, x: (l.left + l.right) / 2 });

@@ -6,7 +6,7 @@ import { normalizePenguinName, resolvePenguinName } from '../game/characters';
 /**
  * A quiet text field shown once the world can take arrivals. It says nothing about what
  * it is for: a registered name drops that penguin into the scene, "oziel" makes every
- * penguin look up while the scene sparkles, anything else is simply ignored. Text is only
+ * penguin look up while the scene sparkles, "pop" bursts them all, anything else is ignored. Text is only
  * matched against the registry, never used as a path. Enter (or Go on a phone) submits.
  */
 export default function SummonPenguin() {
@@ -37,6 +37,10 @@ export default function SummonPenguin() {
     if (!typed) return;
     if (typed === 'oziel') {
       if (bridge.marvel()) done();
+      return;
+    }
+    if (typed === 'pop') {
+      if (bridge.popAll() > 0) done();
       return;
     }
     const character = resolvePenguinName(typed);
