@@ -1,707 +1,714 @@
 {
   "phases": [
     {
-      "ms": 86,
+      "ms": 3,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 4
     },
     {
-      "ms": 339,
+      "ms": 261,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 4
     },
     {
-      "ms": 613,
+      "ms": 530,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 4
     },
     {
-      "ms": 884,
+      "ms": 849,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 5
     },
     {
-      "ms": 1289,
+      "ms": 1150,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 6
     },
     {
-      "ms": 1552,
+      "ms": 1401,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 7
     },
     {
-      "ms": 1811,
+      "ms": 1663,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 7
     },
     {
-      "ms": 2075,
+      "ms": 1938,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 7
     },
     {
-      "ms": 2413,
+      "ms": 2368,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 8
     },
     {
-      "ms": 2667,
+      "ms": 2632,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 9
     },
     {
-      "ms": 3140,
+      "ms": 3211,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 10
     },
     {
-      "ms": 3402,
+      "ms": 3471,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 10
     },
     {
-      "ms": 3944,
+      "ms": 3841,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 11
     },
     {
-      "ms": 4203,
+      "ms": 4096,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 12
     },
     {
-      "ms": 4465,
+      "ms": 4451,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 13
     },
     {
-      "ms": 4802,
+      "ms": 4713,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 13
     },
     {
-      "ms": 5066,
+      "ms": 4982,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 13
     },
     {
-      "ms": 5945,
+      "ms": 5584,
       "phase": "intro",
       "ready": false,
       "form": false,
-      "present": 15
+      "present": 14
     },
     {
-      "ms": 6200,
+      "ms": 5856,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 6463,
+      "ms": 6115,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 6727,
+      "ms": 6371,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 6993,
+      "ms": 6631,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 7258,
+      "ms": 6896,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 7539,
+      "ms": 7156,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 7830,
+      "ms": 7422,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 8108,
+      "ms": 7681,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 8376,
+      "ms": 7944,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 8634,
+      "ms": 8209,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 8892,
+      "ms": 8477,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 9154,
+      "ms": 8733,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 9415,
+      "ms": 8995,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 9679,
+      "ms": 9250,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 9955,
+      "ms": 9509,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 10231,
+      "ms": 9771,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 10487,
+      "ms": 10024,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 10750,
+      "ms": 10299,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 11013,
+      "ms": 10551,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 11279,
+      "ms": 10812,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 11540,
+      "ms": 11066,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 11799,
+      "ms": 11338,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 12235,
+      "ms": 11614,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 12495,
+      "ms": 11867,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 12755,
+      "ms": 12128,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 13020,
+      "ms": 12396,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 13294,
+      "ms": 12652,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 13581,
+      "ms": 12916,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 13842,
+      "ms": 13178,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 14099,
+      "ms": 13468,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 14384,
+      "ms": 13747,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 14639,
+      "ms": 14003,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 14899,
+      "ms": 14265,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 15163,
+      "ms": 14521,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 15421,
+      "ms": 14780,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 15684,
+      "ms": 15129,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 15945,
+      "ms": 15382,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 16205,
+      "ms": 15652,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 16467,
+      "ms": 15919,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 16728,
+      "ms": 16182,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 16986,
+      "ms": 16456,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 17246,
+      "ms": 16721,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 17505,
+      "ms": 17005,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 17767,
+      "ms": 17265,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 18028,
+      "ms": 17519,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 18285,
+      "ms": 17771,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 18544,
+      "ms": 18026,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 18816,
+      "ms": 18278,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 19078,
+      "ms": 18534,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 19337,
+      "ms": 18794,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 19596,
+      "ms": 19058,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 19852,
+      "ms": 19327,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 20114,
+      "ms": 19579,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 20371,
+      "ms": 19846,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 20629,
+      "ms": 20117,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 20887,
+      "ms": 20382,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 21146,
+      "ms": 20636,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 21403,
+      "ms": 20915,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 21664,
+      "ms": 21180,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 21925,
+      "ms": 21503,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 22184,
+      "ms": 21758,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 22445,
+      "ms": 22021,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 22702,
+      "ms": 22287,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 22961,
+      "ms": 22610,
       "phase": "intro",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 23221,
+      "ms": 22887,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 23480,
+      "ms": 23145,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 23739,
+      "ms": 23409,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 23998,
+      "ms": 23678,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 24256,
+      "ms": 23931,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 24515,
+      "ms": 24182,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 24775,
+      "ms": 24443,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 25034,
+      "ms": 24701,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 25292,
+      "ms": 24962,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 25553,
+      "ms": 25216,
       "phase": "falling",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 25823,
+      "ms": 25472,
+      "phase": "falling",
+      "ready": false,
+      "form": false,
+      "present": 15
+    },
+    {
+      "ms": 25732,
       "phase": "reveal",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 26095,
+      "ms": 26003,
       "phase": "reveal",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 26346,
+      "ms": 26268,
       "phase": "reveal",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 26610,
+      "ms": 26530,
       "phase": "reveal",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 26872,
+      "ms": 26792,
       "phase": "reveal",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 27129,
+      "ms": 27059,
       "phase": "reveal",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 27398,
+      "ms": 27317,
       "phase": "reveal",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 27667,
+      "ms": 27654,
       "phase": "home",
       "ready": false,
       "form": false,
       "present": 15
     },
     {
-      "ms": 27927,
+      "ms": 27916,
       "phase": "home",
       "ready": true,
       "form": true,
@@ -711,13 +718,13 @@
   "lifecycle": {
     "aylen": {
       "seen": [
-        "airborne:fall_normal",
+        "airborne:fall_flap",
         "down:impact_heavy",
         "down:get_up",
         "normal:idle"
       ],
       "below": 0,
-      "mirrored": false,
+      "wrongWay": 0,
       "tex": [
         "extra_aylen__penguin_base_00"
       ],
@@ -726,13 +733,13 @@
     },
     "boris": {
       "seen": [
-        "airborne:fall_normal",
+        "airborne:fall_flap",
         "down:impact_medium",
         "down:get_up",
         "normal:idle"
       ],
       "below": 0,
-      "mirrored": false,
+      "wrongWay": 0,
       "tex": [
         "extra_boris__penguin_base_00"
       ],
@@ -741,13 +748,13 @@
     },
     "chalquits": {
       "seen": [
-        "airborne:fall_spin",
-        "down:impact_medium",
+        "airborne:fall_flap",
+        "down:impact_heavy",
         "down:get_up",
         "normal:idle"
       ],
       "below": 0,
-      "mirrored": false,
+      "wrongWay": 0,
       "tex": [
         "extra_chalquits__penguin_base_00"
       ],
@@ -762,7 +769,7 @@
         "normal:idle"
       ],
       "below": 0,
-      "mirrored": false,
+      "wrongWay": 0,
       "tex": [
         "extra_chiquito__penguin_base_00"
       ],
@@ -771,17 +778,32 @@
     },
     "oror": {
       "seen": [
-        "airborne:fall_normal",
+        "airborne:fall_spin",
         "down:impact_medium",
         "down:get_up",
-        "normal:look_around"
+        "normal:idle"
       ],
       "below": 0,
-      "mirrored": false,
+      "wrongWay": 0,
       "tex": [
         "extra_oror__penguin_base_00"
       ],
       "variant": "extra_oror__penguin",
+      "scale": 1
+    },
+    "rmliv": {
+      "seen": [
+        "airborne:fall_flap",
+        "down:impact_medium",
+        "down:get_up",
+        "normal:idle"
+      ],
+      "below": 0,
+      "wrongWay": 0,
+      "tex": [
+        "extra_rmliv__penguin_base_00"
+      ],
+      "variant": "extra_rmliv__penguin",
       "scale": 1
     },
     "shadow-frederick": {
@@ -792,7 +814,7 @@
         "normal:idle"
       ],
       "below": 0,
-      "mirrored": false,
+      "wrongWay": 0,
       "tex": [
         "extra_shadow-frederick__penguin_base_00"
       ],
@@ -801,13 +823,13 @@
     },
     "tats": {
       "seen": [
-        "airborne:fall_flap",
-        "down:impact_medium",
+        "airborne:fall_normal",
+        "down:impact_heavy",
         "down:get_up",
-        "normal:look_around"
+        "normal:idle"
       ],
       "below": 0,
-      "mirrored": false,
+      "wrongWay": 0,
       "tex": [
         "extra_tats__penguin_base_00"
       ],
@@ -817,12 +839,12 @@
     "zorro-negro": {
       "seen": [
         "airborne:fall_spin",
-        "down:impact_medium",
+        "down:impact_heavy",
         "down:get_up",
         "normal:idle"
       ],
       "below": 0,
-      "mirrored": false,
+      "wrongWay": 0,
       "tex": [
         "extra_zorro-negro__penguin_base_00"
       ],
@@ -832,29 +854,31 @@
   },
   "life": {
     "clips": [
-      "idle",
-      "chase_butterfly",
+      "smell_flower",
       "greet",
-      "sleep",
       "walk",
-      "confused",
+      "idle",
+      "bump",
+      "carry_ladder",
       "laugh",
-      "sit_grass",
-      "interact_object",
-      "run",
-      "wake_up",
-      "curious",
-      "push",
+      "watch_bloom",
+      "look_around",
+      "play",
+      "confused",
+      "chase",
       "stumble",
-      "blink",
-      "look_around"
+      "place_ladder",
+      "sit_down",
+      "sit_idle",
+      "climb"
     ],
     "facing": [
       -1,
       1
     ],
     "textures": true,
-    "mirrored": false
+    "wrongWay": 0,
+    "walkedRight": 202
   },
   "marvel": {
     "up": 23,

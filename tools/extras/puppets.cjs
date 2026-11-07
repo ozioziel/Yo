@@ -5,7 +5,8 @@
  * along the sleeve's own seam, a polyline from the shoulder line down to the flipper's end
  * (measured on the drawing's ink lines). It turns at the outer shoulder and is drawn behind
  * the torso, which keeps the seam as its outline: a raised flipper opens a real armpit.
- *   hair   hair falling over that sleeve stays in front, with the head
+ *   hair   hair falling over that sleeve stays in front, with the head (dark hair by default;
+ *          hairTone 'warm': orange/brown locks over a dark sleeve)
  *   pivot  shoulder joint; by default near the outer end of the shoulder line
  * Flippers holding something in front (`piece`): explicit outline, drawn in front.
  *   extras  bits above the outline that move with it (a straw over the hair)
@@ -44,6 +45,25 @@ module.exports = {
     armL: { side: -1, tip: [45, 900], seam: [[126, 592], [126, 600], [123, 620], [122, 640], [122, 660], [124, 680], [126, 700], [128, 720], [125, 740], [120, 760], [115, 780], [110, 800], [106, 820], [103, 840], [101, 860], [100, 880], [98, 900], [98, 920], [95, 940], [85, 952], [60, 957]] },
     armR: { side: 1, tip: [650, 930], seam: [[534, 612], [534, 620], [530, 640], [528, 660], [528, 680], [530, 700], [533, 720], [537, 740], [541, 760], [546, 780], [552, 800], [558, 820], [570, 840], [573, 860], [582, 880], [593, 900], [600, 920], [611, 940], [629, 960], [650, 978], [670, 985]] },
     eyes: [{ c: [179, 294], r: [14, 19] }, { c: [316, 297], r: [14, 19] }],
+  },
+  rmliv: {
+    // the raised forearm (bracelets, mitten, phone) with its whole rounded elbow turns at the
+    // elbow, in front of the jacket; it moves gently: the selfie is her signature pose. Its
+    // own outline closes it everywhere except along the jacket and the bag strap, where the
+    // cut gets an outline on both sides. Nothing of the body is hidden behind it.
+    armL: {
+      side: -1, tip: [60, 410], pivot: [95, 588], gain: 0.3,
+      piece: [[0, 195], [146, 195], [146, 430], [136, 440], [136, 468], [148, 478], [151, 500], [153, 525], [156, 548], [159, 560], [152, 580], [144, 600], [138, 612], [128, 626], [118, 638], [0, 642]],
+      seamStroke: [[148, 470], [151, 500], [153, 525], [156, 548], [152, 580], [144, 602], [134, 620]],
+    },
+    // the whole black denim sleeve from the shoulder seam; the orange locks resting on that
+    // shoulder stay with the head, in front, and the sleeve under them is completed
+    armR: {
+      side: 1, tip: [675, 975], pivot: [676, 530], hairTone: 'warm',
+      hair: [[630, 440], [789, 440], [789, 594], [630, 594]],
+      seam: [[626, 500], [613, 530], [605, 565], [603, 605], [603, 640], [606, 680], [610, 720], [613, 760], [614, 800], [614, 825], [613, 860], [620, 882], [624, 910], [632, 940], [645, 965], [662, 982], [690, 988]],
+    },
+    eyes: [{ c: [320, 251], r: [18, 21] }],
   },
   'shadow-frederick': {
     // the raised flipper with the twig turns at the elbow, in front of the shirt

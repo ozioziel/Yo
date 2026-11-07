@@ -1,8 +1,8 @@
 {
   "validation": "runtime-assets-pass",
-  "characters": 8,
-  "atlases": 72,
-  "frames": 4104,
+  "characters": 9,
+  "atlases": 81,
+  "frames": 4617,
   "textureScale": 0.75,
   "sd": 0.375
 }

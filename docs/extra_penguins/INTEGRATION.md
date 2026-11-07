@@ -13,6 +13,7 @@ Registro único: [`src/game/extraPenguins.json`](../../src/game/extraPenguins.js
 | chalquits | Chalquits | chalquits | `assets_overrides/ExtraPenguins/Chalquits.png` | `extra_chalquits__penguin` | `puppets.cjs#chalquits` |
 | chiquito | Chiquito | chiquito | `assets_overrides/ExtraPenguins/Chiquito.png` | `extra_chiquito__penguin` | `puppets.cjs#chiquito` |
 | oror | oror | oror | `assets_overrides/ExtraPenguins/oror.png` | `extra_oror__penguin` | `puppets.cjs#oror` |
+| rmliv | RMLIV | rmliv | `assets_overrides/ExtraPenguins/RMLIV.png` | `extra_rmliv__penguin` | `puppets.cjs#rmliv` |
 | shadow-frederick | Shadow Frederick | shadow frederick, shadow-frederick | `assets_overrides/ExtraPenguins/Shadow Frederick.png` | `extra_shadow-frederick__penguin` | `puppets.cjs#shadow-frederick` |
 | tats | Tats | tats | `assets_overrides/ExtraPenguins/Tats.png` | `extra_tats__penguin` | `puppets.cjs#tats` |
 | zorro-negro | zorro negro | zorro negro, zorro-negro | `assets_overrides/ExtraPenguins/zorro negro.png` | `extra_zorro-negro__penguin` | `puppets.cjs#zorro-negro` |
@@ -21,7 +22,7 @@ Normalización (`normalizePenguinName`): NFKC, sin espacios al principio ni al f
 
 El campo no muestra mensajes: un texto vacío, desconocido o ya presente no hace nada (no hay pingüino genérico de sustitución). Si el pingüino llega, o ya está en escena, el campo se vacía. Mientras carga, el campo se atenúa.
 
-Decisiones del usuario: los extras llevan siempre su ropa (sin bufanda, botas ni casco de ingeniero), hay uno por nombre (como máximo los 8) y no se recuerdan al recargar la página.
+Decisiones del usuario: los extras llevan siempre su ropa (sin bufanda, botas ni casco de ingeniero), hay uno por nombre (como máximo los 9) y no se recuerdan al recargar la página.
 
 ## Cuándo aparece el campo
 
@@ -42,17 +43,17 @@ Un envío es una sola aparición: Enter dispara el `submit` del formulario, un `
 ## Mismo sistema, apariencia propia
 
 - `Penguin.identity` marca a un extra. `targetVariant()` devuelve su propia variante, `weatherRoutine` le aplica la rama de «no cambia de ropa» (notice → confused → shiver/protector → resume) y `updateHelmet` no lo elige para el casco.
-- Sin espejo: cada clip tiene `clip` y `clip__right`, que apunta a los mismos fotogramas (`flipSafe=false`). Estos personajes miran al espectador como en sus referencias, así que al ir a la derecha no se refleja la textura: el texto SIS, la L, el tatuaje, el vaso o el portátil siguen en su lado. `Penguin.play()`/`face()` eligen esa versión cuando existe y, al girar a mitad de clip, conservan el fotograma. Las rutinas que esperan un clip lo reconocen en cualquiera de sus dos nombres. Las anclas (`hn`, `hf`, `hm`) se leen del dibujo activo. Los usos de `sprite.flipX` como «mira a la derecha» (globo, accesorios, aliento, escalera) pasan a `facing`, equivalente para los originales.
+- Dirección (desde el 6 de noviembre de 2026): igual que los pingüinos base, al mirar a la derecha el juego refleja el dibujo (`sprite.flipX`) y no hay `clip__right`. Antes, `clip__right` apuntaba a los mismos fotogramas sin reflejar y, como los dibujos miran a la izquierda, al ir a la derecha parecían caminar de espaldas. Consecuencia aceptada: de ese lado el texto SIS de Tats y la L de Chalquits se leen al revés, y el tatuaje, el vaso, el portátil o el celular pasan al otro lado. `Penguin.play()`/`face()` siguen aceptando un `clip__right` explícito si algún día se dibuja uno; al girar a mitad de clip conservan el fotograma. Las anclas (`hn`, `hf`, `hm`) se reflejan con el dibujo. Los usos de «mira a la derecha» (globo, accesorios, aliento, escalera) leen `facing`.
 - Carga y descarga por estación: `atlasesForSeason(data, season, extras)` incluye a los extras presentes o en carga. Al cambiar de estación se carga su grupo nuevo y se libera el anterior. Las texturas en uso se toman de `sprite.texture.key`.
 - Limpieza: los extras están en `world.penguins`, así que `World.destroy()` los destruye junto con sus sprites, sombras, globos y listeners; `WorldScene.teardown` restablece el puente.
 
 ## Verificación
 
-Ejecutado el 2 de noviembre de 2026:
+Ejecutado el 2 de noviembre de 2026 y repetido el 6 de noviembre de 2026, con RMLIV y la dirección reflejada:
 
 | Comprobación | Comando | Resultado |
 |---|---|---|
-| Recursos frente al contrato (72 acciones × 8, anclas, recortes, transparencia, sin animaciones estáticas, referencias intactas) | `node tools/extras/validate.cjs` | Correcto: 576 clips, 4104 fotogramas y 72 atlas ([COVERAGE.md](COVERAGE.md)) |
+| Recursos frente al contrato (72 acciones × 9, anclas, recortes, transparencia, sin animaciones estáticas, sin clips `__right`, referencias intactas) | `node tools/extras/validate.cjs` | Correcto: 648 clips, 4617 fotogramas y 81 atlas ([COVERAGE.md](COVERAGE.md)) |
 | Copia publicada (HD 0,75 y móvil 0,375, mitades exactas) | `node tools/extras/validate.cjs --runtime-only` | Correcto |
 | Tipos y compilación de producción | `npm run build` | Correcto |
 | Extremo a extremo en Chrome headless | `npm run test:extras` (con `npm run dev`) | Correcto ([evidence/integration-report.json](evidence/integration-report.json)) |
@@ -61,10 +62,10 @@ La prueba de extremo a extremo cubre:
 
 - El campo está oculto durante la intro y aparece cuando la escena queda limpia.
 - Nombre vacío y nombre desconocido: avisan y no crean ningún pingüino.
-- Los ocho nombres, escritos con mayúsculas, espacios y guiones distintos, caen, aterrizan (`impact_*`), se levantan (`get_up`) y vuelven a `normal`.
-- Ninguno atraviesa el suelo, se refleja ni usa otra textura.
+- Los nueve nombres, escritos con mayúsculas, espacios y guiones distintos, caen, aterrizan (`impact_*`), se levantan (`get_up`) y vuelven a `normal`.
+- Ninguno atraviesa el suelo ni usa otra textura, y cada uno se dibuja hacia donde va (`flipX` exactamente cuando `facing` es 1).
 - Un nombre repetido se rechaza y un doble envío (dos `submit` y un clic) produce una sola aparición.
-- Después conviven con los originales y recorren `walk`, `chase`, `bump`, `push`, `greet`, `laugh`, `sleep`, `sit_grass`, `celebrate`, `hold_ladder`, `carry_ladder`, `climb`, `wipe`, `fall_flap`… mirando a ambos lados sin reflejarse.
+- Después conviven con los originales y recorren `walk`, `chase`, `bump`, `push`, `greet`, `laugh`, `sleep`, `sit_grass`, `celebrate`, `hold_ladder`, `carry_ladder`, `climb`, `wipe`, `fall_flap`… mirando a ambos lados; al caminar a la derecha se ven de frente hacia la derecha.
 - La consola no registra errores, avisos ni respuestas fallidas.
 
 En el navegador integrado se comprobó además:

@@ -1,0 +1,25 @@
+{
+  "reference": "assets_overrides/ExtraPenguins/RMLIV.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "box": {
+    "left": 206,
+    "top": 26,
+    "width": 789,
+    "height": 1089
+  },
+  "paper": [
+    224,
+    234,
+    244
+  ],
+  "ink": [
+    59,
+    60,
+    62
+  ],
+  "droppedComponents": 3,
+  "droppedPixels": 8
+}

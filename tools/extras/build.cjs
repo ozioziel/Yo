@@ -5,8 +5,9 @@
  * Contract (from the base rig's animations.json): same clip names, frame counts, fps,
  * loops and origin; anchors (hands, head) per frame in logical 256-cell units. Frames are
  * trimmed, identical frames share one rectangle, and every rectangle is even-aligned so the
- * phone atlases are an exact half. `clip__right` reuses the same frames: these identities
- * face the viewer as in their references and are never mirrored (text, tattoo, held cup).
+ * phone atlases are an exact half. There is no `clip__right`: facing right, the game mirrors
+ * the drawing (sprite.flipX) exactly as it does for the base penguins, so a penguin walking
+ * right looks right instead of walking backwards (decision of 2026-11-06).
  */
 const fs = require('node:fs');
 const path = require('node:path');
@@ -97,7 +98,7 @@ async function build(person, { rebuildRig }) {
         names.push(name);
         anchors.push({ frame: name, handNear: a.hn.map(round), handFar: a.hf.map(round), helmet: a.head.map(round), ground: [128, 230] });
       }
-      const entry = { atlasKey: null, frames: names, frameAnchors: anchors, frameRate: bdef.frameRate, repeat: bdef.repeat, origin: bdef.origin, group, flipSafe: false };
+      const entry = { atlasKey: null, frames: names, frameAnchors: anchors, frameRate: bdef.frameRate, repeat: bdef.repeat, origin: bdef.origin, group, flipSafe: true };
       result.characters[variant][clip] = entry;
     }
     const pages = pack([...unique.values()]);
@@ -117,7 +118,7 @@ async function build(person, { rebuildRig }) {
       fs.writeFileSync(path.join(dir, `${id}.png`), img);
       fs.writeFileSync(path.join(dir, `${id}.json`), JSON.stringify(map));
       const rel = `ExtraPenguins/generated/${person.id}/atlases/${id}`;
-      result.atlases.push({ id, png: `${rel}.png`, json: `${rel}.json`, variant, group, clips: [...clipsHere].flatMap(c => [c, `${c}__right`]), width: w, height: h, textureScale: OUT / CELL });
+      result.atlases.push({ id, png: `${rel}.png`, json: `${rel}.json`, variant, group, clips: [...clipsHere], width: w, height: h, textureScale: OUT / CELL });
       for (const c of clipsHere) result.characters[variant][c].atlasKey = id;
     }
     // a clip must live on one page (Phaser plays frames of a single texture)
@@ -127,8 +128,6 @@ async function build(person, { rebuildRig }) {
       if (pagesUsed.size !== 1) throw new Error(`${variant}:${clip} repartido en varias páginas`);
     }
   }
-  // facing right shows the same drawing: never a mirror
-  for (const [clip, e] of Object.entries({ ...result.characters[variant] })) result.characters[variant][`${clip}__right`] = { ...e };
   fs.writeFileSync(path.join(GEN, person.id, 'manifest.json'), JSON.stringify(result));
   return result;
 }
@@ -140,7 +139,7 @@ async function main() {
     if (only && only !== person.id) continue;
     const t0 = Date.now();
     const r = await build(person, { rebuildRig });
-    console.log(`[extras] ${person.id}: ${Object.keys(r.characters[person.variant]).length / 2} clips, ${r.atlases.length} atlas, ${((Date.now() - t0) / 1000).toFixed(0)} s`);
+    console.log(`[extras] ${person.id}: ${Object.keys(r.characters[person.variant]).length} clips, ${r.atlases.length} atlas, ${((Date.now() - t0) / 1000).toFixed(0)} s`);
   }
   if (registry.every(p => fs.existsSync(path.join(GEN, p.id, 'manifest.json')))) {
     const all = { generatedBy: 'tools/extras/build.cjs', atlases: [], characters: {}, references: {} };

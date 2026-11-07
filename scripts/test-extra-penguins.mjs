@@ -128,24 +128,25 @@ try {
     assert.equal(await evaluate("document.querySelector('.summon-input').placeholder"), '', 'no hint of what it is for');
     // Every identity, typed with different case, spacing and hyphenation.
     const typed = { aylen: 'Aylen ', boris: 'BORIS', chalquits: 'chalquits', chiquito: ' Chiquito', oror: 'OROR',
-      'shadow-frederick': '  shadow   FREDERICK ', tats: 'tats', 'zorro-negro': 'Zorro-Negro' };
+      rmliv: 'RmLiv', 'shadow-frederick': '  shadow   FREDERICK ', tats: 'tats', 'zorro-negro': 'Zorro-Negro' };
     const lifecycle = {};
     for (const [id, name] of Object.entries(typed)) {
       assert.deepEqual(await submit(name, id === 'aylen'), { added: 1, cleared: true }, `summon ${id}`);
       lifecycle[id] = await evaluate(`(async () => {
         const p = window.__oziel.extras.get(${JSON.stringify(id)});
         const seen = [], tex = new Set();
-        let below = 0, mirrored = false, t = performance.now();
+        let below = 0, wrongWay = 0, t = performance.now();
         while (performance.now() - t < 9000) {
           const s = p.mode + ':' + p.clip;
           if (seen[seen.length - 1] !== s) seen.push(s);
           tex.add(p.sprite.texture.key);
           below = Math.max(below, p.y - p.laneY);
-          mirrored ||= p.sprite.flipX;
+          // facing right is the mirrored drawing, as for the base penguins
+          if (p.sprite.flipX !== (p.facing === 1)) wrongWay++;
           if (p.mode === 'normal' && seen.some(x => x.startsWith('down:get_up'))) break;
           await new Promise(r => setTimeout(r, 20));
         }
-        return { seen, below, mirrored, tex: [...tex], variant: p.variant, scale: p.sprite.scaleX / (p.size / p.texScale) };
+        return { seen, below, wrongWay, tex: [...tex], variant: p.variant, scale: p.sprite.scaleX / (p.size / p.texScale) };
       })()`);
       const life = lifecycle[id];
       assert(life.seen[0].startsWith('airborne:fall_'), `${id} enters falling: ${life.seen}`);
@@ -153,29 +154,31 @@ try {
       assert(life.seen.some(s => s.startsWith('down:get_up')), `${id} gets up`);
       assert(life.seen[life.seen.length - 1].startsWith('normal:'), `${id} back to normal`);
       assert.equal(life.below, 0, `${id} never goes through the ground`);
-      assert.equal(life.mirrored, false, `${id} is never mirrored`);
+      assert.equal(life.wrongWay, 0, `${id} looks the way it faces`);
       assert(life.tex.every(k => k.startsWith(`extra_${id}__penguin_`)), `${id} keeps its own textures: ${life.tex}`);
       assert.equal(life.variant, `extra_${id}__penguin`);
     }
     assert.deepEqual(await submit('tats'), { added: 0, cleared: true }, 'repeated name: no second Tats');
-    assert.equal(await count(), original + 8, 'one arrival per identity, also for a double send');
+    assert.equal(await count(), original + Object.keys(typed).length, 'one arrival per identity, also for a double send');
     await screenshot('extras-home');
     // Normal life afterwards: identities and originals share the brain and collisions.
     const life = await evaluate(`(async () => {
       const w = window.__oziel, seen = new Set(), facing = new Set();
-      let textures = true, mirrored = false;
+      let textures = true, wrongWay = 0, walkedRight = 0;
       for (let k = 0; k < 120; k++) {
         for (const [id, p] of w.extras) {
           seen.add(p.clip); facing.add(p.facing);
           textures &&= p.sprite.texture.key.startsWith('extra_' + id + '__penguin_');
-          mirrored ||= p.sprite.flipX;
+          if (p.sprite.flipX !== (p.facing === 1)) wrongWay++;
+          if (p.clip === 'walk' && p.facing === 1 && p.sprite.flipX) walkedRight++;
         }
         await new Promise(r => setTimeout(r, 60));
       }
-      return { clips: [...seen], facing: [...facing], textures, mirrored };
+      return { clips: [...seen], facing: [...facing], textures, wrongWay, walkedRight };
     })()`);
     assert(life.textures, 'appearance kept during normal behaviour');
-    assert.equal(life.mirrored, false, 'identities are never mirrored, whichever way they walk');
+    assert.equal(life.wrongWay, 0, 'identities look the way they walk: mirrored when facing right');
+    assert(life.walkedRight > 0, 'an identity walking right is drawn facing right');
     await screenshot('extras-life');
     // "oziel": every penguin that can stops to look up, the O lights up, then life goes on
     await sleep(1500);

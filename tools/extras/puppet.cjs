@@ -252,6 +252,15 @@ async function buildParts(id, def) {
     if (!arm) continue;
     const r = armRegions(cut, arm);
     const part = layer(W, H), pieceMask = new Uint8Array(N), hairHole = new Uint8Array(N);
+    // which pixels inside `hair` are hair: dark hair over a light sleeve by default; with
+    // hairTone 'warm', orange/brown locks and their white shine over a dark sleeve, plus
+    // their own ink outline
+    let isHair = i => lum(px, i) < 120;
+    if (r.hair && arm.hairTone === 'warm') {
+      const warm = i => px[i * 4 + 3] > 0 && ((px[i * 4] - px[i * 4 + 2] > 40 && px[i * 4] > 80) || lum(px, i) > 170);
+      const near = dilate(W, H, i => r.hair[i] && warm(i), Math.ceil(outline.width));
+      isHair = i => near[i] === 1;
+    }
     for (let i = 0; i < N; i++) {
       if (!px[i * 4 + 3]) continue;
       let inArm = r.region[i];
@@ -259,7 +268,7 @@ async function buildParts(id, def) {
       if (!inArm) continue;
       // hair falling over the sleeve stays with the head, in front; the sleeve under it is
       // completed from the sleeve's own colours
-      if (r.hair && r.hair[i] && lum(px, i) < 120) { hairHole[i] = 1; pieceMask[i] = 1; continue; }
+      if (r.hair && r.hair[i] && isHair(i)) { hairHole[i] = 1; pieceMask[i] = 1; continue; }
       pieceMask[i] = 1;
       removed[i] = 1;
     }

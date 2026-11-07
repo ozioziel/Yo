@@ -69,7 +69,8 @@ const AERIAL = new Set(['dragged', 'fall_normal', 'fall_spin', 'fall_flap']);
 const AERIAL_SCALE = 0.87;
 const AERIAL_PIVOT = 46; // cell y of the point the aerial rig was scaled around
 const GRAVITY = 2600;
-/** Explicit right-facing drawing of a clip (identities with text or asymmetric details). */
+/** Optional explicit right-facing drawing of a clip. No character ships one today: every
+ *  penguin, summoned identities included, faces right with the mirrored drawing. */
 const RIGHT = '__right';
 const sameClip = (a: string, b: string) => a.replace(RIGHT, '') === b.replace(RIGHT, '');
 let nextId = 1;

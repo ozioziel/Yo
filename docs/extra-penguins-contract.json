@@ -528,6 +528,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "idle",
+              "group": "base",
+              "frames": 6,
+              "fps": 6,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -930,6 +949,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "blink",
+              "group": "base",
+              "frames": 4,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -1559,6 +1597,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "walk",
+              "group": "base",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -2174,6 +2231,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "run",
+              "group": "base",
+              "frames": 8,
+              "fps": 14,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -2679,6 +2755,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "look_up",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -3300,6 +3395,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "look_around",
+              "group": "base",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -3806,6 +3920,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "curious",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -4322,6 +4455,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "confused",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -4723,6 +4875,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "scared",
+              "group": "base",
+              "frames": 4,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 4,
               "validation": "structural-pass"
             }
@@ -5130,6 +5301,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "dragged",
+              "group": "base",
+              "frames": 4,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -5741,6 +5931,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 8,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "fall_normal",
+              "group": "base",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 8,
               "validation": "structural-pass"
             }
@@ -6564,6 +6773,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "fall_spin",
+              "group": "base",
+              "frames": 12,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 12,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -7175,6 +7403,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "fall_flap",
+              "group": "base",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -7624,6 +7871,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "impact_light",
+              "group": "base",
+              "frames": 5,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 5,
               "validation": "structural-pass"
             }
@@ -8129,6 +8395,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "impact_medium",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -8736,6 +9021,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 8,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "impact_heavy",
+              "group": "base",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 8,
               "validation": "structural-pass"
             }
@@ -9350,6 +9654,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "get_up",
+              "group": "base",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 8,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -9856,6 +10179,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "stumble",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -10370,6 +10712,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "bump",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -10872,6 +11233,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "push",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -11385,6 +11765,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "sit_down",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -11785,6 +12184,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "sit_idle",
+              "group": "base",
+              "frames": 4,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 4,
               "validation": "structural-pass"
             }
@@ -12292,6 +12710,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_base_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "stand_up",
+              "group": "base",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_base_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -12899,6 +13336,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_intro_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_intro_00.json",
+              "distinctImages": 7,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "enter",
+              "group": "intro",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.json",
               "distinctImages": 7,
               "validation": "structural-pass"
             }
@@ -13514,6 +13970,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "switch_light",
+              "group": "intro",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
@@ -14021,6 +14496,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "notice_name",
+              "group": "intro",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
@@ -14523,6 +15017,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_intro_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_intro_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "group_look_up",
+              "group": "intro",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -15141,6 +15654,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "carry_ladder",
+              "group": "tasks",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -15747,6 +16279,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_tasks_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_tasks_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "place_ladder",
+              "group": "tasks",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.json",
               "distinctImages": 4,
               "validation": "structural-pass"
             }
@@ -16361,6 +16912,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "assemble_ladder",
+              "group": "intro",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.json",
+              "distinctImages": 7,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
@@ -16865,6 +17435,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_tasks_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_tasks_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "hold_ladder",
+              "group": "tasks",
+              "frames": 6,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -17486,6 +18075,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "climb",
+              "group": "tasks",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.json",
+              "distinctImages": 8,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -17988,6 +18596,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_intro_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_intro_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "reach_rope",
+              "group": "intro",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -18597,6 +19224,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_intro_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_intro_00.json",
+              "distinctImages": 7,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "cut_rope",
+              "group": "intro",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.json",
               "distinctImages": 7,
               "validation": "structural-pass"
             }
@@ -19212,6 +19858,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "react_name_fall",
+              "group": "intro",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_intro_00.json",
+              "distinctImages": 7,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "No se carga: coreografía exclusiva de la intro, anterior a cualquier invocación",
@@ -19720,6 +20385,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_tasks_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_tasks_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "celebrate",
+              "group": "tasks",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -20329,6 +21013,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_tasks_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_tasks_00.json",
+              "distinctImages": 7,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "wipe",
+              "group": "tasks",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_tasks_00.json",
               "distinctImages": 7,
               "validation": "structural-pass"
             }
@@ -20944,6 +21647,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "sleep",
+              "group": "daily",
+              "frames": 8,
+              "fps": 6,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -21446,6 +22168,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "wake_up",
+              "group": "daily",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -21957,6 +22698,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "greet",
+              "group": "daily",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -22567,6 +23327,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "play",
+              "group": "daily",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
               "distinctImages": 5,
               "validation": "structural-pass"
             }
@@ -23186,6 +23965,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "chase",
+              "group": "daily",
+              "frames": 8,
+              "fps": 14,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -23700,6 +24498,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "laugh",
+              "group": "daily",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -24315,6 +25132,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "interact_object",
+              "group": "daily",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -24824,6 +25660,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "pick_up_object",
+              "group": "daily",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -25324,6 +26179,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_daily_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Cargado; ningún pingüino lo usa en el código actual",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "put_down_object",
+              "group": "daily",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_daily_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -25836,6 +26710,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "notice_weather",
+              "group": "weather",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_weather_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_weather_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -26339,6 +27232,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_weather_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_weather_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "weather_confused",
+              "group": "weather",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_weather_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_weather_00.json",
               "distinctImages": 5,
               "validation": "structural-pass"
             }
@@ -26953,6 +27865,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Cargado con su grupo; no alcanzable: los extras no se cambian de ropa",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "remove_accessories",
+              "group": "weather",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_weather_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_weather_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Cargado con su grupo; no alcanzable: los extras no se cambian de ropa",
@@ -27353,6 +28284,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_weather_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_weather_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "resume_after_weather",
+              "group": "weather",
+              "frames": 4,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_weather_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_weather_00.json",
               "distinctImages": 4,
               "validation": "structural-pass"
             }
@@ -27965,6 +28915,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Cargado con su grupo; no alcanzable: los extras no se cambian de ropa",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "put_scarf",
+              "group": "winter",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Cargado con su grupo; no alcanzable: los extras no se cambian de ropa",
@@ -28468,6 +29437,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_winter_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_winter_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "shiver",
+              "group": "winter",
+              "frames": 6,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.json",
               "distinctImages": 5,
               "validation": "structural-pass"
             }
@@ -29082,6 +30070,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "make_snowball",
+              "group": "winter",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.json",
+              "distinctImages": 8,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -29691,6 +30698,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "throw_snowball",
+              "group": "winter",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.json",
+              "distinctImages": 8,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -30295,6 +31321,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_winter_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_winter_00.json",
+              "distinctImages": 8,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "ice_slide",
+              "group": "winter",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.json",
               "distinctImages": 8,
               "validation": "structural-pass"
             }
@@ -31113,6 +32158,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "build_snowman",
+              "group": "winter",
+              "frames": 12,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_winter_00.json",
+              "distinctImages": 11,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -31715,6 +32779,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_autumn_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_autumn_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Cargado con su grupo; no alcanzable: los extras no se cambian de ropa",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "put_boots",
+              "group": "autumn",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.json",
               "distinctImages": 4,
               "validation": "structural-pass"
             }
@@ -32327,6 +33410,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Cargado con su grupo; no alcanzable: los extras no se cambian de ropa",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "open_umbrella",
+              "group": "autumn",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Cargado con su grupo; no alcanzable: los extras no se cambian de ropa",
@@ -32930,6 +34032,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_autumn_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_autumn_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "walk_umbrella",
+              "group": "autumn",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.json",
               "distinctImages": 5,
               "validation": "structural-pass"
             }
@@ -33544,6 +34665,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "jump_puddle",
+              "group": "autumn",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -34153,6 +35293,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "play_leaves",
+              "group": "autumn",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -34654,6 +35813,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_autumn_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_autumn_00.json",
+              "distinctImages": 3,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "hide_rain",
+              "group": "autumn",
+              "frames": 6,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_autumn_00.json",
               "distinctImages": 3,
               "validation": "structural-pass"
             }
@@ -35267,6 +36445,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "chase_butterfly",
+              "group": "spring",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_spring_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_spring_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -35875,6 +37072,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "smell_flower",
+              "group": "spring",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_spring_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_spring_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -36376,6 +37592,25 @@
               "repeat": -1,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_spring_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_spring_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "sit_grass",
+              "group": "spring",
+              "frames": 6,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_spring_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_spring_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -36883,6 +38118,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_spring_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_spring_00.json",
+              "distinctImages": 6,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "watch_bloom",
+              "group": "spring",
+              "frames": 6,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_spring_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_spring_00.json",
               "distinctImages": 6,
               "validation": "structural-pass"
             }
@@ -37495,6 +38749,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_summer_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_summer_00.json",
+              "distinctImages": 7,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "apply_sunscreen",
+              "group": "summer",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.json",
               "distinctImages": 7,
               "validation": "structural-pass"
             }
@@ -38312,6 +39585,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "build_sandcastle",
+              "group": "summer",
+              "frames": 12,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.json",
+              "distinctImages": 11,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -38921,6 +40213,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "play_beach",
+              "group": "summer",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -39523,6 +40834,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_summer_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_summer_00.json",
+              "distinctImages": 8,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "enter_water",
+              "group": "summer",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.json",
               "distinctImages": 8,
               "validation": "structural-pass"
             }
@@ -40138,6 +41468,25 @@
             }
           ]
         },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "swim",
+              "group": "summer",
+              "frames": 8,
+              "fps": 10,
+              "repeat": -1,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.json",
+              "distinctImages": 5,
+              "validation": "structural-pass"
+            }
+          ]
+        },
         "shadow-frederick": {
           "status": "structural-pass",
           "use": "Alcanzable tras la intro",
@@ -40740,6 +42089,25 @@
               "repeat": 0,
               "atlas": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_summer_00.png",
               "atlasJson": "ExtraPenguins/generated/oror/atlases/extra_oror__penguin_summer_00.json",
+              "distinctImages": 4,
+              "validation": "structural-pass"
+            }
+          ]
+        },
+        "rmliv": {
+          "status": "structural-pass",
+          "use": "Alcanzable tras la intro",
+          "manifest": "assets_overrides/ExtraPenguins/generated/animations.json",
+          "resources": [
+            {
+              "character": "rmliv",
+              "action": "shake_water",
+              "group": "summer",
+              "frames": 8,
+              "fps": 10,
+              "repeat": 0,
+              "atlas": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.png",
+              "atlasJson": "ExtraPenguins/generated/rmliv/atlases/extra_rmliv__penguin_summer_00.json",
               "distinctImages": 4,
               "validation": "structural-pass"
             }

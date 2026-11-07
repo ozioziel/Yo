@@ -53,8 +53,9 @@ function rect(info, f) {
 async function validateSources() {
   assert(fs.existsSync(generated), 'Faltan los recursos generados (node tools/extras/build.cjs)');
   const data = JSON.parse(fs.readFileSync(generated));
-  assert.equal(registry.length, 8);
-  assert.equal(new Set(registry.map(p => p.id)).size, 8, 'Identificadores duplicados');
+  const N = registry.length;
+  assert(N > 0, 'Registro vacío');
+  assert.equal(new Set(registry.map(p => p.id)).size, N, 'Identificadores duplicados');
   assert.equal(new Set(data.atlases.map(a => a.id)).size, data.atlases.length, 'Atlas duplicados');
   const contract = base.characters.penguin, rows = [], pages = new Map(), idle = [];
   for (const person of registry) {
@@ -64,18 +65,19 @@ async function validateSources() {
     exactFile(path.join(dir, 'ExtraPenguins/generated', person.id, 'cutout.png'));
     const clips = data.characters[person.variant];
     assert(clips, person.variant);
-    assert.equal(Object.keys(clips).length, Object.keys(contract).length * 2, `${person.variant}: número de clips`);
+    assert.equal(Object.keys(clips).length, Object.keys(contract).length, `${person.variant}: número de clips`);
+    // facing right is the same drawing mirrored by the game, as for the base penguins: a
+    // `clip__right` with the left-facing drawing made them walk backwards
+    assert(!Object.keys(clips).some(c => c.endsWith('__right')), `${person.variant}: no debe tener clips __right`);
     for (const [clip, original] of Object.entries(contract)) {
-      const def = clips[clip], right = clips[`${clip}__right`];
-      assert(def && right, `${person.variant}:${clip}`);
+      const def = clips[clip];
+      assert(def, `${person.variant}:${clip}`);
       assert.equal(def.frames.length, original.frames.length, `${clip}: fotogramas`);
       assert.equal(def.frameRate, original.frameRate);
       assert.equal(def.repeat, original.repeat);
       assert.deepEqual(def.origin, original.origin);
-      assert.equal(def.flipSafe, false);
+      assert.equal(def.flipSafe, true);
       assert.equal(def.group === 'intro', INTRO_ONLY.has(clip), `${clip}: grupo ${def.group}`);
-      // facing right reuses the same drawing: never a mirrored texture
-      assert.deepEqual({ ...right }, { ...def }, `${clip}__right debe ser el mismo dibujo`);
       assert.equal(def.frameAnchors.length, def.frames.length);
       for (const [i, a] of def.frameAnchors.entries()) {
         assert.equal(a.frame, def.frames[i]);
@@ -116,10 +118,10 @@ async function validateSources() {
       rows.push({ character: person.id, action: clip, group: def.group, frames: def.frames.length, fps: def.frameRate, repeat: def.repeat, atlas: atlas.png, atlasJson: atlas.json, distinctImages: new Set(hashes).size, validation: 'structural-pass' });
     }
   }
-  assert.equal(new Set(idle).size, 8, 'Dos identidades comparten el mismo reposo');
+  assert.equal(new Set(idle).size, N, 'Dos identidades comparten el mismo reposo');
   const used = new Set(registry.flatMap(p => Object.values(data.characters[p.variant]).map(d => d.atlasKey)));
   assert.equal(used.size, data.atlases.length, 'Atlas sin consumidor en el manifiesto');
-  const report = { validation: 'structural-pass', visualValidation: 'Revisión visual y en el juego aparte; esta comprobación no certifica el parecido.', characters: 8, clips: rows.length, frames: rows.reduce((n, r) => n + r.frames, 0), atlases: pages.size, rows };
+  const report = { validation: 'structural-pass', visualValidation: 'Revisión visual y en el juego aparte; esta comprobación no certifica el parecido.', characters: N, clips: rows.length, frames: rows.reduce((n, r) => n + r.frames, 0), atlases: pages.size, rows };
   fs.mkdirSync(docs, { recursive: true });
   fs.writeFileSync(path.join(docs, 'coverage.json'), JSON.stringify(report, null, 2));
   writeCoverage(report, data);
@@ -152,11 +154,11 @@ function writeCoverage(report, data) {
     const cells = registry.map(p => `✓ ${report.rows.find(r => r.character === p.id && r.action === clip).distinctImages}`);
     return `| ${clip} | ${g} | ${def.frames.length} / ${def.frameRate} / ${def.repeat === -1 ? 'bucle' : 'una vez'} | ${runtimeUse(clip)} | ${cells.join(' | ')} |`;
   });
-  const md = `# Cobertura de recursos de los ocho pingüinos
+  const md = `# Cobertura de recursos de los pingüinos extra
 
-Generado por \`node tools/extras/validate.cjs\`. Resultado: **${report.clips} clips, ${report.frames} fotogramas y ${report.atlases} atlas con validación estructural correcta**. La comprobación cubre archivos, transparencia, recortes, contratos, anclas y que ninguna animación sea estática. El parecido con las referencias y el movimiento se revisan aparte, con las hojas de control y en el juego ([VISUAL_REVIEW.md](VISUAL_REVIEW.md)).
+Generado por \`node tools/extras/validate.cjs\`. Resultado: **${report.characters} personajes: ${report.clips} clips, ${report.frames} fotogramas y ${report.atlases} atlas con validación estructural correcta**. La comprobación cubre archivos, transparencia, recortes, contratos, anclas y que ninguna animación sea estática. El parecido con las referencias y el movimiento se revisan aparte, con las hojas de control y en el juego ([VISUAL_REVIEW.md](VISUAL_REVIEW.md)).
 
-Cada personaje es una marioneta de recortes de su propio PNG ([IDENTITY.md](IDENTITY.md)). Tiene un único traje, su ropa propia, con las 72 acciones del pingüino base (\`penguin\`): mismos nombres, número de fotogramas, fps, bucle y origen. \`<acción>__right\` reutiliza los mismos fotogramas, porque estos personajes miran al espectador como en sus referencias y nunca se reflejan.
+Cada personaje es una marioneta de recortes de su propio PNG ([IDENTITY.md](IDENTITY.md)). Tiene un único traje, su ropa propia, con las 72 acciones del pingüino base (\`penguin\`): mismos nombres, número de fotogramas, fps, bucle y origen. Al mirar a la derecha el juego refleja el mismo dibujo (\`flipX\`), como con los pingüinos base; no hay \`<acción>__right\`.
 
 Fuentes: referencias intactas en \`assets_overrides/ExtraPenguins/*.png\` (SHA-256 coincidente). Recorte en \`generated/<id>/cutout.png\`. Piezas en \`generated/<id>/rig/\`. Atlas en \`generated/<id>/atlases/\`. Manifiesto en \`generated/animations.json\`. Registro en \`src/game/extraPenguins.json\`. [Correspondencia exacta por personaje, acción, atlas y fotograma](coverage.json).
 
@@ -178,7 +180,8 @@ ${actionRows.join('\n')}
 
 ## Contratos comprobados
 
-- Rutas con mayúsculas exactas; referencias originales sin modificar; ocho identidades y claves de atlas únicas.
+- Rutas con mayúsculas exactas; referencias originales sin modificar; ${report.characters} identidades y claves de atlas únicas.
+- Sin clips \`__right\`: mirar a la derecha es el reflejo del mismo dibujo.
 - Páginas RGBA con transparencia; tamaño de PNG, JSON y manifiesto coincidentes; celdas de 240 px (\`textureScale\` 0.75 sobre una celda lógica de 320, con los pies a 0,9 de su altura como en las de 256) recortadas, con rectángulos pares para que la versión móvil sea la mitad exacta.
 - Nombres y orden de fotogramas; los mismos fotogramas, fps, bucle y origen que el pingüino base; anclas finitas dentro de la celda.
 - Ningún fotograma vacío; ninguna secuencia estática; reposos distintos entre identidades; ningún atlas huérfano.
@@ -223,7 +226,7 @@ async function validateRuntime() {
     assert.equal(runtime.fps, def.frameRate); assert.equal(runtime.repeat, def.repeat);
     assert.equal(runtime.anchors.length, def.frameAnchors.length);
   }
-  const report = { validation: 'runtime-assets-pass', characters: 8, atlases: resident.length, frames, textureScale: 0.75, sd: 0.375 };
+  const report = { validation: 'runtime-assets-pass', characters: registry.length, atlases: resident.length, frames, textureScale: 0.75, sd: 0.375 };
   fs.writeFileSync(path.join(docs, 'runtime-assets.json'), JSON.stringify(report, null, 2));
   return report;
 }
